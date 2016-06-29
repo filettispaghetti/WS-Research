@@ -5,8 +5,8 @@ use Getopt::Long;
 use lib 'lib';
 use Comparison::fileOptions;
 
-my $newfile = new Comparison::fileOptions(@ARGV);
-my $newfile2 = new Comparison::fileOptions(@ARGV);
+my $newfile = new Comparison::fileOptions(shift @ARGV);
+my $newfile2 = new Comparison::fileOptions(shift @ARGV);
 
 say $newfile -> printFile();
 say $newfile2 -> printFile();
