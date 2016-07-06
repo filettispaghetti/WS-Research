@@ -5,14 +5,18 @@ use warnings;
 use Text::Document;
 use Getopt::Long;
 
-sub new{
-	my $class = shift;
-	my $file = {
-		file => shift
-		};
-bless $file;
-return $file;
-}
+use Exporter qw(import);
+our @EXPORT = qw(printFile);
+
+
+# sub new{
+# 	my $class = shift;
+# 	my $file = {
+# 		file => shift
+# 		};
+# bless $file;
+# return $file;
+# }
 
 sub printFile{
 	my ($file) = @_;

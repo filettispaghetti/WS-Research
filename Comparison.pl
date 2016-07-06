@@ -1,14 +1,14 @@
 use strict;
-use warning;
-use Text::Document;
+use warnings;
+use Text::Document; # to install, on command line type `cpan Text::Document`
 use Getopt::Long;
 use fileOptions;
 
-my $newfile = fileOptions -> new(shift @ARGV);
-my $newfile2 = fileOptions -> new(shift @ARGV);
+my $newfile = shift @ARGV;
+my $newfile2 = shift @ARGV;
 
-say $newfile -> printFile();
-say $newfile2 -> printFile();
+printFile($newfile);
+printFile($newfile2);
 
 # say $newfile -> countFreq();
 # say $newfile2 -> countFreq();
@@ -53,29 +53,3 @@ say $newfile2 -> printFile();
 # # $firstfile=join(" ",@ARGV);
 # # print "First file is $firstfile and second file is $secondfile";
 
-package fileOptions;
-
-use strict;
-use warnings;
-use Text::Document;
-use Getopt::Long;
-
-sub new{
-	my $class = shift;
-	my $file = {
-		file => shift
-		};
-bless $file;
-return $file;
-}
-
-sub printFile{
-	my ($file) = @_;
- 	open (my $info, $file) or die "Could not open  file.";
-		my $line ='';
-		foreach $line (<$info>)  {   
-			print $line;    
-		}
-	close($info);
-	}
-	
