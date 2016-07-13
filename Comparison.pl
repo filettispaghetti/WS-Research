@@ -1,54 +1,34 @@
 use strict;
-use warnings;
-use Text::Document; # to install, on command line type `cpan Text::Document`
-use Getopt::Long;
-use fileOptions;
+use warnings 'all';
 
-my $newfile = shift @ARGV;
-my $newfile2 = shift @ARGV;
+use Text::Document;
+use Text::DocumentCollection;
+use fileOptions;
+use lib '/Users/rebeccafiletti/lib/';
+use Text::TFIDF;
+
+my $file = shift @ARGV;
+my $file2 = shift @ARGV;
+# my $file3 = shift @ARGV;
+
+# my $word = "Macbeth";
+# my $Obj = new Text::TFIDF(file=>[$file,$file2]);
+# print $Obj->TFIDF($file,$word);
 
 # printFile($newfile);
 # printFile($newfile2);
 
-say $newfile -> countFreq();
-say $newfile2 -> countFreq();
+# print newText($file);
+# print newText($file2);
 
-##Still working on how to get this to work.
-# say $newfile -> cosineSim();
-# say $newfile2 -> cosineSim();
+print "Cosine Similarity is: "; 
+print cosineSim($file, $file2);
+print "\n";
 
-# say $newfile -> countLines();
-# say $newfile2 -> countLines();
+# print "Weighted Cosine Similarity is: \n";
+# print WeightedCS($file, $file2, $file3);
+# print "\n";
 
 
-# Assign Stop Words
-# ##
-# ##
-# 
-# my %sp;
-# my $wordlist = 'StopWords.txt';
-# 
-# #my $sp = 0;
-# 
-# open my $sw, '<', $wordlist or die "Could not open file. $!";
-# while ($lin = <$sw>) {
-#     chomp $lin;
-#     foreach my $str (split /\s+/, $lin) {
-#         $sp{lc($str)} = 1;
-#         #print "$sp \n ";
-#     }
-# }
-
-# my $firstfile = @ARGV; 
-# my $secondfile = @ARGV;
-
-# if(!GetOptions(
-#     "firstfile",
-#     "secondfile=s"=> \$secondfile
-#     )
-#   )
-# {
-#     print "\nUnknown options have been provided\n";
-# }
-# $firstfile=join(" ",@ARGV);
-# print "First file is $firstfile and second file is $secondfile";
+# print countLines($file);
+# print countLines($file2);

@@ -1,14 +1,16 @@
-use strict;
+# use strict;
 use warnings;
 use Text::Document;
+use Text::DocumentCollection;
 use Getopt::Long;
 
 my $firstfile = shift @ARGV; 
 my $secondfile = shift @ARGV;
 my %sp;
 
-##STOP WORDS
-
+#STOP WORDS
+##
+##
 my $wordlist = 'StopWords.txt';
 
 my $lin;
@@ -22,7 +24,9 @@ while ($lin = <$sw>) {
     }
 }
 
-## COSINE SIMILARITY
+#Initiating new Text::Document object
+##
+##
 my %count1;
 
 print "\n First File \n";
@@ -37,7 +41,6 @@ while (my $line = <$fh>) {
     			$t1 -> AddContent ($str);
 }}}
  my $word = 0;
-#while ($word != $stop){
 foreach my $word (reverse sort { $count1{$a} <=> $count1{$b} } keys %count1) {
     printf "%-31s %s\n", $word, $count1{$word};
 }
@@ -61,18 +64,17 @@ while (my $line2 = <$fh2>) {
     			$t2 -> AddContent ($str);
 }}}
  my $word2 = 0;
-#while ($word != $stop){
 foreach my $word2 (reverse sort { $count2{$a} <=> $count2{$b} } keys %count2) {
     printf "%-31s %s\n", $word2, $count2{$word2};
 }
 
-package cosineSimilarity;
 #Cosine Similarity
 ##
 ##
 print "\n";
 my $sim = $t1->CosineSimilarity( $t2 );
 print "Cosine Sim is: $sim\n";
+
 
 # my $listRef = $t1->KeywordFrequency();
 #   foreach my $pair (@{$listRef}){
@@ -85,3 +87,16 @@ print "Cosine Sim is: $sim\n";
 #         my ($term,$frequency) = @{$pair};
 #         print "Frequency of $term is $frequency\n";
 #   }
+
+#Weighted Similarity
+##
+##
+# my $collection = Text::DocumentCollection->new(file => 'coll.db');
+# $collection ->Add("One", $firstfile);
+# $collection ->Add("Two", $secondfile);
+# 
+# my $wSim = $t1->WeightedCosineSimilarity( $t2,
+#         \&Text::DocumentCollection::IDF,
+#         $collection);
+# # print "Weighted Cosine Sim is: $wSim\n";
+

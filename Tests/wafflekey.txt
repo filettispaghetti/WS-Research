@@ -1,0 +1,1 @@
+['dry ingredients add milk slowly beaten egg', 'greased hot waffle iron bake', 'melted butter beat batter', 'steaming stops remove waffle', 'waffle whisk', 'iron', 'make', 'drop', 'serve', 'spoonfuls', 'warm', 'steps', 'ready', '2 minutes']

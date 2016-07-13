@@ -1,0 +1,14 @@
+A mathematical proof is an argument which convinces other people that
+something is true. Math isn’t a court of law, so a “preponderance of the
+evidence” or “beyond any reasonable doubt” isn’t good enough. In principle
+we try to prove things beyond any doubt at all — although in real life people
+make mistakes, and total rigor can be impractical for large projects. (There
+are also some subtleties in the foundations of mathematics, such as G¨odel’s
+theorem, but never mind.)
+Anyway, there is a certain vocabulary and grammar that underlies all
+mathematical proofs. The vocabulary includes logical words such as ‘or’,
+‘if’, etc. These words have very precise meanings in mathematics which can
+differ slightly from everyday usage. By “grammar”, I mean that there are
+certain common-sense principles of logic, or proof techniques, which you can
+use to start with statements which you know and deduce statements which
+you didn’t know before.
