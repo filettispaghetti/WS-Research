@@ -1,6 +1,6 @@
 package fileOptions;
 
-# use strict;
+use strict;
 use warnings;
 use Text::Document;
 use Getopt::Long;
