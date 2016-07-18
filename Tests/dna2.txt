@@ -1,0 +1,19 @@
+
+
+What is DNA made of?
+DNA molecules consist of long chains (polymers) comprised of four distinct “nucleotide” subunits. Nucleotides are made up of:
+A deoxyribose sugar molecule
+A phosphate group
+One of four nitrogenous bases: adenine (A), guanine (G), thymine (T) or cytosine (C).  
+In living organisms, DNA typically exists as a pair of complementary polymers entwined in the shape of a double helix. The backbone of DNA consists of alternating phosphate and sugar molecules, and the nitrogenous bases are situated in the centre and join the two strands via hydrogen bonding with their complementary base pair (A pairs with T and G pairs with C). 
+
+
+What does DNA do?
+Simply put, DNA serves as a “genetic blueprint”, providing the information required to create proteins.
+
+The sequence of the nucleotides forms a four-letter “genetic code” (A,T,C and G), which serves as a template from which another nucleic acid, RNA, is made. RNA encodes specific sequences of amino acids, the subunits of proteins. The region of DNA that encodes a functional RNA molecule is known as a gene.
+
+Proteins are essential components of every living organism. Performing an array of both structural and functional roles, proteins are another example of an essential macromolecule required for life.
+
+An essential attribute of DNA is its ability to make copies of itself. In a process known as “DNA replication”, the strands of the double helix separate and act as templates to direct the synthesis of new, complementary strands. Activated whenever a cell divides, this process follows the base pairing rules (i.e. A pairs with T and G pairs with C) to generate the new strands, and is the basis for biological inheritance.
+
