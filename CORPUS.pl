@@ -15,7 +15,8 @@ print "Processing $_"
     
     print "\n";
     dump @corpus;
-    
+
+#Would work if I changed all the file names...which would take too much time
 #     my $x;
 # 	undef($/);
 # 	my @cArray;
