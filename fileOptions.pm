@@ -3,10 +3,12 @@ package fileOptions;
 use strict;
 use warnings;
 use Text::Document;
+use Text::DocumentCollection;
 use Getopt::Long;
+use Data::Dumper;
 
 use Exporter qw(import);
-our @EXPORT = qw(printFile countFreq cosineSim WeightedCS myTF myIDF myTFIDF log10);
+our @EXPORT = qw(printFile countFreq cosineSim WeightedCS myTF myIDF myTFIDF log10 writeArray newText);
 
 sub printFile{
 	my ($file) = @_;
@@ -18,54 +20,53 @@ sub printFile{
 	close($info);
 	}
 	
-sub newText{
+sub writeArray{
 	my ($file) = @_;
-	my %count1;
-	
+	my @mylist;
 	my %sp = stopWords();
-		
- 	my $t1 = Text::Document->new();
- 	
+	
 	open (my $info, $file) or die "Could not open  file.";
 		while (my $line = <$info>) {
   		  	chomp $line;
     		$line =~ s/[[:punct:]]//g;
     	foreach my $str (split /\s+/, $line) {
     		if (!defined $sp{lc($str)}) {
-    			$count1{lc($str)} += 1;
-    			$t1 -> AddContent ($str);
-		}}}
-		return $t1;
-	}
+    			push(@mylist, $str);
+		}}
+		return @mylist;
+}
+}
 
-sub cosineSim{
-	my($file, $file2) =@_;
-	my $t1 = newText($file);
-	my $t2 = newText($file2);
+sub newText{
+	my (@array) = @_;	
+	my %sp = stopWords();
+ 	my $t1 = Text::Document->new();
+    	foreach my $str (@array) {
+     			$t1 -> AddContent ($str);
+		}
+		return $t1;
+	}	
+
+  sub cosineSim{
+	my(@array1, @array2) =@_;
+	my $t1 = newText(@array1);
+	my $t2 = newText(@array2);
 		
-	my $sim = $t1->CosineSimilarity( $t2 );
-		return $sim;
+	return $t1 ->CosineSimilarity( $t2 );
   }
   
 sub WeightedCS{
-	my($file, $file2, $file3) =@_;
-	my $t1 = newText($file);
-	my $t2 = newText($file2);
-	my $t3 = newText($file3);
+	#takes query (array) and hash? (corpus)
+	my(@query, %corpus) =@_;
+	my $query = newText($file);
+	
 	
 	my $c = Text::DocumentCollection->new( file => 'coll2.db' );
 
-	$c->Add('one',   $t1);
-	$c->Add('two',   $t2);
-	$c->Add('three', $t3);
+# 	$c->Add('one',   $t1);
+# 	$c->Add('two',   $t2);
+# 	$c->Add('three', $t3);
 
-	for my $doc ($t1, $t2, $t3) {
-
-   		 my $wcs = $t2->WeightedCosineSimilarity(
-       		$doc,
-        	\&Text::DocumentCollection::IDF,
-        	$c
-    	);
     	
     
     die qq{Invalid parameters for "WeightedCosineSimilarity"} unless defined $wcs;
@@ -76,59 +77,56 @@ sub WeightedCS{
 }
 
 sub myTF{
-	my ($file, $word) =@_;
+	#runs through hash; returns hash
+	my (@array) =@_;
+	
+	# $count1 counts # of times a word is in document
+	# $count2 counts the # of terms in document
 	my $count1;
 	my $count2;
+	my %hash;
 
-	my %sp = stopWords();
-	
-	open my $fh, '<', $file or die "Could not open file. $!";
-		while (my $line = <$fh>) {
-    		chomp $line;
-    		$count2 ++;
-    		$line =~ s/[[:punct:]]//g;
-   		foreach my $str (split /\s+/, $line) {
-    		if (!defined $sp{lc($str)}) {
-    			# print "$str \n";
-    			if (defined $word){
-    				$count1 ++;
-    				}
-    				}
-    				}
-    				}
-    				# print "$count1 \n";
-#     				print "$count2 \n";
-					return $count2/$count1;	
-	}
-	
+	#Assigns array to a hash
+	%hash = map { $_ => 0 } @array;
+	foreach (sort keys %hash) {
+		$count2++;
+   		print "$_ : $hash{$_}\n";
+  	}
+		print $count2;
+		print "\n";
+		
+		for my $key (%hash) {
+    		for my $key1 (%hash){
+    			if (!($key eq "1") && ($key eq $key1)){
+    				$hash{$key} += 1;
+    				print "$key: $hash{$key} \n";
+		}
+		}
+		}
+		}
+					
 sub myIDF{
-	my ($file, $file2, $word) =@_;
+	my (@array, %corpus) =@_;
 	my $count1 = 0;
 
 	my %sp = stopWords();
 	
-	open my $fh, '<', $file or die "Could not open file. $!";
-		while (my $line = <$fh>) {
-    	chomp $line;
-    	$line =~ s/[[:punct:]]//g;
-   		foreach my $str (split /\s+/, $line) {
-    	if (!defined $sp{lc($str)}) {
+	#Assigns array to a hash
+	%hash = map { $_ => 0 } @array;
+	foreach (sort keys %hash) {
+   		print "$_ : $hash{$_}\n";
+  	}
+    		#instead of counting again, maybe take the count from myTF...
+			#Ask Hill how to make a variable that could be used in both methods
     			if ($str eq $word){
     				$count1 ++;
     				last;
-    				}}}}
-    			
-    open my $fh2, '<', $file2 or die "Could not open file. $!";
-		
-		while (my $line2 = <$fh2>) {
-    		chomp $line2;
-    		$line2 =~ s/[[:punct:]]//g;
-   		foreach my $str2 (split /\s+/, $line2) {
-    		if (!defined $sp{lc($str2)}) {
+    				}
+    				
     			if ($str2 eq $word){
     				$count1 ++;
     				last;
-    				}}}}
+    				}
     				
     		my $x = (log10(2))/$count1;		
 	return ($x);

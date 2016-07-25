@@ -7,26 +7,30 @@ use fileOptions;
 use lib '/Users/rebeccafiletti/lib/';
 
 my $file = shift @ARGV;
-my $file2 = shift @ARGV;
+my @x = writeArray($file);
+
+# my $file2 = shift @ARGV;
+#  my @y = writeArray($file2);
+
 # my $file3 = shift @ARGV;
 
-my $word = "Texas";
+# my $word = "Texas";
 
-print (myTF($file, $word));
-print "\n";
-print (myIDF($file, $file2, $word));
-print "\n";
-print (myTFIDF($file, $file2, $word));
-print "\n"; 
+myTF(@x);
+# print "\n";
+# print (myIDF($file, $file2, $word));
+# print "\n";
+# print (myTFIDF($file, $file2, $word));
+# print "\n"; 
 
 # printFile($newfile);
 # printFile($newfile2);
 
-# print newText($file);
+# newText(@x);
 # print newText($file2);
 
 # print "Cosine Similarity is: "; 
-# print cosineSim($file, $file2);
+# cosineSim(@x, @y);
 # print "\n";
 
 # print "Weighted Cosine Similarity is: \n";
