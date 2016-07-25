@@ -27,14 +27,13 @@ myTF(@x);
 # printFile($newfile2);
 
 # newText(@x);
-# print newText($file2);
 
 # print "Cosine Similarity is: "; 
 # cosineSim(@x, @y);
 # print "\n";
 
 # print "Weighted Cosine Similarity is: \n";
-# print WeightedCS($file, $file2, $file3);
+# print WeightedCS(@query, %corpus);
 # print "\n";
 
 
