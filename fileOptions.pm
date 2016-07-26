@@ -10,6 +10,7 @@ use Data::Dumper;
 use Exporter qw(import);
 our @EXPORT = qw(printFile countFreq cosineSim WeightedCS myTF myIDF myTFIDF log10 writeArray newText);
 
+#Takes a file and prints it.
 sub printFile{
 	my ($file) = @_;
  	open (my $info, $file) or die "Could not open  file.";
@@ -19,7 +20,8 @@ sub printFile{
 		}
 	close($info);
 	}
-	
+
+#Takes file name and rewrites to an array	
 sub writeArray{
 	my ($file) = @_;
 	my @mylist;
@@ -28,25 +30,33 @@ sub writeArray{
 	open (my $info, $file) or die "Could not open  file.";
 		while (my $line = <$info>) {
   		  	chomp $line;
-    		$line =~ s/[[:punct:]]//g;
+#get rid of punctuation
+	   		$line =~ s/[[:punct:]]//g;
     	foreach my $str (split /\s+/, $line) {
+#takes out stopwords    		
     		if (!defined $sp{lc($str)}) {
+#writes to array
     			push(@mylist, $str);
 		}}
 		return @mylist;
 }
 }
 
+#new text document
 sub newText{
 	my (@array) = @_;	
 	my %sp = stopWords();
  	my $t1 = Text::Document->new();
+    
+#adds each element of the array to a text document    
     	foreach my $str (@array) {
      			$t1 -> AddContent ($str);
 		}
 		return $t1;
 	}	
 
+#not fixed since switched from files to arrays
+# (if needed, cosine sim still works on tester)
   sub cosineSim{
 	my(@array1, @array2) =@_;
 	my $t1 = newText(@array1);
@@ -55,8 +65,9 @@ sub newText{
 	return $t1 ->CosineSimilarity( $t2 );
   }
   
+#takes query (array) and corpus (hash) and returns hash with WCS values
+#not fixed since switched from files to arrays.
 sub WeightedCS{
-	#takes query (array) and hash? (corpus)
 	my(@query, %corpus) =@_;
 	my $query = newText($file);
 	
@@ -74,64 +85,76 @@ sub WeightedCS{
     print $wcs;
     print "\n";
 }
-}
 
+#takes array and returns hash
 sub myTF{
-	#runs through hash; returns hash
 	my (@array) =@_;
-	
-	# $count1 counts # of times a word is in document
-	# $count2 counts the # of terms in document
-	my $count1;
-	my $count2;
+	my $count;
 	my %hash;
 
 	#Assigns array to a hash
 	%hash = map { $_ => 0 } @array;
 	foreach (sort keys %hash) {
-		$count2++;
+# $count counts the # of terms in document		
+		$count++;
    		print "$_ : $hash{$_}\n";
   	}
-		print $count2;
-		print "\n";
 		
+#takes loops through keys and compares them to the same hashes keys		
 		for my $key (%hash) {
     		for my $key1 (%hash){
+# "1" keeps returning as a key and seems to be the only key that counts successfully??
+#why? i dont know.
     			if (!($key eq "1") && ($key eq $key1)){
+#adds 1 to $key if the keys equal, meaning they have occurred $key amount of times    				
     				$hash{$key} += 1;
     				print "$key: $hash{$key} \n";
 		}
 		}
 		}
+#goes through each key and divides key's value by count \\\ TF = term frequency/terms in doc		
+		for my $key (%hash){
+			$hash{$key} = ($hash{$key})/$count;
 		}
-					
-sub myIDF{
-	my (@array, %corpus) =@_;
-	my $count1 = 0;
+		
+		return %hash;
+		}
 
-	my %sp = stopWords();
-	
-	#Assigns array to a hash
-	%hash = map { $_ => 0 } @array;
-	foreach (sort keys %hash) {
-   		print "$_ : $hash{$_}\n";
+#a mess, a big mess
+#not complete still fixing hashes.				
+sub myIDF{
+	my (@query, %corpus) =@_;
+	my $count1 = 0;
+	my $count2 = 0;
+  	
+# number of keys in %corpus
+	foreach $key in %corpus{
+		$count1 ++;
+		}
+
+#Assigns query array to a hash
+	%myhash = map { $_ => 0 } @query;
+	foreach (sort keys %myhash) {
+   		print "$_ : $myhash{$_}\n";
   	}
-    		#instead of counting again, maybe take the count from myTF...
-			#Ask Hill how to make a variable that could be used in both methods
-    			if ($str eq $word){
-    				$count1 ++;
+
+#counts up for every document that has a $key in it 	
+	for my $key1 (%myhash){
+		for my $key2 (%corpus){
+#still have to fix inside if statement
+			if ($key1 is in $key2){					
+					$count2 ++;
     				last;
     				}
-    				
-    			if ($str2 eq $word){
-    				$count1 ++;
-    				last;
     				}
-    				
-    		my $x = (log10(2))/$count1;		
-	return ($x);
+#IDF = log_e( # of docs / # of docs w/ term)
+    	%myhash{$key1} = (log10($count1))/$count2;
+		}
+		} 		
+	return %myhash;	
 }
 
+#not yet fixed since switched from files to arrays
 sub myTFIDF{
 	my ($file, $file2, $word) =@_;
 	my $x = myTF($file, $file2);
@@ -139,11 +162,13 @@ sub myTFIDF{
 	return $x * $y;
 }
 
+#for use of myIDF
 sub log10 {
   my $n = shift;
   return log($n)/log(10);
 }
 
+#assigns text file to hash of stopwords
 sub stopWords{
 	my %sp;
 	my $wordlist = 'StopWords.txt';
