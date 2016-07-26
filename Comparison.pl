@@ -4,7 +4,7 @@ use warnings 'all';
 use Text::Document;
 use Text::DocumentCollection;
 use fileOptions;
-use lib '/Users/rebeccafiletti/lib/';
+#use lib '/Users/rebeccafiletti/lib/';
 
 my $file = shift @ARGV;
 my @x = writeArray($file);
