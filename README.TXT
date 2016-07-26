@@ -11,4 +11,8 @@ Order-
 1. Tryy.sh implements Rake so it should be implemented on a group of textfiles, automatically extracting keywords on each.
 2.Splitfiles.py should be used on Documents to create passage files.
 
+1.Python Rake.py ( This will extract the top 20 keywords from a given text document)
+2.Bash Tryy.sh (This will loop through directories, the one used here is the Documents Folder, and implement Rake on each given text Document, and will export the resulting keywords to a directory called Raked_Documents.
+
+
 
