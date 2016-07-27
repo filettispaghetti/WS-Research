@@ -27,7 +27,7 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
 	# build a giant hash of word frequencies
 	# and document frequencies
 
-	printf "Counting ... %s\n", $fp;
+# 	printf "Counting ... %s\n", $fp;
 
 	my @list = writeArray($fp);	# getting list of words from doc
 	%words = myTF(@list);		# counting tf
@@ -40,10 +40,10 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
 }
 
 # calculate IDF
-print "Calculating IDF\n";
+# print "Calculating IDF\n";
 %idf = myIDF(%numDocs);
-print Dumper(\%numDocs);
-print Dumper(\%idf);
+# print Dumper(\%numDocs);
+# print Dumper(\%idf);
 
 # Calculate Normalization for each doc
 # to do: make function
@@ -61,21 +61,21 @@ for my $key (keys %doc_normal) {
 	$doc_normal{$key} = sqrt($doc_normal{$key});
 }
 
- print("terms: \n");
- print Dumper(\%terms);
- print("idf: \n");
- print Dumper(\%idf);
- print("tf-idf: \n");
- print Dumper(\%tf);
+# print("terms: \n");
+# print Dumper(\%terms);
+# print("idf: \n");
+# print Dumper(\%idf);
+# print("tf-idf: \n");
+# print Dumper(\%tf);
 
 # run all the queries
 # foreach file in the query folder
 foreach my $fq (glob("$query_dir/*.txt")) {
-	printf "Counting query ... %s\n", $fq;
+# 	printf "Counting query ... %s\n", $fq;
 	# count word frequencies
 	my @list = writeArray($fq);	# getting list of words from doc
 	my %query = myTF(@list);		# counting tf
-	print Dumper(\%query);
+	#print Dumper(\%query);
 
 	# calculate cosine similarity between every doc in corpus
 	my $norm = 0; # denominator
@@ -91,8 +91,8 @@ foreach my $fq (glob("$query_dir/*.txt")) {
 			$tfidf = log(1 + $query{$qw}) * ((defined $idf{$qw}) ? $idf{$qw} : 0);
 			$dot += $tfidf * ((defined $tf{$doc}{$qw}) ? $tf{$doc}{$qw} : 0);
 		}
-		print("$dot / $norm * $doc_normal{$doc} = \n");
-		my $score = $dot / ($norm * $doc_normal{$doc});
+# 		print("$dot / $norm * $doc_normal{$doc} = \n");
+ 		my $score = $dot / ($norm * $doc_normal{$doc});
 		print("$score\t$doc\n"); # open an out file
 	}
 	
