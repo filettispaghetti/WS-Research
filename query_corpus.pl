@@ -30,7 +30,7 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
  	printf "Counting ... %s\n", $fp;
 
 	my @list = writeArray($fp);	# getting list of words from doc
-	%words = myTF(@list);		# counting tf
+	my %words = myTF(@list);		# counting tf
 	$terms{"$fp"} = \%words;	# storing in giant hash, indexed by file
 
 	# Updating the numDoc hash
@@ -42,8 +42,14 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
 # calculate IDF
  print "Calculating IDF\n";
 %idf = myIDF(%numDocs);
+<<<<<<< HEAD
  print Dumper(\%numDocs);
  print Dumper(\%idf);
+=======
+# print Dumper (\%terms);
+# print Dumper(\%numDocs);
+# print Dumper(\%idf);
+>>>>>>> 55f3c9f70593b2b5150c81d9548b7285421f93c8
 
 # Calculate Normalization for each doc
 # to do: make function
@@ -53,6 +59,7 @@ for my $key (keys %idf) {
 		$tfidf = log(1 + $terms{$doc}{$key}) * $idf{$key};
 		$doc_normal{$doc} += $tfidf * $tfidf;
 		$tf{$doc}{$key} = $tfidf;
+# 		print "$doc $key $tfidf \n";
 	}
 }
 
@@ -71,7 +78,11 @@ for my $key (keys %doc_normal) {
 # run all the queries
 # foreach file in the query folder
 foreach my $fq (glob("$query_dir/*.txt")) {
+<<<<<<< HEAD
  	printf "Counting query ... %s\n", $fq;
+=======
+ 	printf "\n\nCounting query ... %s\n", $fq;
+>>>>>>> 55f3c9f70593b2b5150c81d9548b7285421f93c8
 	# count word frequencies
 	my @list = writeArray($fq);	# getting list of words from doc
 	my %query = myTF(@list);		# counting tf
@@ -91,9 +102,15 @@ foreach my $fq (glob("$query_dir/*.txt")) {
 			$tfidf = log(1 + $query{$qw}) * ((defined $idf{$qw}) ? $idf{$qw} : 0);
 			$dot += $tfidf * ((defined $tf{$doc}{$qw}) ? $tf{$doc}{$qw} : 0);
 		}
+<<<<<<< HEAD
  		print("$dot / $norm * $doc_normal{$doc} = \n");
  		my $score = $dot / ($norm * $doc_normal{$doc});
 		print("$score\t$doc\n"); # open an out file
+=======
+		#print("-$fq - $dot / $norm * $doc_normal{$doc} = \n");
+ 		my $score = 0;
+ 		$score = $dot / ($norm * $doc_normal{$doc}) if $norm > 0;
+		printf("%10.10f \t $doc \n", $score); # open an out file
+>>>>>>> 55f3c9f70593b2b5150c81d9548b7285421f93c8
 	}
-	
 }
