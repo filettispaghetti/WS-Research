@@ -7,7 +7,7 @@ for c in corpora; do
 	for doc in c; do
 		for q in $queries; do
 # 		#echo Corpus10/$f
- 			perl query_corpus.pl q d  querycorpusscores/$c$d
+ 			perl query_corpus.pl q doc  querycorpusscores/$c$doc
  		done
  	done
 done
