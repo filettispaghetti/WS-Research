@@ -36,6 +36,7 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
 	for my $w (keys %words) {
 		$numDocs{$w}++;
 	}
+	
 }
 
 # calculate IDF
