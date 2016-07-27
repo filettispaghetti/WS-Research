@@ -42,8 +42,8 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
 # calculate IDF
 print "Calculating IDF\n";
 %idf = myIDF(%numDocs);
-#print Dumper(\%numDocs);
-#print Dumper(\%idf);
+print Dumper(\%numDocs);
+print Dumper(\%idf);
 
 # Calculate Normalization for each doc
 # to do: make function
@@ -61,12 +61,12 @@ for my $key (keys %doc_normal) {
 	$doc_normal{$key} = sqrt($doc_normal{$key});
 }
 
-# print("terms: \n");
-# print Dumper(\%terms);
-# print("idf: \n");
-# print Dumper(\%idf);
-# print("tf-idf: \n");
-# print Dumper(\%tf);
+ print("terms: \n");
+ print Dumper(\%terms);
+ print("idf: \n");
+ print Dumper(\%idf);
+ print("tf-idf: \n");
+ print Dumper(\%tf);
 
 # run all the queries
 # foreach file in the query folder
@@ -75,7 +75,7 @@ foreach my $fq (glob("$query_dir/*.txt")) {
 	# count word frequencies
 	my @list = writeArray($fq);	# getting list of words from doc
 	my %query = myTF(@list);		# counting tf
-	#print Dumper(\%query);
+	print Dumper(\%query);
 
 	# calculate cosine similarity between every doc in corpus
 	my $norm = 0; # denominator
