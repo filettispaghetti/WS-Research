@@ -1,549 +1,60 @@
-
-
-Counting query ... queries//Footnote.txt
-0.1572120215 	 MainCorpus//KJV.txt 
-0.0394781599 	 MainCorpus//Tim.txt 
-0.0584440110 	 MainCorpus//3H6.txt 
-0.0480301145 	 MainCorpus//SpousageVirginChrist.txt 
-0.0627734925 	 MainCorpus//Ham.txt 
-0.0807498880 	 MainCorpus//COMMEN∣DATIONMatrimony.txt 
-0.0300242446 	 MainCorpus//TheaterLittleWorld.txt 
-0.0551711879 	 MainCorpus//Shr.txt 
-0.0305836210 	 MainCorpus//Cor.txt 
-0.0739263894 	 MainCorpus//R3.txt 
-0.0802381314 	 MainCorpus//H5.txt 
-0.0370062590 	 MainCorpus//TGV.txt 
-0.0303817921 	 MainCorpus//Wiv.txt 
-0.0594756104 	 MainCorpus//MV.txt 
-0.0594859572 	 MainCorpus//Tmp.txt 
-0.0519367270 	 MainCorpus//AWW.txt 
-0.0599500684 	 MainCorpus//tit-2.txt 
-0.0494378331 	 MainCorpus//TN.txt 
-0.0576173190 	 MainCorpus//1H6.txt 
-0.0557106089 	 MainCorpus//LetterPrinceParma.txt 
-0.0896690178 	 MainCorpus//AYL.txt 
-0.0000000000 	 MainCorpus//dna1.txt 
-0.0281978586 	 MainCorpus//LetterDukeAlba.txt 
-0.0370483161 	 MainCorpus//MM.txt 
-0.0628480278 	 MainCorpus//Ado.txt 
-0.0787581271 	 MainCorpus//2H6.txt 
-0.0378032462 	 MainCorpus//Rom.txt 
-0.0749129920 	 MainCorpus//2H4.txt 
-0.0603563912 	 MainCorpus//Cym.txt 
-0.1250531332 	 MainCorpus//LLL.txt 
-0.0460008052 	 MainCorpus//Jn.txt 
-0.0629314174 	 MainCorpus//Lr.txt 
-0.0000000000 	 MainCorpus//introMathArg.txt 
-0.0656150289 	 MainCorpus//H8.txt 
-0.0419781936 	 MainCorpus//Oth.txt 
-0.0233042273 	 MainCorpus//PhT.txt 
-0.2394078958 	 MainCorpus//lionking.txt 
-0.0888276060 	 MainCorpus//1549CommonPrayer.txt 
-0.0623110951 	 MainCorpus//TNK.txt 
-0.0334886934 	 MainCorpus//betwyxtManWo∣man.txt 
-0.0394615877 	 MainCorpus//JC.txt 
-0.0630802969 	 MainCorpus//SermonLukeVIII.txt 
-0.1726616538 	 MainCorpus//MND.txt 
-0.0860890830 	 MainCorpus//GodAgaynstBisshopLondon.txt 
-0.2578400694 	 MainCorpus//Ven.txt 
-0.0512386380 	 MainCorpus//adulterousMariages.txt 
-0.0306156958 	 MainCorpus//Ant.txt 
-0.2570635625 	 MainCorpus//Luc.txt 
-0.0821529653 	 MainCorpus//R2.txt 
-0.0384390558 	 MainCorpus//Tro.txt 
-0.0379530658 	 MainCorpus//ConfessionofWitches.txt 
-0.0415767701 	 MainCorpus//Titus.txt 
-0.0432327667 	 MainCorpus//Mac.txt 
-0.0360231235 	 MainCorpus//Err.txt 
-0.1502868661 	 MainCorpus//Son.txt 
-0.0575410252 	 MainCorpus//WT.txt 
-0.0642474044 	 MainCorpus//Per.txt 
-0.0509028379 	 MainCorpus//1H4.txt 
-
-
-Counting query ... queries//henryvadvantage.txt
-0.0082035737 	 MainCorpus//KJV.txt 
-0.0070215712 	 MainCorpus//Tim.txt 
-0.0237166450 	 MainCorpus//3H6.txt 
-0.0000000000 	 MainCorpus//SpousageVirginChrist.txt 
-0.0196437103 	 MainCorpus//Ham.txt 
-0.0000000000 	 MainCorpus//COMMEN∣DATIONMatrimony.txt 
-0.0442237151 	 MainCorpus//TheaterLittleWorld.txt 
-0.0040372925 	 MainCorpus//Shr.txt 
-0.0148805870 	 MainCorpus//Cor.txt 
-0.0417338027 	 MainCorpus//R3.txt 
-0.0161488163 	 MainCorpus//H5.txt 
-0.0072093977 	 MainCorpus//TGV.txt 
-0.0033584237 	 MainCorpus//Wiv.txt 
-0.0095905361 	 MainCorpus//MV.txt 
-0.0077560517 	 MainCorpus//Tmp.txt 
-0.0150722318 	 MainCorpus//AWW.txt 
-0.0000000000 	 MainCorpus//tit-2.txt 
-0.0079581393 	 MainCorpus//TN.txt 
-0.0452499044 	 MainCorpus//1H6.txt 
-0.0000000000 	 MainCorpus//LetterPrinceParma.txt 
-0.0046121247 	 MainCorpus//AYL.txt 
-0.0000000000 	 MainCorpus//dna1.txt 
-0.0086238687 	 MainCorpus//LetterDukeAlba.txt 
-0.0320747193 	 MainCorpus//MM.txt 
-0.0122229321 	 MainCorpus//Ado.txt 
-0.0413842474 	 MainCorpus//2H6.txt 
-0.0410375563 	 MainCorpus//Rom.txt 
-0.0170362275 	 MainCorpus//2H4.txt 
-0.0225873133 	 MainCorpus//Cym.txt 
-0.0049969486 	 MainCorpus//LLL.txt 
-0.0397009964 	 MainCorpus//Jn.txt 
-0.0136635660 	 MainCorpus//Lr.txt 
-0.0000000000 	 MainCorpus//introMathArg.txt 
-0.0106266347 	 MainCorpus//H8.txt 
-0.0098158961 	 MainCorpus//Oth.txt 
-0.0247289035 	 MainCorpus//PhT.txt 
-0.0011864234 	 MainCorpus//lionking.txt 
-0.0150248813 	 MainCorpus//1549CommonPrayer.txt 
-0.0125055381 	 MainCorpus//TNK.txt 
-0.0000000000 	 MainCorpus//betwyxtManWo∣man.txt 
-0.0240703279 	 MainCorpus//JC.txt 
-0.0000000000 	 MainCorpus//SermonLukeVIII.txt 
-0.0126132402 	 MainCorpus//MND.txt 
-0.0088211248 	 MainCorpus//GodAgaynstBisshopLondon.txt 
-0.0250244240 	 MainCorpus//Ven.txt 
-0.0047464264 	 MainCorpus//adulterousMariages.txt 
-0.0230225723 	 MainCorpus//Ant.txt 
-0.0294466182 	 MainCorpus//Luc.txt 
-0.0378343086 	 MainCorpus//R2.txt 
-0.0118151817 	 MainCorpus//Tro.txt 
-0.0054594789 	 MainCorpus//ConfessionofWitches.txt 
-0.0214781284 	 MainCorpus//Titus.txt 
-0.0189846631 	 MainCorpus//Mac.txt 
-0.0063910088 	 MainCorpus//Err.txt 
-0.0169904407 	 MainCorpus//Son.txt 
-0.0191631055 	 MainCorpus//WT.txt 
-0.0154851389 	 MainCorpus//Per.txt 
-0.0193327203 	 MainCorpus//1H4.txt 
-
-
-Counting query ... queries//henryviblood.txt
-0.1154557039 	 MainCorpus//KJV.txt 
-0.0900062867 	 MainCorpus//Tim.txt 
-0.1231649681 	 MainCorpus//3H6.txt 
-0.0375303738 	 MainCorpus//SpousageVirginChrist.txt 
-0.0681347637 	 MainCorpus//Ham.txt 
-0.0763312048 	 MainCorpus//COMMEN∣DATIONMatrimony.txt 
-0.0251911971 	 MainCorpus//TheaterLittleWorld.txt 
-0.0545078505 	 MainCorpus//Shr.txt 
-0.0701605054 	 MainCorpus//Cor.txt 
-0.1320896138 	 MainCorpus//R3.txt 
-0.0894392204 	 MainCorpus//H5.txt 
-0.0806352254 	 MainCorpus//TGV.txt 
-0.0392977293 	 MainCorpus//Wiv.txt 
-0.0730250222 	 MainCorpus//MV.txt 
-0.0855482745 	 MainCorpus//Tmp.txt 
-0.0729389102 	 MainCorpus//AWW.txt 
-0.0275691742 	 MainCorpus//tit-2.txt 
-0.0711173832 	 MainCorpus//TN.txt 
-0.1385092845 	 MainCorpus//1H6.txt 
-0.0315109907 	 MainCorpus//LetterPrinceParma.txt 
-0.0605897048 	 MainCorpus//AYL.txt 
-0.0000000000 	 MainCorpus//dna1.txt 
-0.0424211997 	 MainCorpus//LetterDukeAlba.txt 
-0.0690526805 	 MainCorpus//MM.txt 
-0.0640124320 	 MainCorpus//Ado.txt 
-0.1242258736 	 MainCorpus//2H6.txt 
-0.1057847646 	 MainCorpus//Rom.txt 
-0.0848178133 	 MainCorpus//2H4.txt 
-0.1037204910 	 MainCorpus//Cym.txt 
-0.0617164792 	 MainCorpus//LLL.txt 
-0.1325147358 	 MainCorpus//Jn.txt 
-0.0939292871 	 MainCorpus//Lr.txt 
-0.0000000000 	 MainCorpus//introMathArg.txt 
-0.0396546778 	 MainCorpus//H8.txt 
-0.0567536755 	 MainCorpus//Oth.txt 
-0.0315513342 	 MainCorpus//PhT.txt 
-0.0001561038 	 MainCorpus//lionking.txt 
-0.1194256092 	 MainCorpus//1549CommonPrayer.txt 
-0.0549351440 	 MainCorpus//TNK.txt 
-0.0569194838 	 MainCorpus//betwyxtManWo∣man.txt 
-0.0527877374 	 MainCorpus//JC.txt 
-0.0380006673 	 MainCorpus//SermonLukeVIII.txt 
-0.0675991583 	 MainCorpus//MND.txt 
-0.0399424792 	 MainCorpus//GodAgaynstBisshopLondon.txt 
-0.0805401858 	 MainCorpus//Ven.txt 
-0.0191065606 	 MainCorpus//adulterousMariages.txt 
-0.0663267378 	 MainCorpus//Ant.txt 
-0.0999561449 	 MainCorpus//Luc.txt 
-0.1671977549 	 MainCorpus//R2.txt 
-0.0794144927 	 MainCorpus//Tro.txt 
-0.0493470983 	 MainCorpus//ConfessionofWitches.txt 
-0.1599516704 	 MainCorpus//Titus.txt 
-0.0734508054 	 MainCorpus//Mac.txt 
-0.0474559930 	 MainCorpus//Err.txt 
-0.1831376176 	 MainCorpus//Son.txt 
-0.0800291515 	 MainCorpus//WT.txt 
-0.0751596325 	 MainCorpus//Per.txt 
-0.0996855755 	 MainCorpus//1H4.txt 
-
-
-Counting query ... queries//henryvipeace.txt
-0.0182325541 	 MainCorpus//KJV.txt 
-0.0045051750 	 MainCorpus//Tim.txt 
-0.0050988040 	 MainCorpus//3H6.txt 
-0.0000000000 	 MainCorpus//SpousageVirginChrist.txt 
-0.0088518480 	 MainCorpus//Ham.txt 
-0.0060353705 	 MainCorpus//COMMEN∣DATIONMatrimony.txt 
-0.0061368248 	 MainCorpus//TheaterLittleWorld.txt 
-0.0017657610 	 MainCorpus//Shr.txt 
-0.0024912606 	 MainCorpus//Cor.txt 
-0.0122602328 	 MainCorpus//R3.txt 
-0.0101633683 	 MainCorpus//H5.txt 
-0.0040690726 	 MainCorpus//TGV.txt 
-0.0017556025 	 MainCorpus//Wiv.txt 
-0.0041795542 	 MainCorpus//MV.txt 
-0.0073620950 	 MainCorpus//Tmp.txt 
-0.0024231625 	 MainCorpus//AWW.txt 
-0.0071360211 	 MainCorpus//tit-2.txt 
-0.0021810857 	 MainCorpus//TN.txt 
-0.0096174653 	 MainCorpus//1H6.txt 
-0.0065597362 	 MainCorpus//LetterPrinceParma.txt 
-0.0017290770 	 MainCorpus//AYL.txt 
-0.0000000000 	 MainCorpus//dna1.txt 
-0.0018600236 	 MainCorpus//LetterDukeAlba.txt 
-0.0018101199 	 MainCorpus//MM.txt 
-0.0008816433 	 MainCorpus//Ado.txt 
-0.0128323169 	 MainCorpus//2H6.txt 
-0.0110332791 	 MainCorpus//Rom.txt 
-0.0058419523 	 MainCorpus//2H4.txt 
-0.0043179363 	 MainCorpus//Cym.txt 
-0.0027993649 	 MainCorpus//LLL.txt 
-0.0118389814 	 MainCorpus//Jn.txt 
-0.0020162863 	 MainCorpus//Lr.txt 
-0.0000000000 	 MainCorpus//introMathArg.txt 
-0.0100867459 	 MainCorpus//H8.txt 
-0.0032458206 	 MainCorpus//Oth.txt 
-0.0000000000 	 MainCorpus//PhT.txt 
-0.0000000000 	 MainCorpus//lionking.txt 
-0.0053737046 	 MainCorpus//1549CommonPrayer.txt 
-0.0078967811 	 MainCorpus//TNK.txt 
-0.0000000000 	 MainCorpus//betwyxtManWo∣man.txt 
-0.0028268497 	 MainCorpus//JC.txt 
-0.0000000000 	 MainCorpus//SermonLukeVIII.txt 
-0.0064308715 	 MainCorpus//MND.txt 
-0.0007247434 	 MainCorpus//GodAgaynstBisshopLondon.txt 
-0.0098216808 	 MainCorpus//Ven.txt 
-0.0010396535 	 MainCorpus//adulterousMariages.txt 
-0.0059247203 	 MainCorpus//Ant.txt 
-0.0043383306 	 MainCorpus//Luc.txt 
-0.0181240037 	 MainCorpus//R2.txt 
-0.0048871982 	 MainCorpus//Tro.txt 
-0.0000000000 	 MainCorpus//ConfessionofWitches.txt 
-0.0084388865 	 MainCorpus//Titus.txt 
-0.0059618772 	 MainCorpus//Mac.txt 
-0.0023215883 	 MainCorpus//Err.txt 
-0.0113743264 	 MainCorpus//Son.txt 
-0.0087531598 	 MainCorpus//WT.txt 
-0.0099132006 	 MainCorpus//Per.txt 
-0.0103135883 	 MainCorpus//1H4.txt 
-
-
-Counting query ... queries//ladymac.txt
-0.0526286857 	 MainCorpus//KJV.txt 
-0.0307193977 	 MainCorpus//Tim.txt 
-0.0293912605 	 MainCorpus//3H6.txt 
-0.0168313368 	 MainCorpus//SpousageVirginChrist.txt 
-0.0351736710 	 MainCorpus//Ham.txt 
-0.0060860005 	 MainCorpus//COMMEN∣DATIONMatrimony.txt 
-0.0141337069 	 MainCorpus//TheaterLittleWorld.txt 
-0.0503731984 	 MainCorpus//Shr.txt 
-0.0415302237 	 MainCorpus//Cor.txt 
-0.0438816303 	 MainCorpus//R3.txt 
-0.0460387629 	 MainCorpus//H5.txt 
-0.0349353769 	 MainCorpus//TGV.txt 
-0.0444032148 	 MainCorpus//Wiv.txt 
-0.0510730047 	 MainCorpus//MV.txt 
-0.0328834715 	 MainCorpus//Tmp.txt 
-0.0349732293 	 MainCorpus//AWW.txt 
-0.0260958350 	 MainCorpus//tit-2.txt 
-0.0440852664 	 MainCorpus//TN.txt 
-0.0293902380 	 MainCorpus//1H6.txt 
-0.0000000000 	 MainCorpus//LetterPrinceParma.txt 
-0.0343061270 	 MainCorpus//AYL.txt 
-0.0000000000 	 MainCorpus//dna1.txt 
-0.0101049011 	 MainCorpus//LetterDukeAlba.txt 
-0.0284604379 	 MainCorpus//MM.txt 
-0.0436443636 	 MainCorpus//Ado.txt 
-0.0466584060 	 MainCorpus//2H6.txt 
-0.0458418481 	 MainCorpus//Rom.txt 
-0.0473067600 	 MainCorpus//2H4.txt 
-0.0302927472 	 MainCorpus//Cym.txt 
-0.0234932342 	 MainCorpus//LLL.txt 
-0.0660500086 	 MainCorpus//Jn.txt 
-0.0416781359 	 MainCorpus//Lr.txt 
-0.0000000000 	 MainCorpus//introMathArg.txt 
-0.0334918912 	 MainCorpus//H8.txt 
-0.0367755974 	 MainCorpus//Oth.txt 
-0.0161284094 	 MainCorpus//PhT.txt 
-0.0124370585 	 MainCorpus//lionking.txt 
-0.0059484845 	 MainCorpus//1549CommonPrayer.txt 
-0.0410510110 	 MainCorpus//TNK.txt 
-0.0000000000 	 MainCorpus//betwyxtManWo∣man.txt 
-0.0391317413 	 MainCorpus//JC.txt 
-0.0101515302 	 MainCorpus//SermonLukeVIII.txt 
-0.0328350719 	 MainCorpus//MND.txt 
-0.0075056641 	 MainCorpus//GodAgaynstBisshopLondon.txt 
-0.0202553013 	 MainCorpus//Ven.txt 
-0.0327948130 	 MainCorpus//adulterousMariages.txt 
-0.0392998565 	 MainCorpus//Ant.txt 
-0.0226230999 	 MainCorpus//Luc.txt 
-0.0503650221 	 MainCorpus//R2.txt 
-0.0461305571 	 MainCorpus//Tro.txt 
-0.0119809787 	 MainCorpus//ConfessionofWitches.txt 
-0.0648315112 	 MainCorpus//Titus.txt 
-0.0394464189 	 MainCorpus//Mac.txt 
-0.0396159630 	 MainCorpus//Err.txt 
-0.0190617797 	 MainCorpus//Son.txt 
-0.0452554272 	 MainCorpus//WT.txt 
-0.0300589070 	 MainCorpus//Per.txt 
-0.0323943391 	 MainCorpus//1H4.txt 
-
-
-Counting query ... queries//name.txt
-0.0279776076 	 MainCorpus//KJV.txt 
-0.0126920161 	 MainCorpus//Tim.txt 
-0.0196248767 	 MainCorpus//3H6.txt 
-0.0210066990 	 MainCorpus//SpousageVirginChrist.txt 
-0.0196196633 	 MainCorpus//Ham.txt 
-0.0175908391 	 MainCorpus//COMMEN∣DATIONMatrimony.txt 
-0.0331183246 	 MainCorpus//TheaterLittleWorld.txt 
-0.0284700953 	 MainCorpus//Shr.txt 
-0.0235350344 	 MainCorpus//Cor.txt 
-0.0296751503 	 MainCorpus//R3.txt 
-0.0288488422 	 MainCorpus//H5.txt 
-0.0134983302 	 MainCorpus//TGV.txt 
-0.0165659464 	 MainCorpus//Wiv.txt 
-0.0225808845 	 MainCorpus//MV.txt 
-0.0204196258 	 MainCorpus//Tmp.txt 
-0.0268115016 	 MainCorpus//AWW.txt 
-0.0000000000 	 MainCorpus//tit-2.txt 
-0.0198706970 	 MainCorpus//TN.txt 
-0.0323331158 	 MainCorpus//1H6.txt 
-0.0081572663 	 MainCorpus//LetterPrinceParma.txt 
-0.0207159912 	 MainCorpus//AYL.txt 
-0.0000000000 	 MainCorpus//dna1.txt 
-0.0353410582 	 MainCorpus//LetterDukeAlba.txt 
-0.0376400772 	 MainCorpus//MM.txt 
-0.0223264277 	 MainCorpus//Ado.txt 
-0.0357796979 	 MainCorpus//2H6.txt 
-0.0258167215 	 MainCorpus//Rom.txt 
-0.0322994479 	 MainCorpus//2H4.txt 
-0.0317846940 	 MainCorpus//Cym.txt 
-0.0189913783 	 MainCorpus//LLL.txt 
-0.0327245144 	 MainCorpus//Jn.txt 
-0.0255111552 	 MainCorpus//Lr.txt 
-0.0338236563 	 MainCorpus//introMathArg.txt 
-0.0288793100 	 MainCorpus//H8.txt 
-0.0130247809 	 MainCorpus//Oth.txt 
-0.0202034030 	 MainCorpus//PhT.txt 
-0.0039266603 	 MainCorpus//lionking.txt 
-0.0307132960 	 MainCorpus//1549CommonPrayer.txt 
-0.0246423436 	 MainCorpus//TNK.txt 
-0.0000000000 	 MainCorpus//betwyxtManWo∣man.txt 
-0.0155793941 	 MainCorpus//JC.txt 
-0.0025170903 	 MainCorpus//SermonLukeVIII.txt 
-0.0221837260 	 MainCorpus//MND.txt 
-0.0282334943 	 MainCorpus//GodAgaynstBisshopLondon.txt 
-0.0110034331 	 MainCorpus//Ven.txt 
-0.0052445524 	 MainCorpus//adulterousMariages.txt 
-0.0160472686 	 MainCorpus//Ant.txt 
-0.0265156823 	 MainCorpus//Luc.txt 
-0.0439646190 	 MainCorpus//R2.txt 
-0.0185116356 	 MainCorpus//Tro.txt 
-0.0179819625 	 MainCorpus//ConfessionofWitches.txt 
-0.0301653628 	 MainCorpus//Titus.txt 
-0.0225195787 	 MainCorpus//Mac.txt 
-0.0192986637 	 MainCorpus//Err.txt 
-0.0333057255 	 MainCorpus//Son.txt 
-0.0352330554 	 MainCorpus//WT.txt 
-0.0381530887 	 MainCorpus//Per.txt 
-0.0361361149 	 MainCorpus//1H4.txt 
-
-
-Counting query ... queries//richblood.txt
-0.0373440955 	 MainCorpus//KJV.txt 
-0.0264394465 	 MainCorpus//Tim.txt 
-0.0391431651 	 MainCorpus//3H6.txt 
-0.0082852506 	 MainCorpus//SpousageVirginChrist.txt 
-0.0408113272 	 MainCorpus//Ham.txt 
-0.0023241048 	 MainCorpus//COMMEN∣DATIONMatrimony.txt 
-0.0167179967 	 MainCorpus//TheaterLittleWorld.txt 
-0.0149160507 	 MainCorpus//Shr.txt 
-0.0332485799 	 MainCorpus//Cor.txt 
-0.0453442101 	 MainCorpus//R3.txt 
-0.0491016644 	 MainCorpus//H5.txt 
-0.0180650862 	 MainCorpus//TGV.txt 
-0.0131930488 	 MainCorpus//Wiv.txt 
-0.0325956568 	 MainCorpus//MV.txt 
-0.0281032893 	 MainCorpus//Tmp.txt 
-0.0220726895 	 MainCorpus//AWW.txt 
-0.0086308680 	 MainCorpus//tit-2.txt 
-0.0258243985 	 MainCorpus//TN.txt 
-0.0432854680 	 MainCorpus//1H6.txt 
-0.0075718892 	 MainCorpus//LetterPrinceParma.txt 
-0.0243067126 	 MainCorpus//AYL.txt 
-0.0075611178 	 MainCorpus//dna1.txt 
-0.0187342394 	 MainCorpus//LetterDukeAlba.txt 
-0.0220671809 	 MainCorpus//MM.txt 
-0.0288431257 	 MainCorpus//Ado.txt 
-0.0381529998 	 MainCorpus//2H6.txt 
-0.0280960684 	 MainCorpus//Rom.txt 
-0.0380664462 	 MainCorpus//2H4.txt 
-0.0283960801 	 MainCorpus//Cym.txt 
-0.0251321106 	 MainCorpus//LLL.txt 
-0.0701000336 	 MainCorpus//Jn.txt 
-0.0218675060 	 MainCorpus//Lr.txt 
-0.0000000000 	 MainCorpus//introMathArg.txt 
-0.0316530600 	 MainCorpus//H8.txt 
-0.0253423475 	 MainCorpus//Oth.txt 
-0.0000000000 	 MainCorpus//PhT.txt 
-0.0037456046 	 MainCorpus//lionking.txt 
-0.0047990811 	 MainCorpus//1549CommonPrayer.txt 
-0.0368291761 	 MainCorpus//TNK.txt 
-0.0000000000 	 MainCorpus//betwyxtManWo∣man.txt 
-0.0293244491 	 MainCorpus//JC.txt 
-0.0084816310 	 MainCorpus//SermonLukeVIII.txt 
-0.0218443064 	 MainCorpus//MND.txt 
-0.0025105587 	 MainCorpus//GodAgaynstBisshopLondon.txt 
-0.0455333651 	 MainCorpus//Ven.txt 
-0.0039007411 	 MainCorpus//adulterousMariages.txt 
-0.0224222419 	 MainCorpus//Ant.txt 
-0.0386311749 	 MainCorpus//Luc.txt 
-0.0646897434 	 MainCorpus//R2.txt 
-0.0388076812 	 MainCorpus//Tro.txt 
-0.0266375022 	 MainCorpus//ConfessionofWitches.txt 
-0.0410258445 	 MainCorpus//Titus.txt 
-0.0383449772 	 MainCorpus//Mac.txt 
-0.0151872288 	 MainCorpus//Err.txt 
-0.0335480931 	 MainCorpus//Son.txt 
-0.0434092719 	 MainCorpus//WT.txt 
-0.0428577649 	 MainCorpus//Per.txt 
-0.0452702129 	 MainCorpus//1H4.txt 
-
-
-Counting query ... queries//tempestcreation.txt
-0.0463927801 	 MainCorpus//KJV.txt 
-0.0191801840 	 MainCorpus//Tim.txt 
-0.0191800776 	 MainCorpus//3H6.txt 
-0.0155442684 	 MainCorpus//SpousageVirginChrist.txt 
-0.0292210296 	 MainCorpus//Ham.txt 
-0.0111350804 	 MainCorpus//COMMEN∣DATIONMatrimony.txt 
-0.0341712301 	 MainCorpus//TheaterLittleWorld.txt 
-0.0269936255 	 MainCorpus//Shr.txt 
-0.0288560465 	 MainCorpus//Cor.txt 
-0.0382251898 	 MainCorpus//R3.txt 
-0.0481374895 	 MainCorpus//H5.txt 
-0.0243446148 	 MainCorpus//TGV.txt 
-0.0169951155 	 MainCorpus//Wiv.txt 
-0.0398527995 	 MainCorpus//MV.txt 
-0.0246141599 	 MainCorpus//Tmp.txt 
-0.0232574727 	 MainCorpus//AWW.txt 
-0.0000000000 	 MainCorpus//tit-2.txt 
-0.0241966248 	 MainCorpus//TN.txt 
-0.0329251822 	 MainCorpus//1H6.txt 
-0.0121712236 	 MainCorpus//LetterPrinceParma.txt 
-0.0163878642 	 MainCorpus//AYL.txt 
-0.0000000000 	 MainCorpus//dna1.txt 
-0.0262220822 	 MainCorpus//LetterDukeAlba.txt 
-0.0229306819 	 MainCorpus//MM.txt 
-0.0309880159 	 MainCorpus//Ado.txt 
-0.0353850702 	 MainCorpus//2H6.txt 
-0.0655134725 	 MainCorpus//Rom.txt 
-0.0349987536 	 MainCorpus//2H4.txt 
-0.0320493968 	 MainCorpus//Cym.txt 
-0.0385182010 	 MainCorpus//LLL.txt 
-0.0485470015 	 MainCorpus//Jn.txt 
-0.0325921812 	 MainCorpus//Lr.txt 
-0.0000000000 	 MainCorpus//introMathArg.txt 
-0.0281323814 	 MainCorpus//H8.txt 
-0.0254153250 	 MainCorpus//Oth.txt 
-0.0149498557 	 MainCorpus//PhT.txt 
-0.0032944028 	 MainCorpus//lionking.txt 
-0.0227274177 	 MainCorpus//1549CommonPrayer.txt 
-0.0267931295 	 MainCorpus//TNK.txt 
-0.0111154642 	 MainCorpus//betwyxtManWo∣man.txt 
-0.0344664860 	 MainCorpus//JC.txt 
-0.0018625642 	 MainCorpus//SermonLukeVIII.txt 
-0.0532020931 	 MainCorpus//MND.txt 
-0.0441837369 	 MainCorpus//GodAgaynstBisshopLondon.txt 
-0.0410025567 	 MainCorpus//Ven.txt 
-0.0030857586 	 MainCorpus//adulterousMariages.txt 
-0.0190260428 	 MainCorpus//Ant.txt 
-0.0487925810 	 MainCorpus//Luc.txt 
-0.0440311989 	 MainCorpus//R2.txt 
-0.0271307707 	 MainCorpus//Tro.txt 
-0.0403911938 	 MainCorpus//ConfessionofWitches.txt 
-0.0262264455 	 MainCorpus//Titus.txt 
-0.0410652819 	 MainCorpus//Mac.txt 
-0.0243850475 	 MainCorpus//Err.txt 
-0.0449628782 	 MainCorpus//Son.txt 
-0.0256437847 	 MainCorpus//WT.txt 
-0.0358363643 	 MainCorpus//Per.txt 
-0.0390301446 	 MainCorpus//1H4.txt 
-
-
-Counting query ... queries//thy-warm.txt
-0.1193538141 	 MainCorpus//KJV.txt 
-0.1242942884 	 MainCorpus//Tim.txt 
-0.1437193592 	 MainCorpus//3H6.txt 
-0.0089453593 	 MainCorpus//SpousageVirginChrist.txt 
-0.0541842015 	 MainCorpus//Ham.txt 
-0.0520429925 	 MainCorpus//COMMEN∣DATIONMatrimony.txt 
-0.0076849500 	 MainCorpus//TheaterLittleWorld.txt 
-0.0752650619 	 MainCorpus//Shr.txt 
-0.0718249987 	 MainCorpus//Cor.txt 
-0.1494859719 	 MainCorpus//R3.txt 
-0.0690849670 	 MainCorpus//H5.txt 
-0.0932998056 	 MainCorpus//TGV.txt 
-0.0273638158 	 MainCorpus//Wiv.txt 
-0.0629641330 	 MainCorpus//MV.txt 
-0.1105087974 	 MainCorpus//Tmp.txt 
-0.0762077497 	 MainCorpus//AWW.txt 
-0.0132102762 	 MainCorpus//tit-2.txt 
-0.0895480608 	 MainCorpus//TN.txt 
-0.1739443099 	 MainCorpus//1H6.txt 
-0.0000000000 	 MainCorpus//LetterPrinceParma.txt 
-0.0599337047 	 MainCorpus//AYL.txt 
-0.0000000000 	 MainCorpus//dna1.txt 
-0.0000000000 	 MainCorpus//LetterDukeAlba.txt 
-0.0480740037 	 MainCorpus//MM.txt 
-0.0434654269 	 MainCorpus//Ado.txt 
-0.1587177528 	 MainCorpus//2H6.txt 
-0.1253336185 	 MainCorpus//Rom.txt 
-0.0694186245 	 MainCorpus//2H4.txt 
-0.1085638164 	 MainCorpus//Cym.txt 
-0.0658064781 	 MainCorpus//LLL.txt 
-0.1186111975 	 MainCorpus//Jn.txt 
-0.1234011094 	 MainCorpus//Lr.txt 
-0.0000000000 	 MainCorpus//introMathArg.txt 
-0.0331325479 	 MainCorpus//H8.txt 
-0.0487980252 	 MainCorpus//Oth.txt 
-0.0300761355 	 MainCorpus//PhT.txt 
-0.0000000000 	 MainCorpus//lionking.txt 
-0.1785971046 	 MainCorpus//1549CommonPrayer.txt 
-0.0681252630 	 MainCorpus//TNK.txt 
-0.0000000000 	 MainCorpus//betwyxtManWo∣man.txt 
-0.0441871480 	 MainCorpus//JC.txt 
-0.0099893113 	 MainCorpus//SermonLukeVIII.txt 
-0.0703798031 	 MainCorpus//MND.txt 
-0.0268014120 	 MainCorpus//GodAgaynstBisshopLondon.txt 
-0.0873995257 	 MainCorpus//Ven.txt 
-0.0115422746 	 MainCorpus//adulterousMariages.txt 
-0.0763919287 	 MainCorpus//Ant.txt 
-0.1247367128 	 MainCorpus//Luc.txt 
-0.1738457444 	 MainCorpus//R2.txt 
-0.0750304459 	 MainCorpus//Tro.txt 
-0.0265341945 	 MainCorpus//ConfessionofWitches.txt 
-0.2003836758 	 MainCorpus//Titus.txt 
-0.0527197668 	 MainCorpus//Mac.txt 
-0.0528956142 	 MainCorpus//Err.txt 
-0.2809609624 	 MainCorpus//Son.txt 
-0.0777925178 	 MainCorpus//WT.txt 
-0.0750502564 	 MainCorpus//Per.txt 
-0.1006490702 	 MainCorpus//1H4.txt 
+Counting ... MainCorpus//1549CommonPrayer.txt
+Counting ... MainCorpus//1H4.txt
+Counting ... MainCorpus//1H6.txt
+Counting ... MainCorpus//2H4.txt
+Counting ... MainCorpus//2H6.txt
+Counting ... MainCorpus//3H6.txt
+Counting ... MainCorpus//Ado.txt
+Counting ... MainCorpus//adulterousMariages.txt
+Counting ... MainCorpus//Ant.txt
+Counting ... MainCorpus//AWW.txt
+Counting ... MainCorpus//AYL.txt
+Counting ... MainCorpus//betwyxtManWo∣man.txt
+Counting ... MainCorpus//COMMEN∣DATIONMatrimony.txt
+Counting ... MainCorpus//ConfessionofWitches.txt
+Counting ... MainCorpus//Cor.txt
+Counting ... MainCorpus//Cym.txt
+Counting ... MainCorpus//dna1.txt
+Counting ... MainCorpus//Err.txt
+Counting ... MainCorpus//GodAgaynstBisshopLondon.txt
+Counting ... MainCorpus//H5.txt
+Counting ... MainCorpus//H8.txt
+Counting ... MainCorpus//Ham.txt
+Counting ... MainCorpus//introMathArg.txt
+Counting ... MainCorpus//JC.txt
+Counting ... MainCorpus//Jn.txt
+Counting ... MainCorpus//KJV.txt
+Counting ... MainCorpus//LetterDukeAlba.txt
+Counting ... MainCorpus//LetterPrinceParma.txt
+Counting ... MainCorpus//lionking.txt
+Counting ... MainCorpus//LLL.txt
+Counting ... MainCorpus//Lr.txt
+Counting ... MainCorpus//Luc.txt
+Counting ... MainCorpus//Mac.txt
+Counting ... MainCorpus//MM.txt
+Counting ... MainCorpus//MND.txt
+Counting ... MainCorpus//MV.txt
+Counting ... MainCorpus//Oth.txt
+Counting ... MainCorpus//Per.txt
+Counting ... MainCorpus//PhT.txt
+Counting ... MainCorpus//R2.txt
+Counting ... MainCorpus//R3.txt
+Counting ... MainCorpus//Rom.txt
+Counting ... MainCorpus//SermonLukeVIII.txt
+Counting ... MainCorpus//Shr.txt
+Counting ... MainCorpus//Son.txt
+Counting ... MainCorpus//SpousageVirginChrist.txt
+Counting ... MainCorpus//TGV.txt
+Counting ... MainCorpus//TheaterLittleWorld.txt
+Counting ... MainCorpus//Tim.txt
+Counting ... MainCorpus//tit-2.txt
+Counting ... MainCorpus//Titus.txt
+Counting ... MainCorpus//Tmp.txt
+Counting ... MainCorpus//TN.txt
+Counting ... MainCorpus//TNK.txt
+Counting ... MainCorpus//Tro.txt
+Counting ... MainCorpus//Ven.txt
+Counting ... MainCorpus//Wiv.txt
+Counting ... MainCorpus//WT.txt
+Calculating IDF
+Counting query ... Footnote.txt
