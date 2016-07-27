@@ -2,18 +2,17 @@ use warnings;
 use fileOptions;
 use Data::Dumper;
 
-# takes as input a query directory and a corpus directory
-# perl query_corpus.pl test-queries Corpus10
-# perl query_corpus.pl queries test-queries
+# takes as input a query directory, a corpus directory, and a results directory
+#perl query_corpus.pl DebugQUERIES DebugCORPUS out
 
 # TODO Need to add a results dir that we remove
 # TODO debug mulitple docs in test-queries (add one more)
 
 my $query_dir = shift @ARGV;
 my $corpus_dir = shift @ARGV;
-#my $results_dir = shift@ARGV;
+my $results_dir = shift@ARGV;
 
-#`rm -rf $results_dir`;
+`rm -rf $results_dir; mkdir -p $results_dir`;
 
 my %numDocs = (); 	# maps term to number of documents it's in
 my %idf = ();		# idf values for each word in corpus
@@ -42,14 +41,9 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
 # calculate IDF
  print "Calculating IDF\n";
 %idf = myIDF(%numDocs);
-<<<<<<< HEAD
- print Dumper(\%numDocs);
- print Dumper(\%idf);
-=======
 # print Dumper (\%terms);
 # print Dumper(\%numDocs);
 # print Dumper(\%idf);
->>>>>>> 55f3c9f70593b2b5150c81d9548b7285421f93c8
 
 # Calculate Normalization for each doc
 # to do: make function
@@ -68,25 +62,24 @@ for my $key (keys %doc_normal) {
 	$doc_normal{$key} = sqrt($doc_normal{$key});
 }
 
- print("terms: \n");
- print Dumper(\%terms);
- print("idf: \n");
- print Dumper(\%idf);
- print("tf-idf: \n");
- print Dumper(\%tf);
+# print("terms: \n");
+# print Dumper(\%terms);
+# print("idf: \n");
+# print Dumper(\%idf);
+# print("tf-idf: \n");
+# print Dumper(\%tf);
 
 # run all the queries
 # foreach file in the query folder
 foreach my $fq (glob("$query_dir/*.txt")) {
-<<<<<<< HEAD
- 	printf "Counting query ... %s\n", $fq;
-=======
- 	printf "\n\nCounting query ... %s\n", $fq;
->>>>>>> 55f3c9f70593b2b5150c81d9548b7285421f93c8
+	my $qfile = $fq;
+	$qfile =~ s/.*\///g;
+ 	printf "Counting query ... %s\n", $qfile;
+ 	open(FILE, "| sort -rn > $results_dir/$qfile") or die "$!";
 	# count word frequencies
 	my @list = writeArray($fq);	# getting list of words from doc
 	my %query = myTF(@list);		# counting tf
-	print Dumper(\%query);
+	#print Dumper(\%query);
 
 	# calculate cosine similarity between every doc in corpus
 	my $norm = 0; # denominator
@@ -102,15 +95,13 @@ foreach my $fq (glob("$query_dir/*.txt")) {
 			$tfidf = log(1 + $query{$qw}) * ((defined $idf{$qw}) ? $idf{$qw} : 0);
 			$dot += $tfidf * ((defined $tf{$doc}{$qw}) ? $tf{$doc}{$qw} : 0);
 		}
-<<<<<<< HEAD
- 		print("$dot / $norm * $doc_normal{$doc} = \n");
- 		my $score = $dot / ($norm * $doc_normal{$doc});
-		print("$score\t$doc\n"); # open an out file
-=======
+
 		#print("-$fq - $dot / $norm * $doc_normal{$doc} = \n");
  		my $score = 0;
  		$score = $dot / ($norm * $doc_normal{$doc}) if $norm > 0;
-		printf("%10.10f \t $doc \n", $score); # open an out file
->>>>>>> 55f3c9f70593b2b5150c81d9548b7285421f93c8
+ 		my $out = sprintf("%10.10f \t $doc \n", $score); # open an out file
+		print FILE $out; 
+
 	}
+	close(FILE);
 }

@@ -1,0 +1,2 @@
+0.6145695161 	 DebugCORPUS/Ham.txt 
+0.0000000000 	 DebugCORPUS/Mac.txt 
