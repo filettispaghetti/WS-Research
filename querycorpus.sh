@@ -1,11 +1,13 @@
 #!/usr/bin/bash # optional — to run, bash rake_passages.sh
-files=`ls Corpus10`
-#queries=`ls Queries`
+corpora="Documents Documents_raked"
+# files=`ls Documents`
+queries=`ls test-queries`
 mkdir -p querycorpusscores
-
-#for q in $queries; do
-for f in $files; do
-	#echo Corpus10/$f
-	echo Corpus10/$f | perl query_corpus.pl tempestcreation.txt f > querycorpusscores/$f$q
-	#done
+for c in corpora; do
+	for doc in c; do
+		for q in $queries; do
+# 		#echo Corpus10/$f
+ 			perl query_corpus.pl q d  querycorpusscores/$c$d
+ 		done
+ 	done
 done
