@@ -1,14 +1,18 @@
-use strict;
-use warnings 'all';
+#use strict;
+use warnings;
 
 use Text::Document;
 use Text::DocumentCollection;
 use fileOptions;
-use lib '/Users/rebeccafiletti/lib/';
+use Data::Dumper;
+
+# perl Comparison.pl TestA.txt
 
 my $file = shift @ARGV;
 my @a = writeArray($file);
-print @a;
+print join(" ", @a), "\n";
+my %words = myTF(@a);
+print Dumper(\%words);
 
 # my $file2 = 'Corpus10/1559CommonPrayer.txt';
 # my @b = writeArray($file2);
@@ -54,7 +58,7 @@ print @a;
 
 # my $word = "Texas";
 
-myTF(@a);
+
 # print "\n";
 # print (myIDF($file, $file2, $word));
 # print "\n";
