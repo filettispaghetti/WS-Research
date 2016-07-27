@@ -91,7 +91,7 @@ foreach my $fq (glob("$query_dir/*.txt")) {
 			$tfidf = log(1 + $query{$qw}) * ((defined $idf{$qw}) ? $idf{$qw} : 0);
 			$dot += $tfidf * ((defined $tf{$doc}{$qw}) ? $tf{$doc}{$qw} : 0);
 		}
-		#print("$dot / $norm * $doc_normal{$doc} = \n");
+		print("$dot / $norm * $doc_normal{$doc} = \n");
 		my $score = $dot / ($norm * $doc_normal{$doc});
 		print("$score\t$doc\n"); # open an out file
 	}
