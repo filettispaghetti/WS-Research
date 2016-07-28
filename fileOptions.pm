@@ -8,7 +8,7 @@ use Getopt::Long;
 use Data::Dumper;
 
 use Exporter qw(import);
-our @EXPORT = qw(printFile countFreq cosineSim WeightedCS myTF myIDF myTFIDF log10 writeArray newText);
+our @EXPORT = qw(myTF myIDF log10 writeArray); #run again and time difference
 
 #Takes a file and prints it.
 sub printFile{
