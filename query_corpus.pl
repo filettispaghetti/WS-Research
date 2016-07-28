@@ -26,7 +26,7 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
 	# build a giant hash of word frequencies
 	# and document frequencies
 
- 	printf "Counting ... %s\n", $fp;
+ 	#printf "Counting ... %s\n", $fp;
 
 	my @list = writeArray($fp);	# getting list of words from doc
 	my %words = myTF(@list);		# counting tf
@@ -100,8 +100,10 @@ foreach my $fq (glob("$query_dir/*.txt")) {
 		#print("-$fq - $dot / $norm * $doc_normal{$doc} = \n");
  		my $score = 0;
  		$score = $dot / ($norm * $doc_normal{$doc}) if $norm > 0;
- 		my $out = sprintf("%10.10f \t $doc \n", $score); # open an out file
-		print FILE $out; 
+ 		my $dfile = $doc;
+		$dfile =~ s/.*\///g;
+ 		my $out = sprintf("%10.10f \t $dfile \n", $score); # open an out file
+		print FILE $out if $score > 0; 
 
 	}
 	close(FILE);
