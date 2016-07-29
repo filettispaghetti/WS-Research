@@ -8,7 +8,7 @@ use Getopt::Long;
 use Data::Dumper;
 
 use Exporter qw(import);
-our @EXPORT = qw(myTF myIDF log10 writeArray); #run again and time difference
+our @EXPORT = qw(myTF myIDF myNoIDF log10 writeArray); #run again and time difference
 
 #Takes a file and prints it.
 sub printFile{
