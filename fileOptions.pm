@@ -2,8 +2,8 @@ package fileOptions;
 
 #use strict;
 use warnings;
-use Text::Document;
-use Text::DocumentCollection;
+# use Text::Document;
+# use Text::DocumentCollection;
 use Getopt::Long;
 use Data::Dumper;
 
@@ -137,6 +137,20 @@ sub myIDF{
 	for my $key (keys %corpus){
 		#IDF = log_e( # of docs / # of docs w/ term)
     	$idf{$key} = log10($count / $corpus{$key});
+	}
+	 		
+	return %idf;	
+}
+
+sub myNoIDF{
+	my (%corpus) =@_; # hash of words => number of docs (doc frequency)
+	my %idf = ();
+	my $count = scalar keys %corpus; # number of docs
+
+	# calculate IDF 	
+	for my $key (keys %corpus){
+		#IDF = log_e( # of docs / # of docs w/ term)
+    	$idf{$key} = 1;
 	}
 	 		
 	return %idf;	

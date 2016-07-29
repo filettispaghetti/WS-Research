@@ -10,7 +10,12 @@ use Data::Dumper;
 
 my $query_dir = shift @ARGV;
 my $corpus_dir = shift @ARGV;
-my $results_dir = shift@ARGV;
+my $results_dir = shift @ARGV;
+my $noidf = 0;
+my $qidf  = shift @ARGV;
+$noidf = 1 if (defined $qidf and $qidf eq "-noidf");
+#print "$noidf\n";
+#exit;
 
 `rm -rf $results_dir; mkdir -p $results_dir`;
 
@@ -39,9 +44,13 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
 	
 }
 
-# calculate IDF
- print "Calculating IDF\n";
-%idf = myIDF(%numDocs);
+if ($noidf) {
+	%idf = myNoIDF(%numDocs);
+} else {
+	# calculate IDF
+	 print "\tCalculating IDF\n";
+	%idf = myIDF(%numDocs);
+}
 # print Dumper (\%terms);
 # print Dumper(\%numDocs);
 # print Dumper(\%idf);
@@ -75,7 +84,7 @@ for my $key (keys %doc_normal) {
 foreach my $fq (glob("$query_dir/*.txt")) {
 	my $qfile = $fq;
 	$qfile =~ s/.*\///g;
- 	printf "Counting query ... %s\n", $qfile;
+ 	printf "\tCounting query ... %s\n", $qfile;
  	open(FILE, "| sort -rn > $results_dir/$qfile") or die "$!";
 	# count word frequencies
 	my @list = writeArray($fq);	# getting list of words from doc

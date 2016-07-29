@@ -1,0 +1,360 @@
+
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> # R CMD BATCH gen_plots.R
+> 
+> # first row contains variable names, comma is separator
+> # assign the variable id to row names
+> # note the / instead of \ on mswindows systems
+> 
+> mydata <- read.table("data.txt", header=TRUE, sep="")
+> names(mydata)
+[1] "tech"  "query" "P"     "R"     "F"     "MAP"   "MRR"  
+> attach(mydata)
+The following object is masked from package:base:
+
+    F
+
+> 
+> print("-------------------All Comparisons--------------------------")
+[1] "-------------------All Comparisons--------------------------"
+> 
+> for (y in c("P", "R", "F", "MAP", "MRR" )) {
++ # map only
++ #y <- "map"
++ 
++ print(paste("Analyzing:", y, sep=" "))
++ 	
++ 		name <- paste("figs/box_", y, ".pdf", sep="")
++ 		pdf(name, height=4, width=4)
++ 		par(las=2)
++ 		par(mar=c(5, 4.5, 1, 1))
++ 				
++ 		
++ 		
++ # get the means
++ 		mediansx <- tapply(mydata[[y]],mydata$tech,median)
++ 		meansx <- tapply(mydata[[y]],mydata$tech,mean)
++ 		qx <- tapply(mydata[[y]],mydata$tech,quantile, prob=0.25)
++ 
++ # sort the levels of config factor		
++ #mydata$tech=factor(mydata$tech, levels=c("NL-Body", "NL-Sig", "STMT", "SWUM", "TF-IDF", "MRF", "DLM"))
++ 		mydata$tech=factor(mydata$tech, levels=levels(mydata$tech)[order(-meansx)])
++ 
++ 		print(levels(mydata$tech))
++ # get the means again in the new order (otherwise box plots won't have the right means)
++ 		meansx <- tapply(mydata[[y]],mydata$tech,mean)
++ 		print(meansx)
++ 
++ #	box plots	
++ 		boxplot(mydata[[y]] ~ tech, data=mydata, range=1.5, boxwex=0.5,
++ 	#ylim=c(0,1), 
++ 	ylab=y, col="lightgray")		
++ 		points(meansx,col="red",pch=3,lw=2)
++ #		ct <- "MAP"
++ #		title(ct);
++ 		
++ 		
++ # generate summary numbers used in boxplots		
++ 		print(tapply(X=mydata[[y]],INDEX=list(mydata$tech),FUN=summary))
++ 		
++ 		print("Testing")
++ 		
++ 		# f test --summary(fm1 <- aov(Rust ~ Brand))
++ 		print(summary(fm1 <- aov(mydata[[y]] ~ tech, family=binomial, data=mydata)))
++ 		fm1Tukey=TukeyHSD(fm1) # , order.contrasts=TRUE # , ordered=TRUE
++ 		print(fm1Tukey)
++ 		#print(?TukeyHSD)
++ 		
++ 		# names, attributes
++ 		#print(attributes(fm1Tukey))
++ 		#print(attributes(fm1Tukey$config))
++ 		
++ 		name <- paste("figs/tukey_", y, ".pdf", sep="")
++ 		pdf(name, height=8, width=5)
++ 		par(las=1)
++ 		# (bottom, left, top, right)
++ 		par(mar=c(5, 15, 3, 1))
++ 		plot(fm1Tukey)
++ 		title(y);
++ 
++ }
+[1] "Analyzing: P"
+[1] "tf-Documents_raked"    "tfidf-Documents_raked" "tf-Documents"         
+[4] "tfidf-Documents"      
+   tf-Documents_raked tfidf-Documents_raked          tf-Documents 
+           0.04040404            0.04040404            0.03496242 
+      tfidf-Documents 
+           0.03496242 
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.04040 0.06187 0.16670 
+
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.04040 0.06187 0.16670 
+
+$`tf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.01786 0.03620 0.03636 0.03496 0.03778 0.04000 
+
+$`tfidf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.01786 0.03620 0.03636 0.03496 0.03778 0.04000 
+
+[1] "Testing"
+            Df  Sum Sq  Mean Sq F value Pr(>F)
+tech         3 0.00024 0.000079   0.037   0.99
+Residuals   28 0.05897 0.002106               
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
+
+$tech
+                                                  diff         lwr        upr
+tfidf-Documents_raked-tf-Documents_raked  6.938894e-18 -0.06264838 0.06264838
+tf-Documents-tf-Documents_raked          -5.441619e-03 -0.06808999 0.05720676
+tfidf-Documents-tf-Documents_raked       -5.441619e-03 -0.06808999 0.05720676
+tf-Documents-tfidf-Documents_raked       -5.441619e-03 -0.06808999 0.05720676
+tfidf-Documents-tfidf-Documents_raked    -5.441619e-03 -0.06808999 0.05720676
+tfidf-Documents-tf-Documents              6.938894e-18 -0.06264838 0.06264838
+                                             p adj
+tfidf-Documents_raked-tf-Documents_raked 1.0000000
+tf-Documents-tf-Documents_raked          0.9951954
+tfidf-Documents-tf-Documents_raked       0.9951954
+tf-Documents-tfidf-Documents_raked       0.9951954
+tfidf-Documents-tfidf-Documents_raked    0.9951954
+tfidf-Documents-tf-Documents             1.0000000
+
+[1] "Analyzing: R"
+[1] "tf-Documents"          "tfidf-Documents"       "tf-Documents_raked"   
+[4] "tfidf-Documents_raked"
+         tf-Documents       tfidf-Documents    tf-Documents_raked 
+               0.9375                0.9375                0.1875 
+tfidf-Documents_raked 
+               0.1875 
+$`tf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.5000  1.0000  1.0000  0.9375  1.0000  1.0000 
+
+$`tfidf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.5000  1.0000  1.0000  0.9375  1.0000  1.0000 
+
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.1875  0.5000  0.5000 
+
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.1875  0.5000  0.5000 
+
+[1] "Testing"
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+tech         3  4.500  1.5000   30.55 5.67e-09 ***
+Residuals   28  1.375  0.0491                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
+
+$tech
+                                                  diff        lwr        upr
+tfidf-Documents-tf-Documents             -4.440892e-16 -0.3025203  0.3025203
+tf-Documents_raked-tf-Documents          -7.500000e-01 -1.0525203 -0.4474797
+tfidf-Documents_raked-tf-Documents       -7.500000e-01 -1.0525203 -0.4474797
+tf-Documents_raked-tfidf-Documents       -7.500000e-01 -1.0525203 -0.4474797
+tfidf-Documents_raked-tfidf-Documents    -7.500000e-01 -1.0525203 -0.4474797
+tfidf-Documents_raked-tf-Documents_raked -3.330669e-16 -0.3025203  0.3025203
+                                           p adj
+tfidf-Documents-tf-Documents             1.0e+00
+tf-Documents_raked-tf-Documents          1.4e-06
+tfidf-Documents_raked-tf-Documents       1.4e-06
+tf-Documents_raked-tfidf-Documents       1.4e-06
+tfidf-Documents_raked-tfidf-Documents    1.4e-06
+tfidf-Documents_raked-tf-Documents_raked 1.0e+00
+
+[1] "Analyzing: F"
+[1] "tf-Documents"          "tfidf-Documents"       "tf-Documents_raked"   
+[4] "tfidf-Documents_raked"
+         tf-Documents       tfidf-Documents    tf-Documents_raked 
+           0.06740616            0.06740616            0.06439394 
+tfidf-Documents_raked 
+           0.06439394 
+$`tf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.03448 0.06987 0.07018 0.06741 0.07280 0.07692 
+
+$`tfidf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.03448 0.06987 0.07018 0.06741 0.07280 0.07692 
+
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.06439 0.10800 0.25000 
+
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.06439 0.10800 0.25000 
+
+[1] "Testing"
+            Df  Sum Sq  Mean Sq F value Pr(>F)
+tech         3 0.00007 0.000024   0.005      1
+Residuals   28 0.14127 0.005045               
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
+
+$tech
+                                                  diff         lwr        upr
+tfidf-Documents-tf-Documents             -1.387779e-17 -0.09696888 0.09696888
+tf-Documents_raked-tf-Documents          -3.012225e-03 -0.09998111 0.09395666
+tfidf-Documents_raked-tf-Documents       -3.012225e-03 -0.09998111 0.09395666
+tf-Documents_raked-tfidf-Documents       -3.012225e-03 -0.09998111 0.09395666
+tfidf-Documents_raked-tfidf-Documents    -3.012225e-03 -0.09998111 0.09395666
+tfidf-Documents_raked-tf-Documents_raked  1.387779e-17 -0.09696888 0.09696888
+                                             p adj
+tfidf-Documents-tf-Documents             1.0000000
+tf-Documents_raked-tf-Documents          0.9997757
+tfidf-Documents_raked-tf-Documents       0.9997757
+tf-Documents_raked-tfidf-Documents       0.9997757
+tfidf-Documents_raked-tfidf-Documents    0.9997757
+tfidf-Documents_raked-tf-Documents_raked 1.0000000
+
+[1] "Analyzing: MAP"
+[1] "tf-Documents"          "tfidf-Documents"       "tf-Documents_raked"   
+[4] "tfidf-Documents_raked"
+         tf-Documents       tfidf-Documents    tf-Documents_raked 
+           0.28613065            0.28613065            0.06770833 
+tfidf-Documents_raked 
+           0.06770833 
+$`tf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.04805 0.10830 0.17280 0.28610 0.36550 0.83330 
+
+$`tfidf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.04805 0.10830 0.17280 0.28610 0.36550 0.83330 
+
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.06771 0.13540 0.25000 
+
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.06771 0.13540 0.25000 
+
+[1] "Testing"
+            Df Sum Sq Mean Sq F value Pr(>F)  
+tech         3 0.3817 0.12722   3.032 0.0458 *
+Residuals   28 1.1748 0.04196                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
+
+$tech
+                                                  diff        lwr        upr
+tfidf-Documents-tf-Documents             -1.110223e-16 -0.2796287 0.27962868
+tf-Documents_raked-tf-Documents          -2.184223e-01 -0.4980510 0.06120636
+tfidf-Documents_raked-tf-Documents       -2.184223e-01 -0.4980510 0.06120636
+tf-Documents_raked-tfidf-Documents       -2.184223e-01 -0.4980510 0.06120636
+tfidf-Documents_raked-tfidf-Documents    -2.184223e-01 -0.4980510 0.06120636
+tfidf-Documents_raked-tf-Documents_raked  0.000000e+00 -0.2796287 0.27962868
+                                             p adj
+tfidf-Documents-tf-Documents             1.0000000
+tf-Documents_raked-tf-Documents          0.1675799
+tfidf-Documents_raked-tf-Documents       0.1675799
+tf-Documents_raked-tfidf-Documents       0.1675799
+tfidf-Documents_raked-tfidf-Documents    0.1675799
+tfidf-Documents_raked-tf-Documents_raked 1.0000000
+
+[1] "Analyzing: MRR"
+[1] "tf-Documents"          "tfidf-Documents"       "tf-Documents_raked"   
+[4] "tfidf-Documents_raked"
+         tf-Documents       tfidf-Documents    tf-Documents_raked 
+                    1                     1                     1 
+tfidf-Documents_raked 
+                    1 
+$`tf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+      1       1       1       1       1       1 
+
+$`tfidf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+      1       1       1       1       1       1 
+
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+      1       1       1       1       1       1 
+
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+      1       1       1       1       1       1 
+
+[1] "Testing"
+            Df    Sum Sq  Mean Sq F value Pr(>F)
+tech         3 1.812e-30 6.04e-31       1  0.407
+Residuals   28 1.691e-29 6.04e-31               
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
+
+$tech
+                                                 diff           lwr
+tfidf-Documents-tf-Documents             4.440892e-16 -6.168500e-16
+tf-Documents_raked-tf-Documents          4.440892e-16 -6.168500e-16
+tfidf-Documents_raked-tf-Documents       4.440892e-16 -6.168500e-16
+tf-Documents_raked-tfidf-Documents       0.000000e+00 -1.060939e-15
+tfidf-Documents_raked-tfidf-Documents    0.000000e+00 -1.060939e-15
+tfidf-Documents_raked-tf-Documents_raked 0.000000e+00 -1.060939e-15
+                                                  upr     p adj
+tfidf-Documents-tf-Documents             1.505028e-15 0.6667138
+tf-Documents_raked-tf-Documents          1.505028e-15 0.6667138
+tfidf-Documents_raked-tf-Documents       1.505028e-15 0.6667138
+tf-Documents_raked-tfidf-Documents       1.060939e-15 1.0000000
+tfidf-Documents_raked-tfidf-Documents    1.060939e-15 1.0000000
+tfidf-Documents_raked-tf-Documents_raked 1.060939e-15 1.0000000
+
+Warning messages:
+1: In lm.fit(x, y, offset = offset, singular.ok = singular.ok, ...) :
+ extra argument ‘family’ will be disregarded 
+2: In lm.fit(x, y, offset = offset, singular.ok = singular.ok, ...) :
+ extra argument ‘family’ will be disregarded 
+3: In lm.fit(x, y, offset = offset, singular.ok = singular.ok, ...) :
+ extra argument ‘family’ will be disregarded 
+4: In lm.fit(x, y, offset = offset, singular.ok = singular.ok, ...) :
+ extra argument ‘family’ will be disregarded 
+5: In lm.fit(x, y, offset = offset, singular.ok = singular.ok, ...) :
+ extra argument ‘family’ will be disregarded 
+> 
+> 
+> 
+> proc.time()
+   user  system elapsed 
+  0.268   0.026   0.284 
