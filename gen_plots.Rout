@@ -44,9 +44,9 @@ The following object is masked from package:base:
 + print(paste("Analyzing:", y, sep=" "))
 + 	
 + 		name <- paste("figs/box_", y, ".pdf", sep="")
-+ 		pdf(name, height=4, width=4)
++ 		pdf(name, height=6, width=4)
 + 		par(las=2)
-+ 		par(mar=c(5, 4.5, 1, 1))
++ 		par(mar=c(11, 4.5, 1, 1))
 + 				
 + 		
 + 		
@@ -297,49 +297,51 @@ tfidf-Documents_raked-tf-Documents_raked 1.0000000
 [1] "tf-Documents"          "tfidf-Documents"       "tf-Documents_raked"   
 [4] "tfidf-Documents_raked"
          tf-Documents       tfidf-Documents    tf-Documents_raked 
-                    1                     1                     1 
+           0.41793478            0.41793478            0.06770833 
 tfidf-Documents_raked 
-                    1 
+           0.06770833 
 $`tf-Documents`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-      1       1       1       1       1       1 
+0.04348 0.15000 0.26670 0.41790 0.62500 1.00000 
 
 $`tfidf-Documents`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-      1       1       1       1       1       1 
+0.04348 0.15000 0.26670 0.41790 0.62500 1.00000 
 
 $`tf-Documents_raked`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-      1       1       1       1       1       1 
+0.00000 0.00000 0.00000 0.06771 0.13540 0.25000 
 
 $`tfidf-Documents_raked`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-      1       1       1       1       1       1 
+0.00000 0.00000 0.00000 0.06771 0.13540 0.25000 
 
 [1] "Testing"
-            Df    Sum Sq  Mean Sq F value Pr(>F)
-tech         3 1.812e-30 6.04e-31       1  0.407
-Residuals   28 1.691e-29 6.04e-31               
+            Df Sum Sq Mean Sq F value Pr(>F)  
+tech         3 0.9813  0.3271   4.116 0.0154 *
+Residuals   28 2.2253  0.0795                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
   Tukey multiple comparisons of means
     95% family-wise confidence level
 
 Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
 
 $tech
-                                                 diff           lwr
-tfidf-Documents-tf-Documents             4.440892e-16 -6.168500e-16
-tf-Documents_raked-tf-Documents          4.440892e-16 -6.168500e-16
-tfidf-Documents_raked-tf-Documents       4.440892e-16 -6.168500e-16
-tf-Documents_raked-tfidf-Documents       0.000000e+00 -1.060939e-15
-tfidf-Documents_raked-tfidf-Documents    0.000000e+00 -1.060939e-15
-tfidf-Documents_raked-tf-Documents_raked 0.000000e+00 -1.060939e-15
-                                                  upr     p adj
-tfidf-Documents-tf-Documents             1.505028e-15 0.6667138
-tf-Documents_raked-tf-Documents          1.505028e-15 0.6667138
-tfidf-Documents_raked-tf-Documents       1.505028e-15 0.6667138
-tf-Documents_raked-tfidf-Documents       1.060939e-15 1.0000000
-tfidf-Documents_raked-tfidf-Documents    1.060939e-15 1.0000000
-tfidf-Documents_raked-tf-Documents_raked 1.060939e-15 1.0000000
+                                                  diff        lwr       upr
+tfidf-Documents-tf-Documents              0.000000e+00 -0.3848555 0.3848555
+tf-Documents_raked-tf-Documents          -3.502264e-01 -0.7350819 0.0346290
+tfidf-Documents_raked-tf-Documents       -3.502264e-01 -0.7350819 0.0346290
+tf-Documents_raked-tfidf-Documents       -3.502264e-01 -0.7350819 0.0346290
+tfidf-Documents_raked-tfidf-Documents    -3.502264e-01 -0.7350819 0.0346290
+tfidf-Documents_raked-tf-Documents_raked -1.387779e-16 -0.3848555 0.3848555
+                                             p adj
+tfidf-Documents-tf-Documents             1.0000000
+tf-Documents_raked-tf-Documents          0.0844308
+tfidf-Documents_raked-tf-Documents       0.0844308
+tf-Documents_raked-tfidf-Documents       0.0844308
+tfidf-Documents_raked-tfidf-Documents    0.0844308
+tfidf-Documents_raked-tf-Documents_raked 1.0000000
 
 Warning messages:
 1: In lm.fit(x, y, offset = offset, singular.ok = singular.ok, ...) :
@@ -357,4 +359,4 @@ Warning messages:
 > 
 > proc.time()
    user  system elapsed 
-  0.268   0.026   0.284 
+  0.280   0.028   0.298 

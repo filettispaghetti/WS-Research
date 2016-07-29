@@ -8,11 +8,15 @@ queries="Queries"
 
 ############# Run Search Queries #############
 
+echo "### TF-IDF ###"
+
 # tf-idf
 for c in $corpora; do
 	echo "querying $c" 
 	perl query_corpus.pl "$queries" "$c" "test-tfidf-$c"
 done
+
+echo "#### IDF ####"
 
 # tf (no idf)
 for c in $corpora; do

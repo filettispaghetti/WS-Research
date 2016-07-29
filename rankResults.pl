@@ -97,8 +97,6 @@ while (my $line = <FILE>) {
 			print PRF $last;
 			
 			$map += $marked * $p if ($marked > 0); # MAP only for relevant ranks
-
-			$mrr = 1.0 / $rank if ($mrr == 0);
 			
 			# then this is a new rank
 			$rank += $seen;
@@ -111,7 +109,10 @@ while (my $line = <FILE>) {
 		
 		# update seen & output rank line
 		$returned++;
-		$tp++ if (defined $sigs{$elem});
+		if (defined $sigs{$elem}) {
+			$tp++;
+			$mrr = 1.0 / $rank if ($tp == 1);
+		}
 		$seen++;
 		print OUT $pline;
 		

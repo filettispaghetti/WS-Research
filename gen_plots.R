@@ -17,9 +17,9 @@ for (y in c("P", "R", "F", "MAP", "MRR" )) {
 print(paste("Analyzing:", y, sep=" "))
 	
 		name <- paste("figs/box_", y, ".pdf", sep="")
-		pdf(name, height=4, width=4)
+		pdf(name, height=6, width=4)
 		par(las=2)
-		par(mar=c(5, 4.5, 1, 1))
+		par(mar=c(11, 4.5, 1, 1))
 				
 		
 		
