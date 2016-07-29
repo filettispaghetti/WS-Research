@@ -62,10 +62,10 @@ print(paste("Analyzing:", y, sep=" "))
 		#print(attributes(fm1Tukey$config))
 		
 		name <- paste("figs/tukey_", y, ".pdf", sep="")
-		pdf(name, height=8, width=5)
+		pdf(name, height=8, width=8)
 		par(las=1)
 		# (bottom, left, top, right)
-		par(mar=c(5, 15, 3, 1))
+		par(mar=c(5, 20, 3, 1))
 		plot(fm1Tukey)
 		title(y);
 
