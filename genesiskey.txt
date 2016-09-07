@@ -1,0 +1,1 @@
+['great lights', 'greater light', 'lesser light', 'made', 'god', 'rule', 'stars', 'night', 'day']

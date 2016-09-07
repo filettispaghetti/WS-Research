@@ -1,0 +1,50 @@
+GLOUCESTER
+Then send for one presently.
+Mayor
+Sirrah, go fetch the beadle hither straight.
+Exit an Attendant
+
+GLOUCESTER
+Now fetch me a stool hither by and by. Now, sirrah,
+if you mean to save yourself from whipping, leap me
+over this stool and run away.
+SIMPCOX
+Alas, master, I am not able to stand alone:
+You go about to torture me in vain.
+Enter a Beadle with whips
+
+GLOUCESTER
+Well, sir, we must have you find your legs. Sirrah
+beadle, whip him till he leap over that same stool.
+Beadle
+I will, my lord. Come on, sirrah; off with your
+doublet quickly.
+SIMPCOX
+Alas, master, what shall I do? I am not able to stand.
+After the Beadle hath hit him once, he leaps over the stool and runs away; and they follow and cry, 'A miracle!'
+
+KING HENRY VI
+O God, seest Thou this, and bearest so long?
+QUEEN MARGARET
+It made me laugh to see the villain run.
+GLOUCESTER
+Follow the knave; and take this drab away.
+Wife
+Alas, sir, we did it for pure need.
+GLOUCESTER
+Let them be whipped through every market-town, till
+they come to Berwick, from whence they came.
+Exeunt Wife, Beadle, Mayor, & c
+
+CARDINAL
+Duke Humphrey has done a miracle to-day.
+SUFFOLK
+True; made the lame to leap and fly away.
+GLOUCESTER
+But you have done more miracles than I;
+You made in a day, my lord, whole towns to fly.
+Enter BUCKINGHAM
+
+KING HENRY VI
+What tidings with our cousin Buckingham?
+BUCKINGHAM

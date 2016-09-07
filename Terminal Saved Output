@@ -1,0 +1,1828 @@
+Last login: Fri Jul  8 09:30:44 on ttys000
+-bash: alias: -a: not found
+-bash: alias: textwrangler: not found
+Jennifers-MacBook-Pro-3:~ Victorine$ pip install -U textblob
+-bash: pip: command not found
+Jennifers-MacBook-Pro-3:~ Victorine$ python setup.py install
+python: can't open file 'setup.py': [Errno 2] No such file or directory
+Jennifers-MacBook-Pro-3:~ Victorine$ python get-pip.py
+python: can't open file 'get-pip.py': [Errno 2] No such file or directory
+Jennifers-MacBook-Pro-3:~ Victorine$ l
+-bash: l: command not found
+Jennifers-MacBook-Pro-3:~ Victorine$ ls
+Applications			pwod3_jbenedict1
+Desktop				pwod3_jbenedict1.zip
+Documents			pwod4
+Downloads			pwod5
+Google Drive			pwod8_jbenedict1
+Library				pwod9_jbenedict1
+Movies				sum_n.py
+Music				while.py
+Pictures			wod1_jbenedict1
+Public				wod1_jbenedict1.zip
+csc117				wod2_jbenedict1
+csci117				wod2_jbenedict1 2
+hello_variable.py		wod2_jbenedict1 3
+inclass				wod2_jbenedict1 4
+list_fun.py			wod2_jbenedict1 5
+multwonum.py			wod2_jbenedict1.zip
+perl5				wod3_jbenedict1
+practiceloop			wod3_jbenedict1 2
+practicerun			wod3_jbenedict1.zip
+project1_jbenedict1		wod4_jbenedict1
+project1_jbenedict1 2		wod4_jbenedict1 2
+project1_jbenedict1.zip		wod4_jbenedict1.zip
+project2-jbenedict1_rsayeed	wod5_jbenedict1
+project2-jbenedict1_rsayeed.zip	wod5_jbenedict1.zip
+puttin_toget.py			wod6_jbenedict1
+pwod10_jbenedict1		wod6_jbenedict1.zip
+pwod2_jbenedict1		zipies.zip
+pwod2_jbenedict1.zip
+Jennifers-MacBook-Pro-3:~ Victorine$ python get-pip.py
+python: can't open file 'get-pip.py': [Errno 2] No such file or directory
+Jennifers-MacBook-Pro-3:~ Victorine$ cd Desktop
+Jennifers-MacBook-Pro-3:Desktop Victorine$ ls
+13616342_1074116396009154_408247803_o.jpg
+2niSrTifV11X.128 (1).mp3
+2niSrTifV11X.128.mp3
+581320_348841238522679_1570908750_n.jpg
+Eclipse.app
+FAFSA
+Important sshots
+Math 117
+Messages Image(400376986).png
+Normal_Distribution_Calculator.xls
+Project1 CSCI 117
+RIse Sshots
+Screen Shot 2016-05-29 at 2.33.10 PM.png
+Screen Shot 2016-05-29 at 2.40.59 PM.png
+Screen Shot 2016-06-07 at 8.34.54 PM.png
+Screen Shot 2016-07-05 at 6.02.39 PM.png
+Screen Shot 2016-07-05 at 6.02.41 PM.png
+Screen Shot 2016-07-06 at 10.18.03 AM.png
+Screen Shot 2016-07-08 at 4.18.26 PM.png
+Screen Shot 2016-07-08 at 4.18.27 PM.png
+Screen Shot 2016-07-10 at 11.50.06 PM.png
+Taming
+Z.jpg
+a97c4a1614b53d6f55ae2464b06ba6aa-large.jpg
+get-pip.py
+jeep-wrangler-wallpapers-hd-wallpaper-4.jpg
+photos
+project1_jbenedict1 4
+tumblr_nmcj4b3Qe01s1ono8o1_1280.jpg
+untitled folder
+Jennifers-MacBook-Pro-3:Desktop Victorine$ python get-pip.py
+Collecting pip
+  Downloading pip-8.1.2-py2.py3-none-any.whl (1.2MB)
+    100% |████████████████████████████████| 1.2MB 805kB/s 
+Collecting wheel
+  Downloading wheel-0.29.0-py2.py3-none-any.whl (66kB)
+    100% |████████████████████████████████| 71kB 6.1MB/s 
+Installing collected packages: pip, wheel
+Exception:
+Traceback (most recent call last):
+  File "/var/folders/n3/28x_ns2d26v5p5b4y3dljn400000gn/T/tmpLCANhc/pip.zip/pip/basecommand.py", line 215, in main
+    status = self.run(options, args)
+  File "/var/folders/n3/28x_ns2d26v5p5b4y3dljn400000gn/T/tmpLCANhc/pip.zip/pip/commands/install.py", line 317, in run
+    prefix=options.prefix_path,
+  File "/var/folders/n3/28x_ns2d26v5p5b4y3dljn400000gn/T/tmpLCANhc/pip.zip/pip/req/req_set.py", line 742, in install
+    **kwargs
+  File "/var/folders/n3/28x_ns2d26v5p5b4y3dljn400000gn/T/tmpLCANhc/pip.zip/pip/req/req_install.py", line 831, in install
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)
+  File "/var/folders/n3/28x_ns2d26v5p5b4y3dljn400000gn/T/tmpLCANhc/pip.zip/pip/req/req_install.py", line 1032, in move_wheel_files
+    isolated=self.isolated,
+  File "/var/folders/n3/28x_ns2d26v5p5b4y3dljn400000gn/T/tmpLCANhc/pip.zip/pip/wheel.py", line 346, in move_wheel_files
+    clobber(source, lib_dir, True)
+  File "/var/folders/n3/28x_ns2d26v5p5b4y3dljn400000gn/T/tmpLCANhc/pip.zip/pip/wheel.py", line 317, in clobber
+    ensure_dir(destdir)
+  File "/var/folders/n3/28x_ns2d26v5p5b4y3dljn400000gn/T/tmpLCANhc/pip.zip/pip/utils/__init__.py", line 83, in ensure_dir
+    os.makedirs(path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 13] Permission denied: '/Library/Python/2.7/site-packages/pip'
+Jennifers-MacBook-Pro-3:Desktop Victorine$ python get-pip.py --no-index --find-links=/local/copies
+Ignoring indexes: https://pypi.python.org/simple
+Collecting pip
+  Url '/local/copies' is ignored. It is either a non-existing path or lacks a specific scheme.
+  Could not find a version that satisfies the requirement pip (from versions: )
+No matching distribution found for pip
+Jennifers-MacBook-Pro-3:Desktop Victorine$ python get-pip.py --user
+Collecting pip
+  Using cached pip-8.1.2-py2.py3-none-any.whl
+Collecting wheel
+  Using cached wheel-0.29.0-py2.py3-none-any.whl
+Installing collected packages: pip, wheel
+Successfully installed pip wheel
+Jennifers-MacBook-Pro-3:Desktop Victorine$ pip install -U textblob
+-bash: pip: command not found
+Jennifers-MacBook-Pro-3:Desktop Victorine$ cd Documents
+-bash: cd: Documents: No such file or directory
+Jennifers-MacBook-Pro-3:Desktop Victorine$ ls
+13616342_1074116396009154_408247803_o.jpg
+2niSrTifV11X.128 (1).mp3
+2niSrTifV11X.128.mp3
+581320_348841238522679_1570908750_n.jpg
+Eclipse.app
+FAFSA
+Important sshots
+Math 117
+Messages Image(400376986).png
+Normal_Distribution_Calculator.xls
+Project1 CSCI 117
+RIse Sshots
+Screen Shot 2016-05-29 at 2.33.10 PM.png
+Screen Shot 2016-05-29 at 2.40.59 PM.png
+Screen Shot 2016-06-07 at 8.34.54 PM.png
+Screen Shot 2016-07-05 at 6.02.39 PM.png
+Screen Shot 2016-07-05 at 6.02.41 PM.png
+Screen Shot 2016-07-06 at 10.18.03 AM.png
+Screen Shot 2016-07-08 at 4.18.26 PM.png
+Screen Shot 2016-07-08 at 4.18.27 PM.png
+Screen Shot 2016-07-10 at 11.50.06 PM.png
+Taming
+Z.jpg
+a97c4a1614b53d6f55ae2464b06ba6aa-large.jpg
+get-pip.py
+jeep-wrangler-wallpapers-hd-wallpaper-4.jpg
+photos
+project1_jbenedict1 4
+tumblr_nmcj4b3Qe01s1ono8o1_1280.jpg
+untitled folder
+Jennifers-MacBook-Pro-3:Desktop Victorine$ cd documents
+-bash: cd: documents: No such file or directory
+Jennifers-MacBook-Pro-3:Desktop Victorine$ ls
+13616342_1074116396009154_408247803_o.jpg
+2niSrTifV11X.128 (1).mp3
+2niSrTifV11X.128.mp3
+581320_348841238522679_1570908750_n.jpg
+Eclipse.app
+FAFSA
+Important sshots
+Math 117
+Messages Image(400376986).png
+Normal_Distribution_Calculator.xls
+Project1 CSCI 117
+RIse Sshots
+Screen Shot 2016-05-29 at 2.33.10 PM.png
+Screen Shot 2016-05-29 at 2.40.59 PM.png
+Screen Shot 2016-06-07 at 8.34.54 PM.png
+Screen Shot 2016-07-05 at 6.02.39 PM.png
+Screen Shot 2016-07-05 at 6.02.41 PM.png
+Screen Shot 2016-07-06 at 10.18.03 AM.png
+Screen Shot 2016-07-08 at 4.18.26 PM.png
+Screen Shot 2016-07-08 at 4.18.27 PM.png
+Screen Shot 2016-07-10 at 11.50.06 PM.png
+Taming
+Z.jpg
+a97c4a1614b53d6f55ae2464b06ba6aa-large.jpg
+get-pip.py
+jeep-wrangler-wallpapers-hd-wallpaper-4.jpg
+photos
+project1_jbenedict1 4
+tumblr_nmcj4b3Qe01s1ono8o1_1280.jpg
+untitled folder
+Jennifers-MacBook-Pro-3:Desktop Victorine$ cd Downloads
+-bash: cd: Downloads: No such file or directory
+Jennifers-MacBook-Pro-3:Desktop Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ cd Documents
+Jennifers-MacBook-Pro-3:Documents Victorine$ ls
+10-strings.key
+10334-ar-promise-peril-of-big-data.pdf
+11-lists.key
+13-dictionaries.key
+1369118x%2E2012%2E678878.pdf
+14-while-loops.key
+American Safety Council's Safe Motorist Course for GEICO Customers receipt.html
+American Safety Council's Safe Motorist Course for GEICO Customers receipt_files
+BigDataWhitePaper.pdf
+CHAPTER 2 SOLUTIONS second edition.pages
+DSC_0007 2.JPG
+Discussion Question Assignment.pages
+Discussion Questions.pages
+Functions.key
+Hon 202 Leah Intro Talk Questions.S15 (1).pages
+Hon 202 Olivia Intro Talk Homework Questions.S15.pages
+Jennifer Benedict Mentor Choices.pages
+Jennifer.txt
+List part 2 tuples.key
+MappingXpress.webarchive
+Mary Beard.pages
+Natl Sci Rev-2014-Fan-nsr-nwt032.pdf
+PWOD 2.pages
+RISE .pages
+RISE-Response paper 1.pages
+Screen Shot 2015-01-13 at 8.29.44 PM.png
+Screen Shot 2015-01-29 at 6.06.28 PM.png
+Screen Shot 2015-01-30 at 4.54.22 PM.png
+Screen Shot 2015-01-30 at 4.54.25 PM.png
+Screen Shot 2015-01-30 at 4.54.26 PM.png
+Screen Shot 2015-01-30 at 4.55.36 PM.png
+Screen Shot 2015-01-30 at 4.56.35 PM.png
+Screen Shot 2015-01-30 at 4.57.53 PM.png
+Screen Shot 2015-01-30 at 4.58.16 PM.png
+Screen Shot 2015-01-30 at 4.59.44 PM.png
+Terminal Saved Output
+Think Python Ch.1 Terms.pages
+WS
+Worksheet on Graphs 2.pages
+brownie.pages
+choosing with conditionals.key
+compsci midterm review.key
+cookie.pages
+hello_world.py
+ilovecheese
+inclass
+jenbed
+jenny.py
+loops.key
+p36-jacobs.pdf
+project1.pages
+python intro slides.key
+the real python 1.key
+workspace
+Jennifers-MacBook-Pro-3:Documents Victorine$ cd WS
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf.py 
+Traceback (most recent call last):
+  File "tf.py", line 2, in <module>
+    from textblob import TextBlob as tb
+ImportError: No module named textblob
+Jennifers-MacBook-Pro-3:WS Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ python get-pip.py
+python: can't open file 'get-pip.py': [Errno 2] No such file or directory
+Jennifers-MacBook-Pro-3:~ Victorine$ cd Desktop
+Jennifers-MacBook-Pro-3:Desktop Victorine$ python get-pip.py
+Requirement already up-to-date: pip in /Users/Victorine/Library/Python/2.7/lib/python/site-packages
+Jennifers-MacBook-Pro-3:Desktop Victorine$ pip install -U textblob
+-bash: pip: command not found
+Jennifers-MacBook-Pro-3:Desktop Victorine$ sudo chown -R $USER /Library/Python/2.7/site-packages/pync
+Password:
+chown: /Library/Python/2.7/site-packages/pync: No such file or directory
+Jennifers-MacBook-Pro-3:Desktop Victorine$ ls
+13616342_1074116396009154_408247803_o.jpg
+2niSrTifV11X.128 (1).mp3
+2niSrTifV11X.128.mp3
+581320_348841238522679_1570908750_n.jpg
+Eclipse.app
+FAFSA
+Important sshots
+Math 117
+Messages Image(400376986).png
+Normal_Distribution_Calculator.xls
+Project1 CSCI 117
+RIse Sshots
+Screen Shot 2016-05-29 at 2.33.10 PM.png
+Screen Shot 2016-05-29 at 2.40.59 PM.png
+Screen Shot 2016-06-07 at 8.34.54 PM.png
+Screen Shot 2016-07-05 at 6.02.39 PM.png
+Screen Shot 2016-07-05 at 6.02.41 PM.png
+Screen Shot 2016-07-06 at 10.18.03 AM.png
+Screen Shot 2016-07-08 at 4.18.26 PM.png
+Screen Shot 2016-07-08 at 4.18.27 PM.png
+Screen Shot 2016-07-10 at 11.50.06 PM.png
+Taming
+Z.jpg
+a97c4a1614b53d6f55ae2464b06ba6aa-large.jpg
+get-pip.py
+jeep-wrangler-wallpapers-hd-wallpaper-4.jpg
+photos
+project1_jbenedict1 4
+tumblr_nmcj4b3Qe01s1ono8o1_1280.jpg
+untitled folder
+Jennifers-MacBook-Pro-3:Desktop Victorine$ pip install -U textblob
+-bash: pip: command not found
+Jennifers-MacBook-Pro-3:Desktop Victorine$ ls
+13616342_1074116396009154_408247803_o.jpg
+2niSrTifV11X.128 (1).mp3
+2niSrTifV11X.128.mp3
+581320_348841238522679_1570908750_n.jpg
+Eclipse.app
+FAFSA
+Important sshots
+Math 117
+Messages Image(400376986).png
+Normal_Distribution_Calculator.xls
+Project1 CSCI 117
+RIse Sshots
+Screen Shot 2016-05-29 at 2.33.10 PM.png
+Screen Shot 2016-05-29 at 2.40.59 PM.png
+Screen Shot 2016-06-07 at 8.34.54 PM.png
+Screen Shot 2016-07-05 at 6.02.39 PM.png
+Screen Shot 2016-07-05 at 6.02.41 PM.png
+Screen Shot 2016-07-06 at 10.18.03 AM.png
+Screen Shot 2016-07-08 at 4.18.26 PM.png
+Screen Shot 2016-07-08 at 4.18.27 PM.png
+Screen Shot 2016-07-10 at 11.50.06 PM.png
+Taming
+Z.jpg
+a97c4a1614b53d6f55ae2464b06ba6aa-large.jpg
+get-pip.py
+jeep-wrangler-wallpapers-hd-wallpaper-4.jpg
+photos
+project1_jbenedict1 4
+tumblr_nmcj4b3Qe01s1ono8o1_1280.jpg
+untitled folder
+Jennifers-MacBook-Pro-3:Desktop Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ cd Documents
+Jennifers-MacBook-Pro-3:Documents Victorine$ ls
+10-strings.key
+10334-ar-promise-peril-of-big-data.pdf
+11-lists.key
+13-dictionaries.key
+1369118x%2E2012%2E678878.pdf
+14-while-loops.key
+American Safety Council's Safe Motorist Course for GEICO Customers receipt.html
+American Safety Council's Safe Motorist Course for GEICO Customers receipt_files
+BigDataWhitePaper.pdf
+CHAPTER 2 SOLUTIONS second edition.pages
+DSC_0007 2.JPG
+Discussion Question Assignment.pages
+Discussion Questions.pages
+Functions.key
+Hon 202 Leah Intro Talk Questions.S15 (1).pages
+Hon 202 Olivia Intro Talk Homework Questions.S15.pages
+Jennifer Benedict Mentor Choices.pages
+Jennifer.txt
+List part 2 tuples.key
+MappingXpress.webarchive
+Mary Beard.pages
+Natl Sci Rev-2014-Fan-nsr-nwt032.pdf
+PWOD 2.pages
+RISE .pages
+RISE-Response paper 1.pages
+Screen Shot 2015-01-13 at 8.29.44 PM.png
+Screen Shot 2015-01-29 at 6.06.28 PM.png
+Screen Shot 2015-01-30 at 4.54.22 PM.png
+Screen Shot 2015-01-30 at 4.54.25 PM.png
+Screen Shot 2015-01-30 at 4.54.26 PM.png
+Screen Shot 2015-01-30 at 4.55.36 PM.png
+Screen Shot 2015-01-30 at 4.56.35 PM.png
+Screen Shot 2015-01-30 at 4.57.53 PM.png
+Screen Shot 2015-01-30 at 4.58.16 PM.png
+Screen Shot 2015-01-30 at 4.59.44 PM.png
+Terminal Saved Output
+Think Python Ch.1 Terms.pages
+WS
+Worksheet on Graphs 2.pages
+brownie.pages
+choosing with conditionals.key
+compsci midterm review.key
+cookie.pages
+hello_world.py
+ilovecheese
+inclass
+jenbed
+jenny.py
+loops.key
+p36-jacobs.pdf
+project1.pages
+python intro slides.key
+the real python 1.key
+workspace
+Jennifers-MacBook-Pro-3:Documents Victorine$ pip install -U textblob
+-bash: pip: command not found
+Jennifers-MacBook-Pro-3:Documents Victorine$ ls
+10-strings.key
+10334-ar-promise-peril-of-big-data.pdf
+11-lists.key
+13-dictionaries.key
+1369118x%2E2012%2E678878.pdf
+14-while-loops.key
+American Safety Council's Safe Motorist Course for GEICO Customers receipt.html
+American Safety Council's Safe Motorist Course for GEICO Customers receipt_files
+BigDataWhitePaper.pdf
+CHAPTER 2 SOLUTIONS second edition.pages
+DSC_0007 2.JPG
+Discussion Question Assignment.pages
+Discussion Questions.pages
+Functions.key
+Hon 202 Leah Intro Talk Questions.S15 (1).pages
+Hon 202 Olivia Intro Talk Homework Questions.S15.pages
+Jennifer Benedict Mentor Choices.pages
+Jennifer.txt
+List part 2 tuples.key
+MappingXpress.webarchive
+Mary Beard.pages
+Natl Sci Rev-2014-Fan-nsr-nwt032.pdf
+PWOD 2.pages
+RISE .pages
+RISE-Response paper 1.pages
+Screen Shot 2015-01-13 at 8.29.44 PM.png
+Screen Shot 2015-01-29 at 6.06.28 PM.png
+Screen Shot 2015-01-30 at 4.54.22 PM.png
+Screen Shot 2015-01-30 at 4.54.25 PM.png
+Screen Shot 2015-01-30 at 4.54.26 PM.png
+Screen Shot 2015-01-30 at 4.55.36 PM.png
+Screen Shot 2015-01-30 at 4.56.35 PM.png
+Screen Shot 2015-01-30 at 4.57.53 PM.png
+Screen Shot 2015-01-30 at 4.58.16 PM.png
+Screen Shot 2015-01-30 at 4.59.44 PM.png
+Terminal Saved Output
+Think Python Ch.1 Terms.pages
+WS
+Worksheet on Graphs 2.pages
+brownie.pages
+choosing with conditionals.key
+compsci midterm review.key
+cookie.pages
+hello_world.py
+ilovecheese
+inclass
+jenbed
+jenny.py
+loops.key
+p36-jacobs.pdf
+project1.pages
+python intro slides.key
+the real python 1.key
+workspace
+Jennifers-MacBook-Pro-3:Documents Victorine$ pip install -U textblob
+-bash: pip: command not found
+Jennifers-MacBook-Pro-3:Documents Victorine$ python setup.py install
+python: can't open file 'setup.py': [Errno 2] No such file or directory
+Jennifers-MacBook-Pro-3:Documents Victorine$ git clone https://github.com/sloria/TextBlob.git
+Cloning into 'TextBlob'...
+remote: Counting objects: 3392, done.
+remote: Total 3392 (delta 0), reused 0 (delta 0), pack-reused 3392
+Receiving objects: 100% (3392/3392), 7.87 MiB | 11.78 MiB/s, done.
+Resolving deltas: 100% (1829/1829), done.
+Checking connectivity... done.
+Jennifers-MacBook-Pro-3:Documents Victorine$ python setup.py install
+python: can't open file 'setup.py': [Errno 2] No such file or directory
+Jennifers-MacBook-Pro-3:Documents Victorine$ ls
+10-strings.key
+10334-ar-promise-peril-of-big-data.pdf
+11-lists.key
+13-dictionaries.key
+1369118x%2E2012%2E678878.pdf
+14-while-loops.key
+American Safety Council's Safe Motorist Course for GEICO Customers receipt.html
+American Safety Council's Safe Motorist Course for GEICO Customers receipt_files
+BigDataWhitePaper.pdf
+CHAPTER 2 SOLUTIONS second edition.pages
+DSC_0007 2.JPG
+Discussion Question Assignment.pages
+Discussion Questions.pages
+Functions.key
+Hon 202 Leah Intro Talk Questions.S15 (1).pages
+Hon 202 Olivia Intro Talk Homework Questions.S15.pages
+Jennifer Benedict Mentor Choices.pages
+Jennifer.txt
+List part 2 tuples.key
+MappingXpress.webarchive
+Mary Beard.pages
+Natl Sci Rev-2014-Fan-nsr-nwt032.pdf
+PWOD 2.pages
+RISE .pages
+RISE-Response paper 1.pages
+Screen Shot 2015-01-13 at 8.29.44 PM.png
+Screen Shot 2015-01-29 at 6.06.28 PM.png
+Screen Shot 2015-01-30 at 4.54.22 PM.png
+Screen Shot 2015-01-30 at 4.54.25 PM.png
+Screen Shot 2015-01-30 at 4.54.26 PM.png
+Screen Shot 2015-01-30 at 4.55.36 PM.png
+Screen Shot 2015-01-30 at 4.56.35 PM.png
+Screen Shot 2015-01-30 at 4.57.53 PM.png
+Screen Shot 2015-01-30 at 4.58.16 PM.png
+Screen Shot 2015-01-30 at 4.59.44 PM.png
+Terminal Saved Output
+TextBlob
+Think Python Ch.1 Terms.pages
+WS
+Worksheet on Graphs 2.pages
+brownie.pages
+choosing with conditionals.key
+compsci midterm review.key
+cookie.pages
+hello_world.py
+ilovecheese
+inclass
+jenbed
+jenny.py
+loops.key
+p36-jacobs.pdf
+project1.pages
+python intro slides.key
+the real python 1.key
+workspace
+Jennifers-MacBook-Pro-3:Documents Victorine$ cd WS
+Jennifers-MacBook-Pro-3:WS Victorine$ ls
+Comparison.pl		StopWords.txt		TextFiles
+CosineTester.pl		TamingExample.txt	fileOptions.pl
+Footnote.txt		TamingOfTheShrew.txt	keyword.py
+KJV.txt			Tamingex2.txt		tf.py
+Merchantofvenice.txt	TestA.txt
+PecanPie.txt		TestB.txt
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf.py 
+Traceback (most recent call last):
+  File "tf.py", line 2, in <module>
+    from textblob import TextBlob as tb
+ImportError: No module named textblob
+Jennifers-MacBook-Pro-3:WS Victorine$ pip install -U textblob
+-bash: pip: command not found
+Jennifers-MacBook-Pro-3:WS Victorine$  install -U textblob
+install: illegal option -- U
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+Jennifers-MacBook-Pro-3:WS Victorine$ python install -U textblob
+python: can't open file 'install': [Errno 2] No such file or directory
+Jennifers-MacBook-Pro-3:WS Victorine$ easy_install textblob
+error: can't create or remove files in install directory
+
+The following error occurred while trying to add or remove files in the
+installation directory:
+
+    [Errno 13] Permission denied: '/Library/Python/2.7/site-packages/test-easy-install-42614.pth'
+
+The installation directory you specified (via --install-dir, --prefix, or
+the distutils default setting) was:
+
+    /Library/Python/2.7/site-packages/
+
+Perhaps your account does not have write access to this directory?  If the
+installation directory is a system-owned directory, you may need to sign in
+as the administrator or "root" account.  If you do not have administrative
+access to this machine, you may wish to choose a different installation
+directory, preferably one that is listed in your PYTHONPATH environment
+variable.
+
+For information on other options, you may wish to consult the
+documentation at:
+
+  https://pythonhosted.org/setuptools/easy_install.html
+
+Please make the appropriate changes for your system and try again.
+
+Jennifers-MacBook-Pro-3:WS Victorine$ pip freeze
+-bash: pip: command not found
+Jennifers-MacBook-Pro-3:WS Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ pip freeze
+-bash: pip: command not found
+Jennifers-MacBook-Pro-3:~ Victorine$ curl https://bootstrap.pypa.io/ez_setup.py -o - | sudo python
+Password:  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 12402  100 12402    0     0  18574      0 --:--:-- --:--:-- --:--:-- 18593
+
+Downloading https://pypi.io/packages/source/s/setuptools/setuptools-24.0.2.zip
+Extracting in /tmp/tmpweQvTH
+Now working in /tmp/tmpweQvTH/setuptools-24.0.2
+Installing Setuptools
+running install
+running bdist_egg
+running egg_info
+writing requirements to setuptools.egg-info/requires.txt
+writing setuptools.egg-info/PKG-INFO
+writing top-level names to setuptools.egg-info/top_level.txt
+writing dependency_links to setuptools.egg-info/dependency_links.txt
+writing entry points to setuptools.egg-info/entry_points.txt
+reading manifest file 'setuptools.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*' under directory 'setuptools/_vendor'
+writing manifest file 'setuptools.egg-info/SOURCES.txt'
+installing library code to build/bdist.macosx-10.10-intel/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+copying easy_install.py -> build/lib
+creating build/lib/pkg_resources
+copying pkg_resources/__init__.py -> build/lib/pkg_resources
+creating build/lib/setuptools
+copying setuptools/__init__.py -> build/lib/setuptools
+copying setuptools/archive_util.py -> build/lib/setuptools
+copying setuptools/depends.py -> build/lib/setuptools
+copying setuptools/dist.py -> build/lib/setuptools
+copying setuptools/extension.py -> build/lib/setuptools
+copying setuptools/launch.py -> build/lib/setuptools
+copying setuptools/lib2to3_ex.py -> build/lib/setuptools
+copying setuptools/msvc.py -> build/lib/setuptools
+copying setuptools/package_index.py -> build/lib/setuptools
+copying setuptools/py26compat.py -> build/lib/setuptools
+copying setuptools/py27compat.py -> build/lib/setuptools
+copying setuptools/py31compat.py -> build/lib/setuptools
+copying setuptools/sandbox.py -> build/lib/setuptools
+copying setuptools/site-patch.py -> build/lib/setuptools
+copying setuptools/ssl_support.py -> build/lib/setuptools
+copying setuptools/unicode_utils.py -> build/lib/setuptools
+copying setuptools/utils.py -> build/lib/setuptools
+copying setuptools/version.py -> build/lib/setuptools
+copying setuptools/windows_support.py -> build/lib/setuptools
+creating build/lib/pkg_resources/_vendor
+copying pkg_resources/_vendor/__init__.py -> build/lib/pkg_resources/_vendor
+copying pkg_resources/_vendor/pyparsing.py -> build/lib/pkg_resources/_vendor
+copying pkg_resources/_vendor/six.py -> build/lib/pkg_resources/_vendor
+creating build/lib/pkg_resources/extern
+copying pkg_resources/extern/__init__.py -> build/lib/pkg_resources/extern
+creating build/lib/pkg_resources/_vendor/packaging
+copying pkg_resources/_vendor/packaging/__about__.py -> build/lib/pkg_resources/_vendor/packaging
+copying pkg_resources/_vendor/packaging/__init__.py -> build/lib/pkg_resources/_vendor/packaging
+copying pkg_resources/_vendor/packaging/_compat.py -> build/lib/pkg_resources/_vendor/packaging
+copying pkg_resources/_vendor/packaging/_structures.py -> build/lib/pkg_resources/_vendor/packaging
+copying pkg_resources/_vendor/packaging/markers.py -> build/lib/pkg_resources/_vendor/packaging
+copying pkg_resources/_vendor/packaging/requirements.py -> build/lib/pkg_resources/_vendor/packaging
+copying pkg_resources/_vendor/packaging/specifiers.py -> build/lib/pkg_resources/_vendor/packaging
+copying pkg_resources/_vendor/packaging/utils.py -> build/lib/pkg_resources/_vendor/packaging
+copying pkg_resources/_vendor/packaging/version.py -> build/lib/pkg_resources/_vendor/packaging
+creating build/lib/setuptools/command
+copying setuptools/command/__init__.py -> build/lib/setuptools/command
+copying setuptools/command/alias.py -> build/lib/setuptools/command
+copying setuptools/command/bdist_egg.py -> build/lib/setuptools/command
+copying setuptools/command/bdist_rpm.py -> build/lib/setuptools/command
+copying setuptools/command/bdist_wininst.py -> build/lib/setuptools/command
+copying setuptools/command/build_ext.py -> build/lib/setuptools/command
+copying setuptools/command/build_py.py -> build/lib/setuptools/command
+copying setuptools/command/develop.py -> build/lib/setuptools/command
+copying setuptools/command/easy_install.py -> build/lib/setuptools/command
+copying setuptools/command/egg_info.py -> build/lib/setuptools/command
+copying setuptools/command/install.py -> build/lib/setuptools/command
+copying setuptools/command/install_egg_info.py -> build/lib/setuptools/command
+copying setuptools/command/install_lib.py -> build/lib/setuptools/command
+copying setuptools/command/install_scripts.py -> build/lib/setuptools/command
+copying setuptools/command/register.py -> build/lib/setuptools/command
+copying setuptools/command/rotate.py -> build/lib/setuptools/command
+copying setuptools/command/saveopts.py -> build/lib/setuptools/command
+copying setuptools/command/sdist.py -> build/lib/setuptools/command
+copying setuptools/command/setopt.py -> build/lib/setuptools/command
+copying setuptools/command/test.py -> build/lib/setuptools/command
+copying setuptools/command/upload.py -> build/lib/setuptools/command
+copying setuptools/command/upload_docs.py -> build/lib/setuptools/command
+creating build/lib/setuptools/extern
+copying setuptools/extern/__init__.py -> build/lib/setuptools/extern
+copying setuptools/script (dev).tmpl -> build/lib/setuptools
+copying setuptools/script.tmpl -> build/lib/setuptools
+creating build/bdist.macosx-10.10-intel
+creating build/bdist.macosx-10.10-intel/egg
+copying build/lib/easy_install.py -> build/bdist.macosx-10.10-intel/egg
+creating build/bdist.macosx-10.10-intel/egg/pkg_resources
+copying build/lib/pkg_resources/__init__.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources
+creating build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor
+copying build/lib/pkg_resources/_vendor/__init__.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor
+creating build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/packaging/__about__.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/packaging/__init__.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/packaging/_compat.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/packaging/_structures.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/packaging/markers.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/packaging/requirements.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/packaging/specifiers.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/packaging/utils.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/packaging/version.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging
+copying build/lib/pkg_resources/_vendor/pyparsing.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor
+copying build/lib/pkg_resources/_vendor/six.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor
+creating build/bdist.macosx-10.10-intel/egg/pkg_resources/extern
+copying build/lib/pkg_resources/extern/__init__.py -> build/bdist.macosx-10.10-intel/egg/pkg_resources/extern
+creating build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/__init__.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/archive_util.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+creating build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/__init__.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/alias.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/bdist_egg.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/bdist_rpm.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/bdist_wininst.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/build_ext.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/build_py.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/develop.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/easy_install.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/egg_info.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/install.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/install_egg_info.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/install_lib.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/install_scripts.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/register.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/rotate.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/saveopts.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/sdist.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/setopt.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/test.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/upload.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/command/upload_docs.py -> build/bdist.macosx-10.10-intel/egg/setuptools/command
+copying build/lib/setuptools/depends.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/dist.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/extension.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+creating build/bdist.macosx-10.10-intel/egg/setuptools/extern
+copying build/lib/setuptools/extern/__init__.py -> build/bdist.macosx-10.10-intel/egg/setuptools/extern
+copying build/lib/setuptools/launch.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/lib2to3_ex.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/msvc.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/package_index.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/py26compat.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/py27compat.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/py31compat.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/sandbox.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/script (dev).tmpl -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/script.tmpl -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/site-patch.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/ssl_support.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/unicode_utils.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/utils.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/version.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+copying build/lib/setuptools/windows_support.py -> build/bdist.macosx-10.10-intel/egg/setuptools
+byte-compiling build/bdist.macosx-10.10-intel/egg/easy_install.py to easy_install.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging/__about__.py to __about__.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging/_compat.py to _compat.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging/_structures.py to _structures.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging/markers.py to markers.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging/requirements.py to requirements.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging/specifiers.py to specifiers.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging/utils.py to utils.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/packaging/version.py to version.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/pyparsing.py to pyparsing.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/_vendor/six.py to six.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/pkg_resources/extern/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/archive_util.py to archive_util.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/alias.py to alias.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/bdist_egg.py to bdist_egg.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/bdist_rpm.py to bdist_rpm.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/bdist_wininst.py to bdist_wininst.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/build_ext.py to build_ext.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/build_py.py to build_py.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/develop.py to develop.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/easy_install.py to easy_install.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/egg_info.py to egg_info.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/install.py to install.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/install_egg_info.py to install_egg_info.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/install_lib.py to install_lib.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/install_scripts.py to install_scripts.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/register.py to register.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/rotate.py to rotate.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/saveopts.py to saveopts.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/sdist.py to sdist.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/setopt.py to setopt.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/test.py to test.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/upload.py to upload.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/command/upload_docs.py to upload_docs.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/depends.py to depends.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/dist.py to dist.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/extension.py to extension.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/extern/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/launch.py to launch.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/lib2to3_ex.py to lib2to3_ex.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/msvc.py to msvc.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/package_index.py to package_index.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/py26compat.py to py26compat.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/py27compat.py to py27compat.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/py31compat.py to py31compat.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/sandbox.py to sandbox.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/site-patch.py to site-patch.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/ssl_support.py to ssl_support.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/unicode_utils.py to unicode_utils.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/utils.py to utils.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/version.py to version.pyc
+byte-compiling build/bdist.macosx-10.10-intel/egg/setuptools/windows_support.py to windows_support.pyc
+creating build/bdist.macosx-10.10-intel/egg/EGG-INFO
+copying setuptools.egg-info/PKG-INFO -> build/bdist.macosx-10.10-intel/egg/EGG-INFO
+copying setuptools.egg-info/SOURCES.txt -> build/bdist.macosx-10.10-intel/egg/EGG-INFO
+copying setuptools.egg-info/dependency_links.txt -> build/bdist.macosx-10.10-intel/egg/EGG-INFO
+copying setuptools.egg-info/entry_points.txt -> build/bdist.macosx-10.10-intel/egg/EGG-INFO
+copying setuptools.egg-info/requires.txt -> build/bdist.macosx-10.10-intel/egg/EGG-INFO
+copying setuptools.egg-info/top_level.txt -> build/bdist.macosx-10.10-intel/egg/EGG-INFO
+copying setuptools.egg-info/zip-safe -> build/bdist.macosx-10.10-intel/egg/EGG-INFO
+creating dist
+creating 'dist/setuptools-24.0.2-py2.7.egg' and adding 'build/bdist.macosx-10.10-intel/egg' to it
+removing 'build/bdist.macosx-10.10-intel/egg' (and everything under it)
+Processing setuptools-24.0.2-py2.7.egg
+Copying setuptools-24.0.2-py2.7.egg to /Library/Python/2.7/site-packages
+Adding setuptools 24.0.2 to easy-install.pth file
+Installing easy_install script to /usr/local/bin
+Installing easy_install-2.7 script to /usr/local/bin
+
+Installed /Library/Python/2.7/site-packages/setuptools-24.0.2-py2.7.egg
+Processing dependencies for setuptools==24.0.2
+Finished processing dependencies for setuptools==24.0.2
+Jennifers-MacBook-Pro-3:~ Victorine$ sudo easy_install pip
+Searching for pip
+Best match: pip 8.1.2
+Adding pip 8.1.2 to easy-install.pth file
+Installing pip script to /usr/local/bin
+Installing pip3.5 script to /usr/local/bin
+Installing pip3 script to /usr/local/bin
+
+Using /Users/Victorine/Library/Python/2.7/lib/python/site-packages
+Processing dependencies for pip
+Finished processing dependencies for pip
+Jennifers-MacBook-Pro-3:~ Victorine$ pip install -U textblob
+Collecting textblob
+  Downloading textblob-0.11.1-py2.py3-none-any.whl (634kB)
+    100% |████████████████████████████████| 634kB 1.4MB/s 
+Collecting nltk>=3.1 (from textblob)
+  Downloading nltk-3.2.1.tar.gz (1.1MB)
+    100% |████████████████████████████████| 1.1MB 925kB/s 
+Building wheels for collected packages: nltk
+  Running setup.py bdist_wheel for nltk ... done
+  Stored in directory: /Users/Victorine/Library/Caches/pip/wheels/55/0b/ce/960dcdaec7c9af5b1f81d471a90c8dae88374386efe6e54a50
+Successfully built nltk
+Installing collected packages: nltk, textblob
+Exception:
+Traceback (most recent call last):
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/basecommand.py", line 215, in main
+    status = self.run(options, args)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/commands/install.py", line 317, in run
+    prefix=options.prefix_path,
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/req/req_set.py", line 742, in install
+    **kwargs
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/req/req_install.py", line 831, in install
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/req/req_install.py", line 1032, in move_wheel_files
+    isolated=self.isolated,
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/wheel.py", line 346, in move_wheel_files
+    clobber(source, lib_dir, True)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/wheel.py", line 317, in clobber
+    ensure_dir(destdir)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/utils/__init__.py", line 83, in ensure_dir
+    os.makedirs(path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 13] Permission denied: '/Library/Python/2.7/site-packages/nltk'
+Jennifers-MacBook-Pro-3:~ Victorine$ cd Documents
+Jennifers-MacBook-Pro-3:Documents Victorine$ ls
+10-strings.key
+10334-ar-promise-peril-of-big-data.pdf
+11-lists.key
+13-dictionaries.key
+1369118x%2E2012%2E678878.pdf
+14-while-loops.key
+American Safety Council's Safe Motorist Course for GEICO Customers receipt.html
+American Safety Council's Safe Motorist Course for GEICO Customers receipt_files
+BigDataWhitePaper.pdf
+CHAPTER 2 SOLUTIONS second edition.pages
+DSC_0007 2.JPG
+Discussion Question Assignment.pages
+Discussion Questions.pages
+Functions.key
+Hon 202 Leah Intro Talk Questions.S15 (1).pages
+Hon 202 Olivia Intro Talk Homework Questions.S15.pages
+Jennifer Benedict Mentor Choices.pages
+Jennifer.txt
+List part 2 tuples.key
+MappingXpress.webarchive
+Mary Beard.pages
+Natl Sci Rev-2014-Fan-nsr-nwt032.pdf
+PWOD 2.pages
+RISE .pages
+RISE-Response paper 1.pages
+Screen Shot 2015-01-13 at 8.29.44 PM.png
+Screen Shot 2015-01-29 at 6.06.28 PM.png
+Screen Shot 2015-01-30 at 4.54.22 PM.png
+Screen Shot 2015-01-30 at 4.54.25 PM.png
+Screen Shot 2015-01-30 at 4.54.26 PM.png
+Screen Shot 2015-01-30 at 4.55.36 PM.png
+Screen Shot 2015-01-30 at 4.56.35 PM.png
+Screen Shot 2015-01-30 at 4.57.53 PM.png
+Screen Shot 2015-01-30 at 4.58.16 PM.png
+Screen Shot 2015-01-30 at 4.59.44 PM.png
+Terminal Saved Output
+TextBlob
+Think Python Ch.1 Terms.pages
+WS
+Worksheet on Graphs 2.pages
+brownie.pages
+choosing with conditionals.key
+compsci midterm review.key
+cookie.pages
+hello_world.py
+ilovecheese
+inclass
+jenbed
+jenny.py
+loops.key
+p36-jacobs.pdf
+project1.pages
+python intro slides.key
+the real python 1.key
+workspace
+Jennifers-MacBook-Pro-3:Documents Victorine$ cd WS
+Jennifers-MacBook-Pro-3:WS Victorine$ ls
+Comparison.pl		StopWords.txt		TextFiles
+CosineTester.pl		TamingExample.txt	fileOptions.pl
+Footnote.txt		TamingOfTheShrew.txt	keyword.py
+KJV.txt			Tamingex2.txt		tf.py
+Merchantofvenice.txt	TestA.txt
+PecanPie.txt		TestB.txt
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf.py 
+Traceback (most recent call last):
+  File "tf.py", line 2, in <module>
+    from textblob import TextBlob as tb
+ImportError: No module named textblob
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf.py 
+Traceback (most recent call last):
+  File "tf.py", line 2, in <module>
+    from textblob import TextBlob as tb
+ImportError: No module named textblob
+Jennifers-MacBook-Pro-3:WS Victorine$ pip
+
+Usage:   
+  pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  search                      Search PyPI for packages.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --isolated                  Run pip in an isolated mode, ignoring
+                              environment variables and user configuration.
+  -v, --verbose               Give more output. Option is additive, and can be
+                              used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output.
+  --log <path>                Path to a verbose appending log.
+  --proxy <proxy>             Specify a proxy in the form
+                              [user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection should
+                              attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists:
+                              (s)witch, (i)gnore, (w)ipe, (b)ackup.
+  --trusted-host <hostname>   Mark this host as trusted, even though it does
+                              not have valid or any HTTPS.
+  --cert <path>               Path to alternate CA bundle.
+  --client-cert <path>        Path to SSL client certificate, a single file
+                              containing the private key and the certificate
+                              in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine
+                              whether a new version of pip is available for
+                              download. Implied with --no-index.
+Jennifers-MacBook-Pro-3:WS Victorine$ pip install textblob
+Collecting textblob
+  Using cached textblob-0.11.1-py2.py3-none-any.whl
+Collecting nltk>=3.1 (from textblob)
+Installing collected packages: nltk, textblob
+Exception:
+Traceback (most recent call last):
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/basecommand.py", line 215, in main
+    status = self.run(options, args)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/commands/install.py", line 317, in run
+    prefix=options.prefix_path,
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/req/req_set.py", line 742, in install
+    **kwargs
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/req/req_install.py", line 831, in install
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/req/req_install.py", line 1032, in move_wheel_files
+    isolated=self.isolated,
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/wheel.py", line 346, in move_wheel_files
+    clobber(source, lib_dir, True)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/wheel.py", line 317, in clobber
+    ensure_dir(destdir)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/utils/__init__.py", line 83, in ensure_dir
+    os.makedirs(path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 13] Permission denied: '/Library/Python/2.7/site-packages/nltk'
+Jennifers-MacBook-Pro-3:WS Victorine$ sudo python2.7 setup.py install
+Password:
+/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python: can't open file 'setup.py': [Errno 2] No such file or directory
+Jennifers-MacBook-Pro-3:WS Victorine$ pip install -U textblob
+Collecting textblob
+  Using cached textblob-0.11.1-py2.py3-none-any.whl
+Collecting nltk>=3.1 (from textblob)
+Installing collected packages: nltk, textblob
+Exception:
+Traceback (most recent call last):
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/basecommand.py", line 215, in main
+    status = self.run(options, args)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/commands/install.py", line 317, in run
+    prefix=options.prefix_path,
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/req/req_set.py", line 742, in install
+    **kwargs
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/req/req_install.py", line 831, in install
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/req/req_install.py", line 1032, in move_wheel_files
+    isolated=self.isolated,
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/wheel.py", line 346, in move_wheel_files
+    clobber(source, lib_dir, True)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/wheel.py", line 317, in clobber
+    ensure_dir(destdir)
+  File "/Users/Victorine/Library/Python/2.7/lib/python/site-packages/pip/utils/__init__.py", line 83, in ensure_dir
+    os.makedirs(path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 13] Permission denied: '/Library/Python/2.7/site-packages/nltk'
+Jennifers-MacBook-Pro-3:WS Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ ls
+Applications			hello_variable.py		puttin_toget.py			while.py			wod4_jbenedict1
+Desktop				inclass				pwod10_jbenedict1		wod1_jbenedict1			wod4_jbenedict1 2
+Documents			list_fun.py			pwod2_jbenedict1		wod1_jbenedict1.zip		wod4_jbenedict1.zip
+Downloads			multwonum.py			pwod2_jbenedict1.zip		wod2_jbenedict1			wod5_jbenedict1
+Google Drive			perl5				pwod3_jbenedict1		wod2_jbenedict1 2		wod5_jbenedict1.zip
+Library				practiceloop			pwod3_jbenedict1.zip		wod2_jbenedict1 3		wod6_jbenedict1
+Movies				practicerun			pwod4				wod2_jbenedict1 4		wod6_jbenedict1.zip
+Music				project1_jbenedict1		pwod5				wod2_jbenedict1 5		zipies.zip
+Pictures			project1_jbenedict1 2		pwod8_jbenedict1		wod2_jbenedict1.zip
+Public				project1_jbenedict1.zip		pwod9_jbenedict1		wod3_jbenedict1
+csc117				project2-jbenedict1_rsayeed	setuptools-24.0.2.zip		wod3_jbenedict1 2
+csci117				project2-jbenedict1_rsayeed.zip	sum_n.py			wod3_jbenedict1.zip
+Jennifers-MacBook-Pro-3:~ Victorine$ cd Documents
+Jennifers-MacBook-Pro-3:Documents Victorine$ cd WS
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf.py 
+Traceback (most recent call last):
+  File "tf.py", line 2, in <module>
+    from textblob import TextBlob as tb
+ImportError: No module named textblob
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf
+tf.py   tf2.py  
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf2.py
+Traceback (most recent call last):
+  File "tf2.py", line 2, in <module>
+    import nltk
+ImportError: No module named nltk
+Jennifers-MacBook-Pro-3:WS Victorine$ sudo pip install -U nltk
+Password:
+The directory '/Users/Victorine/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/Victorine/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting nltk
+Installing collected packages: nltk
+Successfully installed nltk-3.2.1
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf2.py
+[('they', 3), ('women', 2), ('their', 2), ('that', 2), ('married', 2), ('here', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('before', 1), ('abrogate', 1), ('Parliament', 1), ('Divinity', 1), ('Common', 1)]
+Traceback (most recent call last):
+  File "tf2.py", line 2, in <module>
+    import nltk
+  File "/Library/Python/2.7/site-packages/nltk/__init__.py", line 89, in <module>
+    from nltk.internals import config_java
+  File "/Library/Python/2.7/site-packages/nltk/internals.py", line 29, in <module>
+    from nltk import compat
+  File "/Library/Python/2.7/site-packages/nltk/compat.py", line 103, in <module>
+    from urllib2 import (urlopen, HTTPError, URLError,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 94, in <module>
+    import httplib
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 74, in <module>
+    from urlparse import urlsplit
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py", line 119, in <module>
+    from collections import namedtuple
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py", line 10, in <module>
+    from keyword import iskeyword as _iskeyword
+ImportError: cannot import name iskeyword
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf2.py
+[('they', 3), ('women', 2), ('their', 2), ('that', 2), ('married', 2), ('here', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('before', 1), ('abrogate', 1), ('Parliament', 1), ('Divinity', 1), ('Common', 1)]
+Traceback (most recent call last):
+  File "tf2.py", line 3, in <module>
+    import nltk
+  File "/Library/Python/2.7/site-packages/nltk/__init__.py", line 89, in <module>
+    from nltk.internals import config_java
+  File "/Library/Python/2.7/site-packages/nltk/internals.py", line 29, in <module>
+    from nltk import compat
+  File "/Library/Python/2.7/site-packages/nltk/compat.py", line 103, in <module>
+    from urllib2 import (urlopen, HTTPError, URLError,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 94, in <module>
+    import httplib
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 74, in <module>
+    from urlparse import urlsplit
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py", line 119, in <module>
+    from collections import namedtuple
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py", line 10, in <module>
+    from keyword import iskeyword as _iskeyword
+ImportError: cannot import name iskeyword
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf2.py
+[('they', 3), ('women', 2), ('their', 2), ('that', 2), ('married', 2), ('here', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('before', 1), ('abrogate', 1), ('Parliament', 1), ('Divinity', 1), ('Common', 1)]
+Traceback (most recent call last):
+  File "tf2.py", line 2, in <module>
+    import nltk
+  File "/Library/Python/2.7/site-packages/nltk/__init__.py", line 89, in <module>
+    from nltk.internals import config_java
+  File "/Library/Python/2.7/site-packages/nltk/internals.py", line 29, in <module>
+    from nltk import compat
+  File "/Library/Python/2.7/site-packages/nltk/compat.py", line 103, in <module>
+    from urllib2 import (urlopen, HTTPError, URLError,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 94, in <module>
+    import httplib
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 74, in <module>
+    from urlparse import urlsplit
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py", line 119, in <module>
+    from collections import namedtuple
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py", line 10, in <module>
+    from keyword import iskeyword as _iskeyword
+ImportError: cannot import name iskeyword
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf2.py
+[('they', 3), ('women', 2), ('their', 2), ('that', 2), ('married', 2), ('here', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('before', 1), ('abrogate', 1), ('Parliament', 1), ('Divinity', 1), ('Common', 1)]
+Traceback (most recent call last):
+  File "tf2.py", line 2, in <module>
+    import nltk
+  File "/Library/Python/2.7/site-packages/nltk/__init__.py", line 89, in <module>
+    from nltk.internals import config_java
+  File "/Library/Python/2.7/site-packages/nltk/internals.py", line 29, in <module>
+    from nltk import compat
+  File "/Library/Python/2.7/site-packages/nltk/compat.py", line 103, in <module>
+    from urllib2 import (urlopen, HTTPError, URLError,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 94, in <module>
+    import httplib
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 74, in <module>
+    from urlparse import urlsplit
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py", line 119, in <module>
+    from collections import namedtuple
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py", line 10, in <module>
+    from keyword import iskeyword as _iskeyword
+ImportError: cannot import name iskeyword
+Jennifers-MacBook-Pro-3:WS Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ cd Documents
+Jennifers-MacBook-Pro-3:Documents Victorine$ cd WS
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf2.py 
+[('they', 3), ('women', 2), ('their', 2), ('that', 2), ('married', 2), ('here', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('before', 1), ('abrogate', 1), ('Parliament', 1), ('Divinity', 1), ('Common', 1)]
+Traceback (most recent call last):
+  File "tf2.py", line 2, in <module>
+    import nltk
+  File "/Library/Python/2.7/site-packages/nltk/__init__.py", line 89, in <module>
+    from nltk.internals import config_java
+  File "/Library/Python/2.7/site-packages/nltk/internals.py", line 29, in <module>
+    from nltk import compat
+  File "/Library/Python/2.7/site-packages/nltk/compat.py", line 103, in <module>
+    from urllib2 import (urlopen, HTTPError, URLError,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 94, in <module>
+    import httplib
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 74, in <module>
+    from urlparse import urlsplit
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py", line 119, in <module>
+    from collections import namedtuple
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py", line 10, in <module>
+    from keyword import iskeyword as _iskeyword
+ImportError: cannot import name iskeyword
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf2.py 
+Traceback (most recent call last):
+  File "tf2.py", line 1, in <module>
+    Print ("Hello")
+NameError: name 'Print' is not defined
+Jennifers-MacBook-Pro-3:WS Victorine$ python tf2.py 
+Hello
+Jennifers-MacBook-Pro-3:WS Victorine$ ls
+Comparison.pl		KJV.txt			StopWords.txt		Tamingex2.txt		TextFiles		keyword.pyc
+CosineTester.pl		Merchantofvenice.txt	TamingExample.txt	TestA.txt		fileOptions.pl		tf.py
+Footnote.txt		PecanPie.txt		TamingOfTheShrew.txt	TestB.txt		keyword.py		tf2.py
+Jennifers-MacBook-Pro-3:WS Victorine$ touch keyword.py
+Jennifers-MacBook-Pro-3:WS Victorine$ ls
+Comparison.pl		KJV.txt			StopWords.txt		Tamingex2.txt		TextFiles		keyword.pyc
+CosineTester.pl		Merchantofvenice.txt	TamingExample.txt	TestA.txt		fileOptions.pl		tf.py
+Footnote.txt		PecanPie.txt		TamingOfTheShrew.txt	TestB.txt		keyword.py		tf2.py
+Jennifers-MacBook-Pro-3:WS Victorine$ open keyword.py
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+[('they', 3), ('women', 2), ('their', 2), ('that', 2), ('married', 2), ('here', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('before', 1), ('abrogate', 1), ('Parliament', 1), ('Divinity', 1), ('Common', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 10, in <module>
+    words = [ word.strip(BAD_CHARS)  ]
+NameError: name 'word' is not defined
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+[('to', 3), ('they', 3), ('no', 3), ('women', 2), ('their', 2), ('that', 2), ('of', 2), ('married', 2), ('here', 2), ('I', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('the', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('or', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('it', 1), ('in', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('can', 1), ('before', 1), ('be', 1), ('are', 1), ('and', 1), ('abrogate', 1), ('The', 1), ('See', 1), ('Parliament', 1), ('Law', 1), ('Divinity', 1), ('Common', 1), ('All', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+  File "keyword.py", line 10
+    words = [ word.strip(BAD_CHARS) for word in text.strip().split() if in StopWords.txt]
+                                                                         ^
+SyntaxError: invalid syntax
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 10, in <module>
+    words = [ word.strip(BAD_CHARS) for word in text.strip().split() if word in StopWords.txt]
+NameError: name 'StopWords' is not defined
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 8, in <module>
+    stop=f = open('StopWords', 'r')
+IOError: [Errno 2] No such file or directory: 'StopWords'
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 10, in <module>
+    words = [ word.strip(BAD_CHARS) for word in text.strip().split() if word in StopWords.txt]
+NameError: name 'StopWords' is not defined
+Jennifers-MacBook-Pro-3:WS Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ ls
+Applications			hello_variable.py		puttin_toget.py			while.py			wod4_jbenedict1
+Desktop				inclass				pwod10_jbenedict1		wod1_jbenedict1			wod4_jbenedict1 2
+Documents			list_fun.py			pwod2_jbenedict1		wod1_jbenedict1.zip		wod4_jbenedict1.zip
+Downloads			multwonum.py			pwod2_jbenedict1.zip		wod2_jbenedict1			wod5_jbenedict1
+Google Drive			perl5				pwod3_jbenedict1		wod2_jbenedict1 2		wod5_jbenedict1.zip
+Library				practiceloop			pwod3_jbenedict1.zip		wod2_jbenedict1 3		wod6_jbenedict1
+Movies				practicerun			pwod4				wod2_jbenedict1 4		wod6_jbenedict1.zip
+Music				project1_jbenedict1		pwod5				wod2_jbenedict1 5		zipies.zip
+Pictures			project1_jbenedict1 2		pwod8_jbenedict1		wod2_jbenedict1.zip
+Public				project1_jbenedict1.zip		pwod9_jbenedict1		wod3_jbenedict1
+csc117				project2-jbenedict1_rsayeed	setuptools-24.0.2.zip		wod3_jbenedict1 2
+csci117				project2-jbenedict1_rsayeed.zip	sum_n.py			wod3_jbenedict1.zip
+Jennifers-MacBook-Pro-3:~ Victorine$ cd csci117
+Jennifers-MacBook-Pro-3:csci117 Victorine$ ls
+testfile.txt
+Jennifers-MacBook-Pro-3:csci117 Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ ls
+Applications			hello_variable.py		puttin_toget.py			while.py			wod4_jbenedict1
+Desktop				inclass				pwod10_jbenedict1		wod1_jbenedict1			wod4_jbenedict1 2
+Documents			list_fun.py			pwod2_jbenedict1		wod1_jbenedict1.zip		wod4_jbenedict1.zip
+Downloads			multwonum.py			pwod2_jbenedict1.zip		wod2_jbenedict1			wod5_jbenedict1
+Google Drive			perl5				pwod3_jbenedict1		wod2_jbenedict1 2		wod5_jbenedict1.zip
+Library				practiceloop			pwod3_jbenedict1.zip		wod2_jbenedict1 3		wod6_jbenedict1
+Movies				practicerun			pwod4				wod2_jbenedict1 4		wod6_jbenedict1.zip
+Music				project1_jbenedict1		pwod5				wod2_jbenedict1 5		zipies.zip
+Pictures			project1_jbenedict1 2		pwod8_jbenedict1		wod2_jbenedict1.zip
+Public				project1_jbenedict1.zip		pwod9_jbenedict1		wod3_jbenedict1
+csc117				project2-jbenedict1_rsayeed	setuptools-24.0.2.zip		wod3_jbenedict1 2
+csci117				project2-jbenedict1_rsayeed.zip	sum_n.py			wod3_jbenedict1.zip
+Jennifers-MacBook-Pro-3:~ Victorine$ cd csc117
+Jennifers-MacBook-Pro-3:csc117 Victorine$ ls
+ilovecheesde	ilovecheese	testfile.txt
+Jennifers-MacBook-Pro-3:csc117 Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ cd pwod4
+Jennifers-MacBook-Pro-3:pwod4 Victorine$ ls
+absolute_value.py	is_multiple.py		temp.py
+Jennifers-MacBook-Pro-3:pwod4 Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ cd pwod5
+Jennifers-MacBook-Pro-3:pwod5 Victorine$ ls
+average.py	hello_loops.py
+Jennifers-MacBook-Pro-3:pwod5 Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ cd wod2_jbenedict1
+Jennifers-MacBook-Pro-3:wod2_jbenedict1 Victorine$ ls
+bye.py		byebye.py	temp.py
+Jennifers-MacBook-Pro-3:wod2_jbenedict1 Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ cd
+Jennifers-MacBook-Pro-3:~ Victorine$ cd WS
+-bash: cd: WS: No such file or directory
+Jennifers-MacBook-Pro-3:~ Victorine$ cd Documents
+Jennifers-MacBook-Pro-3:Documents Victorine$ cd WS
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+  File "keyword.py", line 12
+    words = [ word.strip(BAD_CHARS) for word in text.strip().split()]
+          ^
+SyntaxError: invalid syntax
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+[('to', 3), ('they', 3), ('no', 3), ('women', 2), ('their', 2), ('that', 2), ('of', 2), ('married', 2), ('here', 2), ('I', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('the', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('or', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('it', 1), ('in', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('can', 1), ('before', 1), ('be', 1), ('are', 1), ('and', 1), ('abrogate', 1), ('The', 1), ('See', 1), ('Parliament', 1), ('Law', 1), ('Divinity', 1), ('Common', 1), ('All', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 1, in <module>
+    from nltk.corpus import stopwords
+  File "/Library/Python/2.7/site-packages/nltk/__init__.py", line 89, in <module>
+    from nltk.internals import config_java
+  File "/Library/Python/2.7/site-packages/nltk/internals.py", line 29, in <module>
+    from nltk import compat
+  File "/Library/Python/2.7/site-packages/nltk/compat.py", line 103, in <module>
+    from urllib2 import (urlopen, HTTPError, URLError,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 94, in <module>
+    import httplib
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 74, in <module>
+    from urlparse import urlsplit
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py", line 119, in <module>
+    from collections import namedtuple
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py", line 10, in <module>
+    from keyword import iskeyword as _iskeyword
+  File "/Users/Victorine/Documents/WS/keyword.py", line 1, in <module>
+    from nltk.corpus import stopwords
+  File "/Library/Python/2.7/site-packages/nltk/corpus/__init__.py", line 64, in <module>
+    from nltk.tokenize import RegexpTokenizer
+  File "/Library/Python/2.7/site-packages/nltk/tokenize/__init__.py", line 62, in <module>
+    from nltk.data              import load
+  File "/Library/Python/2.7/site-packages/nltk/data.py", line 59, in <module>
+    from nltk.compat import py3_data, add_py3_data
+ImportError: cannot import name py3_data
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 1, in <module>
+    import nltk
+  File "/Library/Python/2.7/site-packages/nltk/__init__.py", line 89, in <module>
+    from nltk.internals import config_java
+  File "/Library/Python/2.7/site-packages/nltk/internals.py", line 29, in <module>
+    from nltk import compat
+  File "/Library/Python/2.7/site-packages/nltk/compat.py", line 103, in <module>
+    from urllib2 import (urlopen, HTTPError, URLError,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 94, in <module>
+    import httplib
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 74, in <module>
+    from urlparse import urlsplit
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py", line 119, in <module>
+    from collections import namedtuple
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py", line 10, in <module>
+    from keyword import iskeyword as _iskeyword
+  File "/Users/Victorine/Documents/WS/keyword.py", line 2, in <module>
+    from nltk.corpus import stopwords
+  File "/Library/Python/2.7/site-packages/nltk/corpus/__init__.py", line 64, in <module>
+    from nltk.tokenize import RegexpTokenizer
+  File "/Library/Python/2.7/site-packages/nltk/tokenize/__init__.py", line 62, in <module>
+    from nltk.data              import load
+  File "/Library/Python/2.7/site-packages/nltk/data.py", line 59, in <module>
+    from nltk.compat import py3_data, add_py3_data
+ImportError: cannot import name py3_data
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+  File "keyword.py", line 16
+    word_freq = {}
+            ^
+IndentationError: expected an indented block
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 9, in <module>
+    stopwords=open('StopWords.txt',r)
+NameError: name 'r' is not defined
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 9, in <module>
+    stopwords=open('StopWords.txt',r)
+NameError: name 'r' is not defined
+Jennifers-MacBook-Pro-3:WS Victorine$ python
+Python 2.7.10 (default, Jul 14 2015, 19:46:27) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import nltk
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Library/Python/2.7/site-packages/nltk/__init__.py", line 89, in <module>
+    from nltk.internals import config_java
+  File "/Library/Python/2.7/site-packages/nltk/internals.py", line 29, in <module>
+    from nltk import compat
+  File "/Library/Python/2.7/site-packages/nltk/compat.py", line 103, in <module>
+    from urllib2 import (urlopen, HTTPError, URLError,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 94, in <module>
+    import httplib
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 74, in <module>
+    from urlparse import urlsplit
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py", line 119, in <module>
+    from collections import namedtuple
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py", line 10, in <module>
+    from keyword import iskeyword as _iskeyword
+  File "keyword.py", line 1, in <module>
+    from nltk.corpus import stopwords
+  File "/Library/Python/2.7/site-packages/nltk/corpus/__init__.py", line 64, in <module>
+    from nltk.tokenize import RegexpTokenizer
+  File "/Library/Python/2.7/site-packages/nltk/tokenize/__init__.py", line 62, in <module>
+    from nltk.data              import load
+  File "/Library/Python/2.7/site-packages/nltk/data.py", line 59, in <module>
+    from nltk.compat import py3_data, add_py3_data
+ImportError: cannot import name py3_data
+>>> import nltk
+KeyboardInterrupt
+>>> exit()
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 1, in <module>
+    from nltk.corpus import stopwords
+  File "/Library/Python/2.7/site-packages/nltk/__init__.py", line 89, in <module>
+    from nltk.internals import config_java
+  File "/Library/Python/2.7/site-packages/nltk/internals.py", line 29, in <module>
+    from nltk import compat
+  File "/Library/Python/2.7/site-packages/nltk/compat.py", line 103, in <module>
+    from urllib2 import (urlopen, HTTPError, URLError,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 94, in <module>
+    import httplib
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 74, in <module>
+    from urlparse import urlsplit
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py", line 119, in <module>
+    from collections import namedtuple
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py", line 10, in <module>
+    from keyword import iskeyword as _iskeyword
+  File "/Users/Victorine/Documents/WS/keyword.py", line 1, in <module>
+    from nltk.corpus import stopwords
+  File "/Library/Python/2.7/site-packages/nltk/corpus/__init__.py", line 64, in <module>
+    from nltk.tokenize import RegexpTokenizer
+  File "/Library/Python/2.7/site-packages/nltk/tokenize/__init__.py", line 62, in <module>
+    from nltk.data              import load
+  File "/Library/Python/2.7/site-packages/nltk/data.py", line 59, in <module>
+    from nltk.compat import py3_data, add_py3_data
+ImportError: cannot import name py3_data
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 9, in <module>
+    stopwords=open(StopWords.txt)
+NameError: name 'StopWords' is not defined
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+[('to', 3), ('they', 3), ('no', 3), ('women', 2), ('their', 2), ('that', 2), ('of', 2), ('married', 2), ('here', 2), ('I', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('the', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('or', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('it', 1), ('in', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('can', 1), ('before', 1), ('be', 1), ('are', 1), ('and', 1), ('abrogate', 1), ('The', 1), ('See', 1), ('Parliament', 1), ('Law', 1), ('Divinity', 1), ('Common', 1), ('All', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 13, in <module>
+    words = [ word.strip(stopwords) for word in text.strip().split()]
+TypeError: strip arg must be None, str or unicode
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 13, in <module>
+    words = [ word.strip(stopwords) for word in words]
+TypeError: strip arg must be None, str or unicode
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 13, in <module>
+    words = [ word.strip(stopwords) for word in text.strip().split()]
+TypeError: strip arg must be None, str or unicode
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+[('to', 3), ('they', 3), ('no', 3), ('women', 2), ('their', 2), ('that', 2), ('of', 2), ('married', 2), ('here', 2), ('I', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('the', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('or', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('it', 1), ('in', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('can', 1), ('before', 1), ('be', 1), ('are', 1), ('and', 1), ('abrogate', 1), ('The', 1), ('See', 1), ('Parliament', 1), ('Law', 1), ('Divinity', 1), ('Common', 1), ('All', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ open StopWords.txt 
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+[('to', 3), ('they', 3), ('no', 3), ('women', 2), ('their', 2), ('that', 2), ('of', 2), ('married', 2), ('here', 2), ('I', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('the', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('or', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('it', 1), ('in', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('can', 1), ('before', 1), ('be', 1), ('are', 1), ('and', 1), ('abrogate', 1), ('The', 1), ('See', 1), ('Parliament', 1), ('Law', 1), ('Divinity', 1), ('Common', 1), ('All', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+#http://www.ranks.nl/stopwords
+
+
+
+a
+
+about
+
+above
+
+after
+
+again
+
+against
+
+all
+
+am
+
+an
+
+and
+
+any
+
+are
+
+aren't
+
+as
+
+at
+
+be
+
+because
+
+been
+
+before
+
+being
+
+below
+
+between
+
+both
+
+but
+
+by
+
+can't
+
+cannot
+
+could
+
+couldn't
+
+did
+
+didn't
+
+do
+
+does
+
+doesn't
+
+doing
+
+don't
+
+down
+
+during
+
+each
+
+few
+
+for
+
+from
+
+further
+
+had
+
+hadn't
+
+has
+
+hasn't
+
+have
+
+haven't
+
+having
+
+he
+
+he'd
+
+he'll
+
+he's
+
+her
+
+here
+
+here's
+
+hers
+
+herself
+
+him
+
+himself
+
+his
+
+how
+
+how's
+
+i
+
+i'd
+
+i'll
+
+i'm
+
+i've
+
+if
+
+in
+
+into
+
+is
+
+isn't
+
+it
+
+it's
+
+its
+
+itself
+
+let's
+
+me
+
+more
+
+most
+
+mustn't
+
+my
+
+myself
+
+no
+
+nor
+
+not
+
+of
+
+off
+
+on
+
+once
+
+only
+
+or
+
+other
+
+ought
+
+our
+
+ours	ourselves
+
+out
+
+over
+
+own
+
+same
+
+shan't
+
+she
+
+she'd
+
+she'll
+
+she's
+
+should
+
+shouldn't
+
+so
+
+some
+
+such
+
+than
+
+that
+
+that's
+
+the
+
+their
+
+theirs
+
+them
+
+themselves
+
+then
+
+there
+
+there's
+
+these
+
+they
+
+they'd
+
+they'll
+
+they're
+
+they've
+
+this
+
+those
+
+through
+
+to
+
+too
+
+under
+
+until
+
+up
+
+very
+
+was
+
+wasn't
+
+we
+
+we'd
+
+we'll
+
+we're
+
+we've
+
+were
+
+weren't
+
+what
+
+what's
+
+when
+
+when's
+
+where
+
+where's
+
+which
+
+while
+
+who
+
+who's
+
+whom
+
+why
+
+why's
+
+with
+
+won't
+
+would
+
+wouldn't
+
+you
+
+you'd
+
+you'll
+
+you're
+
+you've
+
+your
+
+yours
+
+yourself
+
+yourselves
+[('to', 3), ('they', 3), ('no', 3), ('women', 2), ('their', 2), ('that', 2), ('of', 2), ('married', 2), ('here', 2), ('I', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('the', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('or', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('it', 1), ('in', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('can', 1), ('before', 1), ('be', 1), ('are', 1), ('and', 1), ('abrogate', 1), ('The', 1), ('See', 1), ('Parliament', 1), ('Law', 1), ('Divinity', 1), ('Common', 1), ('All', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+[('to', 3), ('they', 3), ('no', 3), ('women', 2), ('their', 2), ('that', 2), ('of', 2), ('married', 2), ('here', 2), ('I', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('the', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('or', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('it', 1), ('in', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('can', 1), ('before', 1), ('be', 1), ('are', 1), ('and', 1), ('abrogate', 1), ('The', 1), ('See', 1), ('Parliament', 1), ('Law', 1), ('Divinity', 1), ('Common', 1), ('All', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+  File "keyword.py", line 8
+    text=text.lower
+    ^
+IndentationError: unexpected indent
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 14, in <module>
+    words = [ word.strip(BAD_CHARS) for word in text.strip().split()]
+AttributeError: 'builtin_function_or_method' object has no attribute 'strip'
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 14, in <module>
+    words = [ word.strip(BAD_CHARS) for word in text.strip().split()]
+AttributeError: 'builtin_function_or_method' object has no attribute 'strip'
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 14, in <module>
+    words = [ word.strip(BAD_CHARS) for word in text.strip().split()]
+AttributeError: 'builtin_function_or_method' object has no attribute 'strip'
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+Traceback (most recent call last):
+  File "keyword.py", line 14, in <module>
+    words = [ word.strip(BAD_CHARS) for word in text.strip().split()]
+AttributeError: 'builtin_function_or_method' object has no attribute 'strip'
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+[('to', 3), ('they', 3), ('no', 3), ('women', 2), ('their', 2), ('that', 2), ('of', 2), ('married', 2), ('here', 2), ('I', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('the', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('or', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('it', 1), ('in', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('can', 1), ('before', 1), ('be', 1), ('are', 1), ('and', 1), ('abrogate', 1), ('The', 1), ('See', 1), ('Parliament', 1), ('Law', 1), ('Divinity', 1), ('Common', 1), ('All', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ python keyword.py
+[('to', 3), ('they', 3), ('no', 3), ('women', 2), ('their', 2), ('that', 2), ('of', 2), ('married', 2), ('here', 2), ('I', 2), ('with', 1), ('which', 1), ('well', 1), ('voice', 1), ('understood', 1), ('touched', 1), ('though', 1), ('them', 1), ('the', 1), ('subject', 1), ('some', 1), ('shift', 1), ('shaketh', 1), ('remedy', 1), ('reason', 1), ('or', 1), ('none;', 1), ('none', 1), ('make', 1), ('laws;', 1), ('know', 1), ('it', 1), ('in', 1), ('husband', 1), ('have', 1), ('hand[s]', 1), ('enough', 1), ('either', 1), ('desires', 1), ('consent', 1), ('can', 1), ('before', 1), ('be', 1), ('are', 1), ('and', 1), ('abrogate', 1), ('The', 1), ('See', 1), ('Parliament', 1), ('Law', 1), ('Divinity', 1), ('Common', 1), ('All', 1)]
+Jennifers-MacBook-Pro-3:WS Victorine$ ls
+Comparison.pl		KJV.txt			StopWords.txt		Tamingex2.txt		TextFiles		keyword.pyc
+CosineTester.pl		Merchantofvenice.txt	TamingExample.txt	TestA.txt		fileOptions.pl		tf.py
+Footnote.txt		PecanPie.txt		TamingOfTheShrew.txt	TestB.txt		keyword.py		tf2.py
+Jennifers-MacBook-Pro-3:WS Victorine$ ls
+Comparison.pl		KJV.txt			StopWords.txt		Tamingex2.txt		TextFiles		keyword.pyc		trial.py
+CosineTester.pl		Merchantofvenice.txt	TamingExample.txt	TestA.txt		fileOptions.pl		tf.py			trial.txt
+Footnote.txt		PecanPie.txt		TamingOfTheShrew.txt	TestB.txt		keyword.py		tf2.py
+Jennifers-MacBook-Pro-3:WS Victorine$ python trial.
+python: can't open file 'trial.': [Errno 2] No such file or directory
+Jennifers-MacBook-Pro-3:WS Victorine$ python trial.py
+  File "trial.py", line 8
+    word_freq[word]+=1
+            ^
+IndentationError: expected an indented block
+Jennifers-MacBook-Pro-3:WS Victorine$ python trial.py
+  File "trial.py", line 25
+    test_word_freq[word]+=1
+                 ^
+IndentationError: expected an indented block
+Jennifers-MacBook-Pro-3:WS Victorine$ python trial.py
+Jennifers-MacBook-Pro-3:WS Victorine$ python trial.py
+Jennifers-MacBook-Pro-3:WS Victorine$ python trial.py ()
+-bash: syntax error near unexpected token `('
+Jennifers-MacBook-Pro-3:WS Victorine$ python trial.py (" ")
+-bash: syntax error near unexpected token `('
+Jennifers-MacBook-Pro-3:WS Victorine$ python trial.py ("I'd Love to go to the park today ")

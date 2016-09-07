@@ -1,0 +1,1 @@
+['bigger light', 'teach', 'burn', 'day', 'night']
