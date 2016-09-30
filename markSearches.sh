@@ -2,11 +2,15 @@
 
 # bash markSearches.sh > data.txt
 
-corpora="Documents Documents_raked"
+
 
 techniques="tf tfidf"
 
-gold="Goldsets"
+#gold="Goldsets"
+gold=$1
+shift
+#corpora="Documents Documents_raked"
+corpora=$@
 ext=".txt"
 outdir="results"
 
@@ -27,7 +31,7 @@ for c in $corpora; do
 		for f in $files; do
 			q=`basename $f $ext`
 			#echo -n "$queries $q"
-			#echo $f $q 
+			#echo $c $t $q 
 			perl rankResults.pl $indir/$f $rankdir/$f $gold/$f $odir/$f $pdir/$f $q $c $t
 		done
 	done

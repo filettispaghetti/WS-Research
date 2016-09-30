@@ -17,7 +17,5 @@ CONTINUE THIS
 6.>python Splitfiles.py 
 (You will have to enter the name of the text file that you would like to split into the script itself, which will split the document based on a chunk length of 50 lines).
 
-
-
-
+7. run.sh runs the experiment & generates figures
 
