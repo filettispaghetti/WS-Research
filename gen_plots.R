@@ -4,7 +4,7 @@
 # assign the variable id to row names
 # note the / instead of \ on mswindows systems
 
-mydata <- read.table("data.txt", header=TRUE, sep="")
+mydata <- read.table("data2.txt", header=TRUE, sep="")
 names(mydata)
 attach(mydata)
 
