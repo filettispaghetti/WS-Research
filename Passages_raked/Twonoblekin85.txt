@@ -1,0 +1,1 @@
+['doctor\r \r doctor  pray bring', 'niceness\r neer cast', 'doctor\r \r doctor', 'doctor  twas', 'honesty\r \r doctor', 'sing\r \r doctor', 'doctor\r methinks', 'palamon stays', 'honesty\r cure', 'voice sir', 'cure lies', 'cure\r \r jailer', 'jailer  ho', 'jailer exits', 'wooer  alas', 'presently\r \r wooer', 'doctor', 'jailer', 'wooer', 'tonight']
