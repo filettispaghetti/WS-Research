@@ -364,7 +364,7 @@
    364  0.1060444987 	 Sonet118.txt 
    365  0.1060316965 	 KJV327.txt 
    366  0.1060071648 	 Theaterlittleworld82.txt 
-   367  0.1055744728 	 Tamingoftheshrew78.txt 
+   367 *0.1055744728 	 Tamingoftheshrew78.txt 
    368  0.1055053492 	 KJV550.txt 
    369  0.1053713502 	 KJV430.txt 
    370  0.1052976639 	 Tamingoftheshrew5.txt 

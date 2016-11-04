@@ -106,7 +106,7 @@
    106  0.0840532305 	 Cymbeline66.txt 
    107  0.0837049545 	 Twonoblekin3.txt 
    108  0.0836333860 	 Sonet126.txt 
-   109  0.0825592178 	 Tamingoftheshrew78.txt 
+   109 *0.0825592178 	 Tamingoftheshrew78.txt 
    110  0.0822151350 	 Richardtwo40.txt 
    111  0.0815207765 	 KJV494.txt 
    112  0.0805391555 	 Sonet1.txt 

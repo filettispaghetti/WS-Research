@@ -1,2 +1,2 @@
-Mac 23.txt
+Mac23.txt
 KJV10.txt

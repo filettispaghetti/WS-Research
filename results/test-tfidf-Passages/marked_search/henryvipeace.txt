@@ -8,7 +8,7 @@
      8  0.0589929988 	 Othello28.txt 
      9  0.0571499388 	 Henry6pttwo4.txt 
     10  0.0563839387 	 Sonet52.txt 
-    11  0.0515841729 	 KJV466.txt 
+    11 *0.0515841729 	 KJV466.txt 
     12  0.0498901656 	 1559BCP60.txt 
     13  0.0495139176 	 Richardtwo19.txt 
     14  0.0479228245 	 Henryfive87.txt 

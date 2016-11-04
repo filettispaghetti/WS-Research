@@ -1,4 +1,4 @@
-     1  0.1827268767 	 Mac23.txt 
+     1 *0.1827268767 	 Mac23.txt 
      2  0.1257583442 	 KJV65.txt 
      3  0.1240743956 	 Tamingoftheshrew50.txt 
      4  0.1212856900 	 Titusandronicus60.txt 

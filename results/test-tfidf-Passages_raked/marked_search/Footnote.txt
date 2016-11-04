@@ -120,7 +120,7 @@
    120  0.0387680446 	 Cymbeline65.txt 
    121  0.0387004227 	 Othello104.txt 
    122  0.0386771869 	 Titusandronicus38.txt 
-   123  0.0382968353 	 Tamingoftheshrew78.txt 
+   123 *0.0382968353 	 Tamingoftheshrew78.txt 
    124  0.0382564730 	 Henry6ptthree76.txt 
    125  0.0381018880 	 Henry6ptthree5.txt 
    126  0.0378660111 	 Othello11.txt 

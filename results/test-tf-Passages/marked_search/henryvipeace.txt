@@ -18,7 +18,7 @@
     18  0.0887081777 	 Sonet146.txt 
     19  0.0868318057 	 1549BCP71.txt 
     20  0.0806112623 	 KJV302.txt 
-    21  0.0793321554 	 KJV466.txt 
+    21 *0.0793321554 	 KJV466.txt 
     22  0.0779150552 	 Romeoandjuliet63.txt 
     23  0.0767390103 	 KJV17.txt 
     24  0.0761906687 	 Romeoandjuliet30.txt 

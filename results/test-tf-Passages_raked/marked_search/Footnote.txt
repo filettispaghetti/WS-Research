@@ -99,7 +99,7 @@
     99  0.0859165906 	 KJV566.txt 
    100  0.0857809365 	 1549BCP15.txt 
    101  0.0853906977 	 COMMENDATIONMatrimony4.txt 
-   102  0.0850611994 	 Tamingoftheshrew78.txt 
+   102 *0.0850611994 	 Tamingoftheshrew78.txt 
    103  0.0850499538 	 Coriolanus55.txt 
    104  0.0834434848 	 LovesLabours40.txt 
    105  0.0828273879 	 1559BCP37.txt 

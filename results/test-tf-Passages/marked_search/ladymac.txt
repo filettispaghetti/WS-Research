@@ -1,4 +1,4 @@
-     1  0.2461828235 	 Mac23.txt 
+     1 *0.2461828235 	 Mac23.txt 
      2  0.2178005579 	 Titusandronicus34.txt 
      3  0.2146266053 	 Timonofathens20.txt 
      4  0.1788760503 	 Tamingoftheshrew50.txt 

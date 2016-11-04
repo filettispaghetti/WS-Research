@@ -1,5 +1,5 @@
      1  0.1589298300 	 Titusandronicus60.txt 
-     2  0.1517023804 	 Mac23.txt 
+     2 *0.1517023804 	 Mac23.txt 
      3  0.1468788832 	 Sonet154.txt 
      4  0.1387921232 	 Richardtwo74.txt 
      5  0.1113970882 	 Titusandronicus28.txt 

@@ -4,7 +4,7 @@
      4  0.1536610757 	 Richardtwo74.txt 
      5  0.1469734681 	 Titusandronicus26.txt 
      6  0.1350977558 	 Antonyandcleo79.txt 
-     7  0.1279836948 	 Mac23.txt 
+     7 *0.1279836948 	 Mac23.txt 
      8  0.1230862331 	 Mac34.txt 
      9  0.1210786964 	 KJV273.txt 
     10  0.1086934332 	 Ham71.txt 
