@@ -1,9 +1,9 @@
-0.1028961951 	 GodAgaynstBisshopLondon.txt 
-0.0933414746 	 introMathArg.txt 
-0.0327014043 	 1549CommonPrayer.txt 
-0.0297479814 	 R2.txt 
+0.1034493951 	 GodAgaynstBisshopLondon.txt 
+0.0941769329 	 introMathArg.txt 
+0.0433080883 	 1549CommonPrayer.txt 
+0.0312472736 	 R2.txt 
+0.0308647021 	 Shr.txt 
 0.0285053964 	 lionking.txt 
-0.0265955388 	 Shr.txt 
-0.0249117767 	 MND.txt 
-0.0230938000 	 R3.txt 
-0.0205758964 	 WT.txt 
+0.0262594999 	 MND.txt 
+0.0238051401 	 R3.txt 
+0.0210693409 	 WT.txt 

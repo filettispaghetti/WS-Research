@@ -1,8 +1,8 @@
-0.0532509342 	 LetterDukeAlba.txt 
-0.0365203906 	 Ado.txt 
-0.0327763091 	 MM.txt 
-0.0191027896 	 MV.txt 
-0.0189174561 	 Tmp.txt 
-0.0166586024 	 R3.txt 
-0.0155390458 	 TNK.txt 
-0.0139119876 	 WT.txt 
+0.0537101505 	 LetterDukeAlba.txt 
+0.0368074438 	 Ado.txt 
+0.0349283451 	 MM.txt 
+0.0202911455 	 Tmp.txt 
+0.0194868652 	 MV.txt 
+0.0169983179 	 R3.txt 
+0.0156385735 	 TNK.txt 
+0.0141487395 	 WT.txt 

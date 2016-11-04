@@ -13,14 +13,11 @@ and
 any
 are
 aren't
-art
 as
 at
-at which hour
 be
 because
 been
-beest
 before
 being
 below
@@ -34,29 +31,22 @@ could
 couldn't
 did
 didn't
-didst
 do
 does
 doesn't
-doest
 doing
 don't
-doth
 down
 during
 each
-ere
 few
 for
 from
 further
 had
 hadn't
-hadst
 has
-has't
 hasn't
-hath
 have
 haven't
 having
@@ -72,7 +62,6 @@ herself
 him
 himself
 his
-hither
 how
 how's
 i
@@ -81,7 +70,6 @@ i'll
 i'm
 i've
 if
-if 't be true
 in
 into
 is
@@ -90,10 +78,8 @@ it
 it's
 its
 itself
-lest I
 let's
 me
-mine
 more
 most
 mustn't
@@ -113,11 +99,9 @@ ought
 our
 ours	ourselves
 out
-ov'r
 over
 own
 same
-shall we
 shan't
 she
 she'd
@@ -128,15 +112,10 @@ shouldn't
 so
 some
 such
-t
 than
 that
-that gent
-that lady
 that's
 the
-the lady
-thee
 their
 theirs
 them
@@ -151,13 +130,8 @@ they'll
 they're
 they've
 this
-thither
 those
-those folk
-those gents
-thou art
 through
-thy
 to
 too
 under
@@ -166,7 +140,6 @@ up
 very
 was
 wasn't
-wast
 we
 we'd
 we'll
@@ -180,10 +153,8 @@ when
 when's
 where
 where's
-wherefore
 which
 while
-whither
 who
 who's
 whom
