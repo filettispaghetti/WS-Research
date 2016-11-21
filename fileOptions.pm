@@ -4,6 +4,7 @@ package fileOptions;
 use warnings;
 # use Text::Document;
 # use Text::DocumentCollection;
+use Lingua::Stem::Snowball;
 use Getopt::Long;
 use Data::Dumper;
 
@@ -184,4 +185,12 @@ sub stopWords{
 		}
 	}
 	return %sp;
+}
+
+sub myStemmer{
+	my ($stemmed) = @_; # file to be stemmed
+		my $stemmer = Lingua::Stem::Snowball->new( lang => 'en' );
+   		$stemmer->stem_in_place( \@stemmed ); # qw( hors hoov )
+    	print (join(" ", @array), "\n");
+	return $stemmed;
 }

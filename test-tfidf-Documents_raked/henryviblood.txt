@@ -1,4 +1,6 @@
-0.0512790715 	 LetterDukeAlba.txt 
-0.0374946673 	 Tmp.txt 
-0.0333473857 	 MM.txt 
-0.0314100689 	 R3.txt 
+0.0540483335 	 LetterDukeAlba.txt 
+0.0493447215 	 Son.txt 
+0.0487793934 	 Ven.txt 
+0.0350994297 	 MM.txt 
+0.0325770779 	 Tmp.txt 
+0.0273546475 	 R3.txt 

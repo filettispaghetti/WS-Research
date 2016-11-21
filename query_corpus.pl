@@ -1,6 +1,8 @@
 use warnings;
 use fileOptions;
 use Data::Dumper;
+use Lingua::Stem::Snowball;
+
 
 # takes as input a query directory, a corpus directory, and a results directory
 #perl query_corpus.pl DebugQUERIES DebugCORPUS out
@@ -34,6 +36,10 @@ foreach my $fp (glob("$corpus_dir/*.txt")) {
  	#printf "Counting ... %s\n", $fp;
 
 	my @list = writeArray($fp);	# getting list of words from doc
+	my $stemmer = Lingua::Stem::Snowball->new( lang => 'en' );
+    $stemmer->stem_in_place( \@list ); # qw( hors hoov )
+    #print (join(" ", @list), "\n");
+
 	my %words = myTF(@list);		# counting tf
 	$terms{"$fp"} = \%words;	# storing in giant hash, indexed by file
 

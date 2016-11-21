@@ -1,0 +1,5 @@
+     1 0.0624945473 	 R2.txt 
+     2 0.0577266124 	 PhT.txt 
+     3 0.0293003632 	 2H4.txt 
+     4 0.0210693409 	 WT.txt 
+     5 0.0106079984 	 TheaterLittleWorld.txt 

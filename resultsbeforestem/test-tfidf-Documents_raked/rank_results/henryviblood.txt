@@ -1,0 +1,4 @@
+     1 0.0512790715 	 LetterDukeAlba.txt 
+     2 0.0374946673 	 Tmp.txt 
+     3 0.0333473857 	 MM.txt 
+     4 0.0314100689 	 R3.txt 
