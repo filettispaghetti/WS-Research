@@ -98,29 +98,51 @@ The following object is masked from package:base:
 + 
 + }
 [1] "Analyzing: P"
-[1] "tf-Documents"    "tfidf-Documents" "tf-Passages"     "tfidf-Passages" 
-   tf-Documents tfidf-Documents     tf-Passages  tfidf-Passages 
-    0.037414852     0.037414852     0.001175437     0.001175437 
+[1] "tf-Documents_raked"    "tfidf-Documents_raked" "tf-Documents"         
+[4] "tfidf-Documents"       "tf-Passages_raked"     "tfidf-Passages_raked" 
+[7] "tf-Passages"           "tfidf-Passages"       
+   tf-Documents_raked tfidf-Documents_raked          tf-Documents 
+          0.040404040           0.040404040           0.037730279 
+      tfidf-Documents     tf-Passages_raked  tfidf-Passages_raked 
+          0.037730279           0.001830342           0.001830342 
+          tf-Passages        tfidf-Passages 
+          0.001144542           0.001144542 
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.04040 0.06187 0.16670 
+
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.04040 0.06187 0.16670 
+
 $`tf-Documents`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-0.03571 0.03571 0.03604 0.03741 0.03922 0.04167 
+0.03571 0.03636 0.03670 0.03773 0.04000 0.04000 
 
 $`tfidf-Documents`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-0.03571 0.03571 0.03604 0.03741 0.03922 0.04167 
+0.03571 0.03636 0.03670 0.03773 0.04000 0.04000 
+
+$`tf-Passages_raked`
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.000000 0.000000 0.001469 0.001830 0.003275 0.004854 
+
+$`tfidf-Passages_raked`
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.000000 0.000000 0.001469 0.001830 0.003275 0.004854 
 
 $`tf-Passages`
      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-0.0002815 0.0007094 0.0008613 0.0011750 0.0015920 0.0026140 
+0.0002972 0.0007576 0.0009433 0.0011450 0.0015370 0.0022420 
 
 $`tfidf-Passages`
      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-0.0002815 0.0007094 0.0008613 0.0011750 0.0015920 0.0026140 
+0.0002972 0.0007576 0.0009433 0.0011450 0.0015370 0.0022420 
 
 [1] "Testing"
-            Df   Sum Sq  Mean Sq F value Pr(>F)    
-tech         3 0.010506 0.003502    1184 <2e-16 ***
-Residuals   28 0.000083 0.000003                   
+            Df  Sum Sq  Mean Sq F value  Pr(>F)   
+tech         7 0.02266 0.003237   3.105 0.00772 **
+Residuals   56 0.05837 0.001042                   
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
   Tukey multiple comparisons of means
@@ -129,18 +151,75 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
 
 $tech
-                                        diff          lwr          upr p adj
-tfidf-Documents-tf-Documents   -2.775558e-17 -0.002348287  0.002348287     1
-tf-Passages-tf-Documents       -3.623942e-02 -0.038587702 -0.033891128     0
-tfidf-Passages-tf-Documents    -3.623942e-02 -0.038587702 -0.033891128     0
-tf-Passages-tfidf-Documents    -3.623942e-02 -0.038587702 -0.033891128     0
-tfidf-Passages-tfidf-Documents -3.623942e-02 -0.038587702 -0.033891128     0
-tfidf-Passages-tf-Passages      0.000000e+00 -0.002348287  0.002348287     1
+                                                    diff         lwr        upr
+tfidf-Documents_raked-tf-Documents_raked    1.387779e-17 -0.05081980 0.05081980
+tf-Documents-tf-Documents_raked            -2.673761e-03 -0.05349356 0.04814604
+tfidf-Documents-tf-Documents_raked         -2.673761e-03 -0.05349356 0.04814604
+tf-Passages_raked-tf-Documents_raked       -3.857370e-02 -0.08939350 0.01224610
+tfidf-Passages_raked-tf-Documents_raked    -3.857370e-02 -0.08939350 0.01224610
+tf-Passages-tf-Documents_raked             -3.925950e-02 -0.09007930 0.01156030
+tfidf-Passages-tf-Documents_raked          -3.925950e-02 -0.09007930 0.01156030
+tf-Documents-tfidf-Documents_raked         -2.673761e-03 -0.05349356 0.04814604
+tfidf-Documents-tfidf-Documents_raked      -2.673761e-03 -0.05349356 0.04814604
+tf-Passages_raked-tfidf-Documents_raked    -3.857370e-02 -0.08939350 0.01224610
+tfidf-Passages_raked-tfidf-Documents_raked -3.857370e-02 -0.08939350 0.01224610
+tf-Passages-tfidf-Documents_raked          -3.925950e-02 -0.09007930 0.01156030
+tfidf-Passages-tfidf-Documents_raked       -3.925950e-02 -0.09007930 0.01156030
+tfidf-Documents-tf-Documents                1.318390e-16 -0.05081980 0.05081980
+tf-Passages_raked-tf-Documents             -3.589994e-02 -0.08671974 0.01491986
+tfidf-Passages_raked-tf-Documents          -3.589994e-02 -0.08671974 0.01491986
+tf-Passages-tf-Documents                   -3.658574e-02 -0.08740554 0.01423406
+tfidf-Passages-tf-Documents                -3.658574e-02 -0.08740554 0.01423406
+tf-Passages_raked-tfidf-Documents          -3.589994e-02 -0.08671974 0.01491986
+tfidf-Passages_raked-tfidf-Documents       -3.589994e-02 -0.08671974 0.01491986
+tf-Passages-tfidf-Documents                -3.658574e-02 -0.08740554 0.01423406
+tfidf-Passages-tfidf-Documents             -3.658574e-02 -0.08740554 0.01423406
+tfidf-Passages_raked-tf-Passages_raked      0.000000e+00 -0.05081980 0.05081980
+tf-Passages-tf-Passages_raked              -6.857997e-04 -0.05150560 0.05013400
+tfidf-Passages-tf-Passages_raked           -6.857997e-04 -0.05150560 0.05013400
+tf-Passages-tfidf-Passages_raked           -6.857997e-04 -0.05150560 0.05013400
+tfidf-Passages-tfidf-Passages_raked        -6.857997e-04 -0.05150560 0.05013400
+tfidf-Passages-tf-Passages                  2.428613e-17 -0.05081980 0.05081980
+                                               p adj
+tfidf-Documents_raked-tf-Documents_raked   1.0000000
+tf-Documents-tf-Documents_raked            0.9999998
+tfidf-Documents-tf-Documents_raked         0.9999998
+tf-Passages_raked-tf-Documents_raked       0.2665455
+tfidf-Passages_raked-tf-Documents_raked    0.2665455
+tf-Passages-tf-Documents_raked             0.2465876
+tfidf-Passages-tf-Documents_raked          0.2465876
+tf-Documents-tfidf-Documents_raked         0.9999998
+tfidf-Documents-tfidf-Documents_raked      0.9999998
+tf-Passages_raked-tfidf-Documents_raked    0.2665455
+tfidf-Passages_raked-tfidf-Documents_raked 0.2665455
+tf-Passages-tfidf-Documents_raked          0.2465876
+tfidf-Passages-tfidf-Documents_raked       0.2465876
+tfidf-Documents-tf-Documents               1.0000000
+tf-Passages_raked-tf-Documents             0.3537176
+tfidf-Passages_raked-tf-Documents          0.3537176
+tf-Passages-tf-Documents                   0.3300008
+tfidf-Passages-tf-Documents                0.3300008
+tf-Passages_raked-tfidf-Documents          0.3537176
+tfidf-Passages_raked-tfidf-Documents       0.3537176
+tf-Passages-tfidf-Documents                0.3300008
+tfidf-Passages-tfidf-Documents             0.3300008
+tfidf-Passages_raked-tf-Passages_raked     1.0000000
+tf-Passages-tf-Passages_raked              1.0000000
+tfidf-Passages-tf-Passages_raked           1.0000000
+tf-Passages-tfidf-Passages_raked           1.0000000
+tfidf-Passages-tfidf-Passages_raked        1.0000000
+tfidf-Passages-tf-Passages                 1.0000000
 
 [1] "Analyzing: R"
-[1] "tf-Documents"    "tfidf-Documents" "tf-Passages"     "tfidf-Passages" 
-   tf-Documents tfidf-Documents     tf-Passages  tfidf-Passages 
-              1               1               1               1 
+[1] "tf-Documents"          "tfidf-Documents"       "tf-Passages"          
+[4] "tfidf-Passages"        "tf-Passages_raked"     "tfidf-Passages_raked" 
+[7] "tf-Documents_raked"    "tfidf-Documents_raked"
+         tf-Documents       tfidf-Documents           tf-Passages 
+               1.0000                1.0000                1.0000 
+       tfidf-Passages     tf-Passages_raked  tfidf-Passages_raked 
+               1.0000                0.5625                0.5625 
+   tf-Documents_raked tfidf-Documents_raked 
+               0.1875                0.1875 
 $`tf-Documents`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
       1       1       1       1       1       1 
@@ -157,55 +236,26 @@ $`tfidf-Passages`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
       1       1       1       1       1       1 
 
-[1] "Testing"
-            Df    Sum Sq  Mean Sq F value Pr(>F)
-tech         3 1.812e-30 6.04e-31       1  0.407
-Residuals   28 1.691e-29 6.04e-31               
-  Tukey multiple comparisons of means
-    95% family-wise confidence level
-
-Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
-
-$tech
-                                       diff           lwr          upr
-tfidf-Documents-tf-Documents   4.440892e-16 -6.168500e-16 1.505028e-15
-tf-Passages-tf-Documents       4.440892e-16 -6.168500e-16 1.505028e-15
-tfidf-Passages-tf-Documents    4.440892e-16 -6.168500e-16 1.505028e-15
-tf-Passages-tfidf-Documents    0.000000e+00 -1.060939e-15 1.060939e-15
-tfidf-Passages-tfidf-Documents 0.000000e+00 -1.060939e-15 1.060939e-15
-tfidf-Passages-tf-Passages     0.000000e+00 -1.060939e-15 1.060939e-15
-                                   p adj
-tfidf-Documents-tf-Documents   0.6667138
-tf-Passages-tf-Documents       0.6667138
-tfidf-Passages-tf-Documents    0.6667138
-tf-Passages-tfidf-Documents    1.0000000
-tfidf-Passages-tfidf-Documents 1.0000000
-tfidf-Passages-tf-Passages     1.0000000
-
-[1] "Analyzing: F"
-[1] "tf-Documents"    "tfidf-Documents" "tf-Passages"     "tfidf-Passages" 
-   tf-Documents tfidf-Documents     tf-Passages  tfidf-Passages 
-    0.072122613     0.072122613     0.002347071     0.002347071 
-$`tf-Documents`
+$`tf-Passages_raked`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-0.06897 0.06897 0.06957 0.07212 0.07547 0.08000 
+ 0.0000  0.0000  0.7500  0.5625  1.0000  1.0000 
 
-$`tfidf-Documents`
+$`tfidf-Passages_raked`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-0.06897 0.06897 0.06957 0.07212 0.07547 0.08000 
+ 0.0000  0.0000  0.7500  0.5625  1.0000  1.0000 
 
-$`tf-Passages`
-     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-0.0005629 0.0014180 0.0017210 0.0023470 0.0031790 0.0052150 
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.1875  0.5000  0.5000 
 
-$`tfidf-Passages`
-     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-0.0005629 0.0014180 0.0017210 0.0023470 0.0031790 0.0052150 
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.1875  0.5000  0.5000 
 
 [1] "Testing"
-            Df  Sum Sq Mean Sq F value Pr(>F)    
-tech         3 0.03895 0.01298    1255 <2e-16 ***
-Residuals   28 0.00029 0.00001                   
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+tech         7  7.375  1.0536   13.49 4.62e-10 ***
+Residuals   56  4.375  0.0781                     
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
   Tukey multiple comparisons of means
@@ -214,89 +264,403 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
 
 $tech
-                                        diff          lwr          upr p adj
-tfidf-Documents-tf-Documents   -5.551115e-17 -0.004390441  0.004390441     1
-tf-Passages-tf-Documents       -6.977554e-02 -0.074165983 -0.065385101     0
-tfidf-Passages-tf-Documents    -6.977554e-02 -0.074165983 -0.065385101     0
-tf-Passages-tfidf-Documents    -6.977554e-02 -0.074165983 -0.065385101     0
-tfidf-Passages-tfidf-Documents -6.977554e-02 -0.074165983 -0.065385101     0
-tfidf-Passages-tf-Passages     -2.081668e-17 -0.004390441  0.004390441     1
+                                                    diff        lwr
+tfidf-Documents-tf-Documents                2.220446e-16 -0.4399859
+tf-Passages-tf-Documents                    1.110223e-16 -0.4399859
+tfidf-Passages-tf-Documents                 2.220446e-16 -0.4399859
+tf-Passages_raked-tf-Documents             -4.375000e-01 -0.8774859
+tfidf-Passages_raked-tf-Documents          -4.375000e-01 -0.8774859
+tf-Documents_raked-tf-Documents            -8.125000e-01 -1.2524859
+tfidf-Documents_raked-tf-Documents         -8.125000e-01 -1.2524859
+tf-Passages-tfidf-Documents                -1.110223e-16 -0.4399859
+tfidf-Passages-tfidf-Documents              0.000000e+00 -0.4399859
+tf-Passages_raked-tfidf-Documents          -4.375000e-01 -0.8774859
+tfidf-Passages_raked-tfidf-Documents       -4.375000e-01 -0.8774859
+tf-Documents_raked-tfidf-Documents         -8.125000e-01 -1.2524859
+tfidf-Documents_raked-tfidf-Documents      -8.125000e-01 -1.2524859
+tfidf-Passages-tf-Passages                  1.110223e-16 -0.4399859
+tf-Passages_raked-tf-Passages              -4.375000e-01 -0.8774859
+tfidf-Passages_raked-tf-Passages           -4.375000e-01 -0.8774859
+tf-Documents_raked-tf-Passages             -8.125000e-01 -1.2524859
+tfidf-Documents_raked-tf-Passages          -8.125000e-01 -1.2524859
+tf-Passages_raked-tfidf-Passages           -4.375000e-01 -0.8774859
+tfidf-Passages_raked-tfidf-Passages        -4.375000e-01 -0.8774859
+tf-Documents_raked-tfidf-Passages          -8.125000e-01 -1.2524859
+tfidf-Documents_raked-tfidf-Passages       -8.125000e-01 -1.2524859
+tfidf-Passages_raked-tf-Passages_raked     -2.220446e-16 -0.4399859
+tf-Documents_raked-tf-Passages_raked       -3.750000e-01 -0.8149859
+tfidf-Documents_raked-tf-Passages_raked    -3.750000e-01 -0.8149859
+tf-Documents_raked-tfidf-Passages_raked    -3.750000e-01 -0.8149859
+tfidf-Documents_raked-tfidf-Passages_raked -3.750000e-01 -0.8149859
+tfidf-Documents_raked-tf-Documents_raked    3.885781e-16 -0.4399859
+                                                    upr     p adj
+tfidf-Documents-tf-Documents                0.439985886 1.0000000
+tf-Passages-tf-Documents                    0.439985886 1.0000000
+tfidf-Passages-tf-Documents                 0.439985886 1.0000000
+tf-Passages_raked-tf-Documents              0.002485886 0.0523229
+tfidf-Passages_raked-tf-Documents           0.002485886 0.0523229
+tf-Documents_raked-tf-Documents            -0.372514114 0.0000082
+tfidf-Documents_raked-tf-Documents         -0.372514114 0.0000082
+tf-Passages-tfidf-Documents                 0.439985886 1.0000000
+tfidf-Passages-tfidf-Documents              0.439985886 1.0000000
+tf-Passages_raked-tfidf-Documents           0.002485886 0.0523229
+tfidf-Passages_raked-tfidf-Documents        0.002485886 0.0523229
+tf-Documents_raked-tfidf-Documents         -0.372514114 0.0000082
+tfidf-Documents_raked-tfidf-Documents      -0.372514114 0.0000082
+tfidf-Passages-tf-Passages                  0.439985886 1.0000000
+tf-Passages_raked-tf-Passages               0.002485886 0.0523229
+tfidf-Passages_raked-tf-Passages            0.002485886 0.0523229
+tf-Documents_raked-tf-Passages             -0.372514114 0.0000082
+tfidf-Documents_raked-tf-Passages          -0.372514114 0.0000082
+tf-Passages_raked-tfidf-Passages            0.002485886 0.0523229
+tfidf-Passages_raked-tfidf-Passages         0.002485886 0.0523229
+tf-Documents_raked-tfidf-Passages          -0.372514114 0.0000082
+tfidf-Documents_raked-tfidf-Passages       -0.372514114 0.0000082
+tfidf-Passages_raked-tf-Passages_raked      0.439985886 1.0000000
+tf-Documents_raked-tf-Passages_raked        0.064985886 0.1493688
+tfidf-Documents_raked-tf-Passages_raked     0.064985886 0.1493688
+tf-Documents_raked-tfidf-Passages_raked     0.064985886 0.1493688
+tfidf-Documents_raked-tfidf-Passages_raked  0.064985886 0.1493688
+tfidf-Documents_raked-tf-Documents_raked    0.439985886 1.0000000
+
+[1] "Analyzing: F"
+[1] "tf-Documents"          "tfidf-Documents"       "tf-Documents_raked"   
+[4] "tfidf-Documents_raked" "tf-Passages_raked"     "tfidf-Passages_raked" 
+[7] "tf-Passages"           "tfidf-Passages"       
+         tf-Documents       tfidf-Documents    tf-Documents_raked 
+          0.072711204           0.072711204           0.064393939 
+tfidf-Documents_raked     tf-Passages_raked  tfidf-Passages_raked 
+          0.064393939           0.003646750           0.003646750 
+          tf-Passages        tfidf-Passages 
+          0.002285742           0.002285742 
+$`tf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.06897 0.07018 0.07080 0.07271 0.07692 0.07692 
+
+$`tfidf-Documents`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.06897 0.07018 0.07080 0.07271 0.07692 0.07692 
+
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.06439 0.10800 0.25000 
+
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.06439 0.10800 0.25000 
+
+$`tf-Passages_raked`
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.000000 0.000000 0.002930 0.003647 0.006528 0.009662 
+
+$`tfidf-Passages_raked`
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.000000 0.000000 0.002930 0.003647 0.006528 0.009662 
+
+$`tf-Passages`
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+0.0005942 0.0015140 0.0018850 0.0022860 0.0030700 0.0044740 
+
+$`tfidf-Passages`
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+0.0005942 0.0015140 0.0018850 0.0022860 0.0030700 0.0044740 
+
+[1] "Testing"
+            Df  Sum Sq  Mean Sq F value  Pr(>F)   
+tech         7 0.06939 0.009913   3.992 0.00132 **
+Residuals   56 0.13906 0.002483                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
+
+$tech
+                                                    diff         lwr
+tfidf-Documents-tf-Documents               -4.163336e-17 -0.07844212
+tf-Documents_raked-tf-Documents            -8.317265e-03 -0.08675939
+tfidf-Documents_raked-tf-Documents         -8.317265e-03 -0.08675939
+tf-Passages_raked-tf-Documents             -6.906445e-02 -0.14750658
+tfidf-Passages_raked-tf-Documents          -6.906445e-02 -0.14750658
+tf-Passages-tf-Documents                   -7.042546e-02 -0.14886759
+tfidf-Passages-tf-Documents                -7.042546e-02 -0.14886759
+tf-Documents_raked-tfidf-Documents         -8.317265e-03 -0.08675939
+tfidf-Documents_raked-tfidf-Documents      -8.317265e-03 -0.08675939
+tf-Passages_raked-tfidf-Documents          -6.906445e-02 -0.14750658
+tfidf-Passages_raked-tfidf-Documents       -6.906445e-02 -0.14750658
+tf-Passages-tfidf-Documents                -7.042546e-02 -0.14886759
+tfidf-Passages-tfidf-Documents             -7.042546e-02 -0.14886759
+tfidf-Documents_raked-tf-Documents_raked    1.387779e-17 -0.07844212
+tf-Passages_raked-tf-Documents_raked       -6.074719e-02 -0.13918931
+tfidf-Passages_raked-tf-Documents_raked    -6.074719e-02 -0.13918931
+tf-Passages-tf-Documents_raked             -6.210820e-02 -0.14055032
+tfidf-Passages-tf-Documents_raked          -6.210820e-02 -0.14055032
+tf-Passages_raked-tfidf-Documents_raked    -6.074719e-02 -0.13918931
+tfidf-Passages_raked-tfidf-Documents_raked -6.074719e-02 -0.13918931
+tf-Passages-tfidf-Documents_raked          -6.210820e-02 -0.14055032
+tfidf-Passages-tfidf-Documents_raked       -6.210820e-02 -0.14055032
+tfidf-Passages_raked-tf-Passages_raked      0.000000e+00 -0.07844212
+tf-Passages-tf-Passages_raked              -1.361008e-03 -0.07980313
+tfidf-Passages-tf-Passages_raked           -1.361008e-03 -0.07980313
+tf-Passages-tfidf-Passages_raked           -1.361008e-03 -0.07980313
+tfidf-Passages-tfidf-Passages_raked        -1.361008e-03 -0.07980313
+tfidf-Passages-tf-Passages                  6.938894e-17 -0.07844212
+                                                   upr     p adj
+tfidf-Documents-tf-Documents               0.078442123 1.0000000
+tf-Documents_raked-tf-Documents            0.070124858 0.9999748
+tfidf-Documents_raked-tf-Documents         0.070124858 0.9999748
+tf-Passages_raked-tf-Documents             0.009377669 0.1231749
+tfidf-Passages_raked-tf-Documents          0.009377669 0.1231749
+tf-Passages-tf-Documents                   0.008016661 0.1089484
+tfidf-Passages-tf-Documents                0.008016661 0.1089484
+tf-Documents_raked-tfidf-Documents         0.070124858 0.9999748
+tfidf-Documents_raked-tfidf-Documents      0.070124858 0.9999748
+tf-Passages_raked-tfidf-Documents          0.009377669 0.1231749
+tfidf-Passages_raked-tfidf-Documents       0.009377669 0.1231749
+tf-Passages-tfidf-Documents                0.008016661 0.1089484
+tfidf-Passages-tfidf-Documents             0.008016661 0.1089484
+tfidf-Documents_raked-tf-Documents_raked   0.078442123 1.0000000
+tf-Passages_raked-tf-Documents_raked       0.017694934 0.2438639
+tfidf-Passages_raked-tf-Documents_raked    0.017694934 0.2438639
+tf-Passages-tf-Documents_raked             0.016333926 0.2198904
+tfidf-Passages-tf-Documents_raked          0.016333926 0.2198904
+tf-Passages_raked-tfidf-Documents_raked    0.017694934 0.2438639
+tfidf-Passages_raked-tfidf-Documents_raked 0.017694934 0.2438639
+tf-Passages-tfidf-Documents_raked          0.016333926 0.2198904
+tfidf-Passages-tfidf-Documents_raked       0.016333926 0.2198904
+tfidf-Passages_raked-tf-Passages_raked     0.078442123 1.0000000
+tf-Passages-tf-Passages_raked              0.077081115 1.0000000
+tfidf-Passages-tf-Passages_raked           0.077081115 1.0000000
+tf-Passages-tfidf-Passages_raked           0.077081115 1.0000000
+tfidf-Passages-tfidf-Passages_raked        0.077081115 1.0000000
+tfidf-Passages-tf-Passages                 0.078442123 1.0000000
 
 [1] "Analyzing: MAP"
-[1] "tfidf-Passages"  "tfidf-Documents" "tf-Documents"    "tf-Passages"    
- tfidf-Passages tfidf-Documents    tf-Documents     tf-Passages 
-      0.2603489       0.2230401       0.2156333       0.1362794 
+[1] "tfidf-Passages"        "tfidf-Documents"       "tf-Documents"         
+[4] "tfidf-Passages_raked"  "tf-Passages"           "tf-Passages_raked"    
+[7] "tfidf-Documents_raked" "tf-Documents_raked"   
+       tfidf-Passages       tfidf-Documents          tf-Documents 
+           0.38480059            0.29729295            0.27083490 
+ tfidf-Passages_raked           tf-Passages     tf-Passages_raked 
+           0.24299783            0.24121021            0.11104384 
+tfidf-Documents_raked    tf-Documents_raked 
+           0.06145833            0.05989583 
 $`tfidf-Passages`
-     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-0.0006658 0.0312700 0.2676000 0.2603000 0.5006000 0.5026000 
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.009174 0.265900 0.500700 0.384800 0.513000 0.590900 
 
 $`tfidf-Documents`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
- 0.0434  0.1907  0.2292  0.2230  0.2890  0.3409 
+0.04952 0.13150 0.21250 0.29730 0.38970 0.75000 
 
 $`tf-Documents`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-0.04147 0.18240 0.22620 0.21560 0.28440 0.31670 
+0.04416 0.12650 0.18680 0.27080 0.36910 0.64290 
+
+$`tfidf-Passages_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.08822 0.24300 0.50440 0.75000 
 
 $`tf-Passages`
-     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-0.0006711 0.0115500 0.0761300 0.1363000 0.1898000 0.5006000 
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.002725 0.026360 0.187500 0.241200 0.500500 0.505100 
+
+$`tf-Passages_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.01709 0.11100 0.06920 0.66670 
+
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.06146 0.13540 0.20000 
+
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.05990 0.08854 0.25000 
 
 [1] "Testing"
-            Df Sum Sq Mean Sq F value Pr(>F)
-tech         3 0.0653 0.02178   0.871  0.468
-Residuals   28 0.7000 0.02500               
+            Df Sum Sq Mean Sq F value Pr(>F)  
+tech         7 0.7865 0.11236   2.478 0.0274 *
+Residuals   56 2.5392 0.04534                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
   Tukey multiple comparisons of means
     95% family-wise confidence level
 
 Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
 
 $tech
-                                       diff        lwr        upr     p adj
-tfidf-Documents-tfidf-Passages -0.037308813 -0.2531525 0.17853484 0.9646246
-tf-Documents-tfidf-Passages    -0.044715696 -0.2605593 0.17112795 0.9414285
-tf-Passages-tfidf-Passages     -0.124069569 -0.3399132 0.09177408 0.4116893
-tf-Documents-tfidf-Documents   -0.007406883 -0.2232505 0.20843677 0.9996979
-tf-Passages-tfidf-Documents    -0.086760756 -0.3026044 0.12908289 0.6939573
-tf-Passages-tf-Documents       -0.079353873 -0.2951975 0.13648978 0.7484802
+                                                   diff        lwr        upr
+tfidf-Documents-tfidf-Passages             -0.087507642 -0.4227057 0.24769046
+tf-Documents-tfidf-Passages                -0.113965694 -0.4491638 0.22123241
+tfidf-Passages_raked-tfidf-Passages        -0.141802762 -0.4770009 0.19339534
+tf-Passages-tfidf-Passages                 -0.143590387 -0.4787885 0.19160771
+tf-Passages_raked-tfidf-Passages           -0.273756748 -0.6089548 0.06144135
+tfidf-Documents_raked-tfidf-Passages       -0.323342259 -0.6585404 0.01185584
+tf-Documents_raked-tfidf-Passages          -0.324904759 -0.6601029 0.01029334
+tf-Documents-tfidf-Documents               -0.026458052 -0.3616562 0.30874005
+tfidf-Passages_raked-tfidf-Documents       -0.054295120 -0.3894932 0.28090298
+tf-Passages-tfidf-Documents                -0.056082744 -0.3912808 0.27911536
+tf-Passages_raked-tfidf-Documents          -0.186249106 -0.5214472 0.14894900
+tfidf-Documents_raked-tfidf-Documents      -0.235834617 -0.5710327 0.09936348
+tf-Documents_raked-tfidf-Documents         -0.237397117 -0.5725952 0.09780098
+tfidf-Passages_raked-tf-Documents          -0.027837068 -0.3630352 0.30736103
+tf-Passages-tf-Documents                   -0.029624692 -0.3648228 0.30557341
+tf-Passages_raked-tf-Documents             -0.159791054 -0.4949892 0.17540705
+tfidf-Documents_raked-tf-Documents         -0.209376565 -0.5445747 0.12582154
+tf-Documents_raked-tf-Documents            -0.210939065 -0.5461372 0.12425904
+tf-Passages-tfidf-Passages_raked           -0.001787625 -0.3369857 0.33341048
+tf-Passages_raked-tfidf-Passages_raked     -0.131953986 -0.4671521 0.20324411
+tfidf-Documents_raked-tfidf-Passages_raked -0.181539497 -0.5167376 0.15365860
+tf-Documents_raked-tfidf-Passages_raked    -0.183101997 -0.5183001 0.15209610
+tf-Passages_raked-tf-Passages              -0.130166361 -0.4653645 0.20503174
+tfidf-Documents_raked-tf-Passages          -0.179751872 -0.5149500 0.15544623
+tf-Documents_raked-tf-Passages             -0.181314372 -0.5165125 0.15388373
+tfidf-Documents_raked-tf-Passages_raked    -0.049585511 -0.3847836 0.28561259
+tf-Documents_raked-tf-Passages_raked       -0.051148011 -0.3863461 0.28405009
+tf-Documents_raked-tfidf-Documents_raked   -0.001562500 -0.3367606 0.33363560
+                                               p adj
+tfidf-Documents-tfidf-Passages             0.9911240
+tf-Documents-tfidf-Passages                0.9603307
+tfidf-Passages_raked-tfidf-Passages        0.8826734
+tf-Passages-tfidf-Passages                 0.8758147
+tf-Passages_raked-tfidf-Passages           0.1884061
+tfidf-Documents_raked-tfidf-Passages       0.0661505
+tf-Documents_raked-tfidf-Passages          0.0637932
+tf-Documents-tfidf-Documents               0.9999967
+tfidf-Passages_raked-tfidf-Documents       0.9995651
+tf-Passages-tfidf-Documents                0.9994619
+tf-Passages_raked-tfidf-Documents          0.6556848
+tfidf-Documents_raked-tfidf-Documents      0.3588352
+tf-Documents_raked-tfidf-Documents         0.3504803
+tfidf-Passages_raked-tf-Documents          0.9999953
+tf-Passages-tf-Documents                   0.9999927
+tf-Passages_raked-tf-Documents             0.8037521
+tfidf-Documents_raked-tf-Documents         0.5129218
+tf-Documents_raked-tf-Documents            0.5033362
+tf-Passages-tfidf-Passages_raked           1.0000000
+tf-Passages_raked-tfidf-Passages_raked     0.9163592
+tfidf-Documents_raked-tfidf-Passages_raked 0.6839686
+tf-Documents_raked-tfidf-Passages_raked    0.6746486
+tf-Passages_raked-tf-Passages              0.9217273
+tfidf-Documents_raked-tf-Passages          0.6945436
+tf-Documents_raked-tf-Passages             0.6853057
+tfidf-Documents_raked-tf-Passages_raked    0.9997615
+tf-Documents_raked-tf-Passages_raked       0.9997069
+tf-Documents_raked-tfidf-Documents_raked   1.0000000
 
 [1] "Analyzing: MRR"
-[1] "tfidf-Passages"  "tfidf-Documents" "tf-Documents"    "tf-Passages"    
- tfidf-Passages tfidf-Documents    tf-Documents     tf-Passages 
-      0.5068563       0.3309896       0.3246212       0.2597659 
+[1] "tfidf-Passages"        "tf-Passages"           "tfidf-Documents"      
+[4] "tf-Documents"          "tfidf-Passages_raked"  "tf-Passages_raked"    
+[7] "tfidf-Documents_raked" "tf-Documents_raked"   
+       tfidf-Passages           tf-Passages       tfidf-Documents 
+           0.71989679            0.45522321            0.43043478 
+         tf-Documents  tfidf-Passages_raked     tf-Passages_raked 
+           0.41296296            0.35518293            0.15571683 
+tfidf-Documents_raked    tf-Documents_raked 
+           0.06145833            0.05989583 
 $`tfidf-Passages`
-     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-0.0006658 0.0398600 0.5000000 0.5069000 1.0000000 1.0000000 
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.009174 0.437500 1.000000 0.719900 1.000000 1.000000 
+
+$`tf-Passages`
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.002725 0.028640 0.291700 0.455200 1.000000 1.000000 
 
 $`tfidf-Documents`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-0.03125 0.23750 0.33330 0.33100 0.50000 0.50000 
+0.04348 0.19170 0.26670 0.43040 0.62500 1.00000 
 
 $`tf-Documents`
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
- 0.0303  0.2000  0.3333  0.3246  0.5000  0.5000 
+0.03704 0.19170 0.20000 0.41300 0.62500 1.00000 
 
-$`tf-Passages`
-     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-0.0006711 0.0103400 0.1147000 0.2598000 0.3750000 1.0000000 
+$`tfidf-Passages_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.1707  0.3552  0.6250  1.0000 
+
+$`tf-Passages_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.02763 0.15570 0.07143 1.00000 
+
+$`tfidf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.06146 0.13540 0.20000 
+
+$`tf-Documents_raked`
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.00000 0.00000 0.05990 0.08854 0.25000 
 
 [1] "Testing"
-            Df Sum Sq Mean Sq F value Pr(>F)
-tech         3  0.269 0.08967   0.923  0.442
-Residuals   28  2.719 0.09712               
+            Df Sum Sq Mean Sq F value  Pr(>F)   
+tech         7  2.886  0.4123   3.294 0.00528 **
+Residuals   56  7.009  0.1252                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
   Tukey multiple comparisons of means
     95% family-wise confidence level
 
 Fit: aov(formula = mydata[[y]] ~ tech, data = mydata, family = binomial)
 
 $tech
-                                       diff        lwr       upr     p adj
-tfidf-Documents-tfidf-Passages -0.175866686 -0.6012965 0.2495631 0.6752742
-tf-Documents-tfidf-Passages    -0.182235057 -0.6076648 0.2431947 0.6505202
-tf-Passages-tfidf-Passages     -0.247090396 -0.6725202 0.1783394 0.4026812
-tf-Documents-tfidf-Documents   -0.006368371 -0.4317982 0.4190614 0.9999748
-tf-Passages-tfidf-Documents    -0.071223710 -0.4966535 0.3542061 0.9676782
-tf-Passages-tf-Documents       -0.064855339 -0.4902851 0.3605744 0.9752402
+                                                  diff        lwr          upr
+tf-Passages-tfidf-Passages                 -0.26467358 -0.8215670  0.292219799
+tfidf-Documents-tfidf-Passages             -0.28946201 -0.8463554  0.267431371
+tf-Documents-tfidf-Passages                -0.30693383 -0.8638272  0.249959552
+tfidf-Passages_raked-tfidf-Passages        -0.36471386 -0.9216072  0.192179515
+tf-Passages_raked-tfidf-Passages           -0.56417996 -1.1210733 -0.007286579
+tfidf-Documents_raked-tfidf-Passages       -0.65843846 -1.2153318 -0.101545078
+tf-Documents_raked-tfidf-Passages          -0.66000096 -1.2168943 -0.103107578
+tfidf-Documents-tf-Passages                -0.02478843 -0.5816818  0.532104950
+tf-Documents-tf-Passages                   -0.04226025 -0.5991536  0.514633130
+tfidf-Passages_raked-tf-Passages           -0.10004028 -0.6569337  0.456853094
+tf-Passages_raked-tf-Passages              -0.29950638 -0.8563998  0.257386999
+tfidf-Documents_raked-tf-Passages          -0.39376488 -0.9506583  0.163128501
+tf-Documents_raked-tf-Passages             -0.39532738 -0.9522208  0.161566001
+tf-Documents-tfidf-Documents               -0.01747182 -0.5743652  0.539421558
+tfidf-Passages_raked-tfidf-Documents       -0.07525186 -0.6321452  0.481641522
+tf-Passages_raked-tfidf-Documents          -0.27471795 -0.8316113  0.282175427
+tfidf-Documents_raked-tfidf-Documents      -0.36897645 -0.9258698  0.187916928
+tf-Documents_raked-tfidf-Documents         -0.37053895 -0.9274323  0.186354428
+tfidf-Passages_raked-tf-Documents          -0.05778004 -0.6146734  0.499113341
+tf-Passages_raked-tf-Documents             -0.25724613 -0.8141395  0.299647247
+tfidf-Documents_raked-tf-Documents         -0.35150463 -0.9083980  0.205388748
+tf-Documents_raked-tf-Documents            -0.35306713 -0.9099605  0.203826248
+tf-Passages_raked-tfidf-Passages_raked     -0.19946609 -0.7563595  0.357427283
+tfidf-Documents_raked-tfidf-Passages_raked -0.29372459 -0.8506180  0.263168784
+tf-Documents_raked-tfidf-Passages_raked    -0.29528709 -0.8521805  0.261606284
+tfidf-Documents_raked-tf-Passages_raked    -0.09425850 -0.6511519  0.462634879
+tf-Documents_raked-tf-Passages_raked       -0.09582100 -0.6527144  0.461072379
+tf-Documents_raked-tfidf-Documents_raked   -0.00156250 -0.5584559  0.555330878
+                                               p adj
+tf-Passages-tfidf-Passages                 0.8061387
+tfidf-Documents-tfidf-Passages             0.7265291
+tf-Documents-tfidf-Passages                0.6647742
+tfidf-Passages_raked-tfidf-Passages        0.4514878
+tf-Passages_raked-tfidf-Passages           0.0449640
+tfidf-Documents_raked-tfidf-Passages       0.0101688
+tf-Documents_raked-tfidf-Passages          0.0099054
+tfidf-Documents-tf-Passages                0.9999999
+tf-Documents-tf-Passages                   0.9999975
+tfidf-Passages_raked-tf-Passages           0.9991443
+tf-Passages_raked-tf-Passages              0.6914590
+tfidf-Documents_raked-tf-Passages          0.3525413
+tf-Documents_raked-tf-Passages             0.3475466
+tf-Documents-tfidf-Documents               1.0000000
+tfidf-Passages_raked-tfidf-Documents       0.9998697
+tf-Passages_raked-tfidf-Documents          0.7752523
+tfidf-Documents_raked-tfidf-Documents      0.4363352
+tf-Documents_raked-tfidf-Documents         0.4308281
+tfidf-Passages_raked-tf-Documents          0.9999782
+tf-Passages_raked-tf-Documents             0.8275969
+tfidf-Documents_raked-tf-Documents         0.4994570
+tf-Documents_raked-tf-Documents            0.4937156
+tf-Passages_raked-tfidf-Passages_raked     0.9478662
+tfidf-Documents_raked-tfidf-Passages_raked 0.7118072
+tf-Documents_raked-tfidf-Passages_raked    0.7063491
+tfidf-Documents_raked-tf-Passages_raked    0.9994196
+tf-Documents_raked-tf-Passages_raked       0.9993537
+tf-Documents_raked-tfidf-Documents_raked   1.0000000
 
 Warning messages:
 1: In lm.fit(x, y, offset = offset, singular.ok = singular.ok, ...) :
@@ -314,4 +678,4 @@ Warning messages:
 > 
 > proc.time()
    user  system elapsed 
-  0.254   0.031   0.275 
+  0.277   0.034   0.300 
