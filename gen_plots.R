@@ -39,7 +39,7 @@ print(paste("Analyzing:", y, sep=" "))
 
 #	box plots	
 		boxplot(mydata[[y]] ~ tech, data=mydata, range=1.5, boxwex=0.5,
-	#ylim=c(0,1), 
+	ylim=c(0,1), 
 	ylab=y, col="lightgray")		
 		points(meansx,col="red",pch=3,lw=2)
 #		ct <- "MAP"
