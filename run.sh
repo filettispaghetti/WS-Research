@@ -15,23 +15,24 @@ datafile="data2.txt"
 ############# Run Search Queries Documents #############
 
 corpora="Documents Documents_raked"
+corpora="Documents"
 goldset="Goldsets"
 
-# echo "### TF-IDF ###"
+echo "### TF-IDF ###"
 
-# # tf-idf
-# for c in $corpora; do
-# 	echo "querying $c" 
-# 	perl query_corpus.pl "$queries" "$c" "$results-tfidf-$c"
-# done
+# tf-idf
+for c in $corpora; do
+	echo "querying $c" 
+	perl query_corpus.pl "$queries" "$c" "$results-tfidf-$c"
+done
 
-# echo "#### IDF ####"
+echo "#### IDF ####"
 
-# # tf (no idf)
-# for c in $corpora; do
-# 	echo "querying $c" 
-# 	perl query_corpus.pl "$queries" "$c" "$results-tf-$c" -noidf
-# done
+# tf (no idf)
+for c in $corpora; do
+	echo "querying $c" 
+	perl query_corpus.pl "$queries" "$c" "$results-tf-$c" -noidf
+done
 
 ############# Generate Results for Documents #############
 
@@ -41,23 +42,24 @@ bash markSearches.sh $goldset $corpora >> $datafile
 ############# Run Search Queries Passages #############
 
 corpora="Passages Passages_raked"
+corpora="Passages"
 goldset="Goldsets_Passages"
 
-# echo "### TF-IDF ###"
+echo "### TF-IDF ###"
 
-# # tf-idf
-# for c in $corpora; do
-# 	echo "querying $c" 
-# 	perl query_corpus.pl "$queries" "$c" "$results-tfidf-$c"
-# done
+# tf-idf
+for c in $corpora; do
+	echo "querying $c" 
+	perl query_corpus.pl "$queries" "$c" "$results-tfidf-$c"
+done
 
-# echo "#### IDF ####"
+echo "#### IDF ####"
 
-# # tf (no idf)
-# for c in $corpora; do
-# 	echo "querying $c" 
-# 	perl query_corpus.pl "$queries" "$c" "$results-tf-$c" -noidf
-# done
+# tf (no idf)
+for c in $corpora; do
+	echo "querying $c" 
+	perl query_corpus.pl "$queries" "$c" "$results-tf-$c" -noidf
+done
 
 ############# Generate Results for Passages #############
 
